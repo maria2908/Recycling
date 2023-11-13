@@ -1,0 +1,43 @@
+{
+  "environment": "Environment",
+  "health": "Health",
+  "contact": "Contact",
+  "home": "Home",
+  "environmental-protection": "Environmental Protection",
+  "main-page-slider1-t1": "What is recycling? Definition, examples and explanation",
+  "main-page-slider1-p": "Recycling should be the focus of attention when it comes to preserving biodiversity and ecosystems and not play a secondary role.",
+  "main-page-slider2-t1": "Tips for environmental protection in everyday life",
+  "main-page-slider2-p": "Collecting garbage bags at the edge of the forest, cycling more distances or planting a bee-friendly garden – protecting the environment can be so easy. These eight measures can be easily integrated into everyday life.",
+  "main-page-slider3-t1": "Where does the extreme weather come from?",
+  "main-page-slider3-p": "Heat, hurricanes, floods: this summer the weather around the world went crazy. Is climate change behind this or just natural fluctuations?",
+  "button-more": "More",
+  "accordion-trash-separation": {
+    "titel": "Separate and dispose of waste properly",
+    "text": "Sometimes it's not that easy to separate waste properly. For example, residual waste definitely does not belong in the yellow bag. It significantly hinders the sorting and recycling of the collected packaging, sometimes making it impossible. Only very few packages have separation instructions printed on them. The following disposal options are available:",
+    "first": {
+      "titel": "Yellow bin/yellow bag",
+      "p": "Yellow bin/yellow bag: All lightweight packaging made of plastic, aluminum, tinplate and composite materials such as beverage cartons belong here. In some places there is alsoregional peculiarities , then plastic items such as watering cans that are not packaging can also be disposed of in the yellow bag."
+    },
+    "second": {
+      "titel": "For residual waste (Gray or black bin)",
+      "p": "Gray or black bin: for residual waste (e.g. baby diapers, ashes, bones)."
+    },
+    "third": {
+      "titel": "Paper bin (green or blue)",
+      "p": "Paper bin: for paper waste (paper, cardboard and cardboard). Fold it up as best you can to save space. Some packaging looks like it is made of paper, but is coated. They belong in the yellow bag or yellow bin."
+    },
+    "fourth": {
+      "titel": "Organic waste bin (brown",
+      "p": "Organic waste bin: for organic waste (except bones). Organic waste often still ends up in household waste. This means that valuable waste is lost because properly disposed of organic waste gets a second life as fertilizer."
+    },
+    "fifth": {
+      "titel": "Glass containers",
+      "p": "Glass containers: Waste glass is used in the production of new glass, saving large amounts of energy and raw materials. For this it is necessary that the glass is of the same type. Glass containers and bottles belong in the different glass containers sorted by color. Blue glass belongs in the container for green glass. Ceramics, porcelain, drinking glasses and lead crystal do not belong in the glass container; they must be disposed of with residual waste."
+    }
+  },
+  "extreme-weather" : {
+    "sub-titel": "Hottest summer",
+    "titel": "Where does the extreme weather come from?",
+    "p": "Heat, hurricanes, floods: this summer the weather around the world went crazy. Is climate change behind this or just natural fluctuations?"
+  }
+}

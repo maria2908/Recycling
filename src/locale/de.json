@@ -1,0 +1,43 @@
+{
+  "environment": "Umwelt",
+  "health": "Gesundheit",
+  "contact": "Kontakt",
+  "home": "Haupt",
+  "environmental-protection": "Umweltschutz",
+  "main-page-slider1-t1": "Was ist Recycling? Definition, Beispiele und Erklärung",
+  "main-page-slider1-p": "Das Recycling sollte beim Erhalt der Biodiversität und der Ökosysteme im Mittelpunkt der Betrachtung stehen und keine Nebenrolle spielen.",
+  "main-page-slider2-t1": "Tipps für Umweltschutz im Alltag",
+  "main-page-slider2-p": "Die Mülltüte am Waldrand einsammeln, mehr Strecken mit dem Fahrrad zurücklegen oder einen bienenfreundlichen Garten anlegen – Umweltschutz kann so einfach sein. Diese acht Maßnahmen lassen sich problemlos in den Alltag integrieren.",
+  "main-page-slider3-t1": "Woher kommen die krassen Extremwetter?",
+  "main-page-slider3-p": "Hitze, Hurrikans, Hochwasser: Diesen Sommer hat das Wetter weltweit verrückt gespielt. Steckt dahinter der Klimawandel oder doch nur natürliche Schwankungen?",
+  "button-more": "Mehr",
+  "accordion-trash-separation": {
+    "titel": "Müll richtig trennen und entsorgen",
+    "text": "Manchmal ist es gar nicht so leicht, Abfall richtig zu trennen. Restmüll gehört beispielsweise auf keinen Fall in den Gelben Sack. Er behindert die Sortierung sowie das Recycling der gesammelten Verpackungen erheblich, teilweise wird es so unmöglich gemacht. Nur die wenigsten Verpackungen haben Trenn-Hinweise aufgedruckt. Folgende Entsorgungsmöglichkeiten gibt es:",
+    "first": {
+      "titel": "Gelbe Tonne/Gelber Sack",
+      "p": "Gelbe Tonne/Gelber Sack: hier hinein gehören alle Leichtverpackungen aus Kunststoff, Aluminium, Weißblech und Verbundmaterialien wie Getränkekartons. Mancherorts gibt es auch regionale Besonderheiten, dann dürfen auch Plastikgegenstände, wie zum Beispiel Gießkannen, die keine Verpackung sind, ebenfalls im gelben Sack entsorgt werden.\",\n"
+    },
+    "second": {
+      "titel": "Restmüll (Graue oder schwarze Tonne)",
+      "p": "Graue oder schwarze Tonne: für Restmüll (z.B. Babywindeln, Asche, Knochen)."
+    },
+    "third": {
+      "titel": "Papiertonne (Grün oder Blau)",
+      "p": "Papiertonne: für Papiermüll (Papier, Pappe und Karton). So gut es geht zusammenfalten, das spart Platz. Manche Verpackungen sehen aus wie aus Papier, sind aber beschichtet. Sie gehören in den gelben Sack oder die gelbe Tonne."
+    },
+    "fourth": {
+      "titel": "Biotonne (Braun)",
+      "p": "Biotonne: für organische Abfälle (außer Knochen). Häufig landet Biomüll nach wie vor im Hausmüll. So geht wertvoller Abfall verloren, denn richtig entsorgter Biomüll bekommt ein zweites Leben als Dünger."
+    },
+    "fifth": {
+      "titel": "Glascontainer",
+      "p": "Glascontainer: Altglas wird bei der Herstellung von neuem Glas verwendet, wodurch große Mengen Energie und Rohstoffe eingespart werden. Dafür ist es notwendig, dass das Glas sortenrein vorliegt. Glasbehälter und -flaschen gehören nach Farben sortiert in die unterschiedlichen Glascontainer. Blaues Glas gehört in den Container für Grünglas. Keramik, Porzellan, Trinkgläser und Bleikristall gehören nicht in den Glascontainer, sie müssen im Restmüll entsorgt werden."
+    }
+  },
+  "extreme-weather" : {
+    "sub-titel": "Heißester Sommer",
+    "titel": "Woher kommen die krassen Extremwetter?",
+    "p": "Hitze, Hurrikans, Hochwasser: Diesen Sommer hat das Wetter weltweit verrückt gespielt. Steckt dahinter der Klimawandel oder doch nur natürliche Schwankungen?"
+  }
+}

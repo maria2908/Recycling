@@ -1,0 +1,11 @@
+@mixin all() {
+  header {
+    .body--dark & {
+      background-color: rgb(44, 41, 41);
+      color: white;
+    }
+    .body--light & {
+      background-color: white;
+    }
+  }
+}

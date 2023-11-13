@@ -1,0 +1,9 @@
+@import './sass/style.scss';
+@import 'base.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#app {
+  text-decoration: none;
+}

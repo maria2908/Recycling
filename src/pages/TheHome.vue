@@ -1,0 +1,28 @@
+<template>
+<div class="body">
+  <the-slider></the-slider>
+  <the-container>
+    <extreme-weather></extreme-weather>
+  </the-container>
+  <trash-separation></trash-separation>
+
+</div>
+</template>
+<script setup>
+import TheSlider from "@/components/MainPage/TheSlider.vue";
+import TrashSeparation from "@/components/MainPage/TrashSeparation.vue";
+import TheContainer from "@/layout/TheContainer.vue";
+import ExtremeWeather from "@/components/MainPage/ExtremeWeather.vue";
+</script>
+
+<style>
+.body {
+  .body--dark & {
+    background-color: #2c2929;
+    color: white;
+  }
+  .body--light & {
+    background-color: white;
+  }
+}
+</style>

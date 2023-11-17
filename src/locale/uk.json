@@ -39,5 +39,27 @@
     "sub-titel": "Найспекотніше літо",
     "titel": "Звідки береться екстремальна погода?",
     "p": "Спека, урагани, повені: цього літа погода у всьому світі зійшла з розуму. За цим стоїть зміна клімату чи просто природні коливання?"
+  },
+  "quiz" : {
+    "sub-titel": "Перевірь себе!",
+    "titel": "Чи сортуєш ти своє сміття правильно?",
+    "button": "Почати тест",
+
+    "questions" : {
+      "firstQuestion": {
+        "titel": "Куди потрібно викидати стаканчики від кави?",
+        "answers": {
+          "firstAnswer": {
+            "text": "В смітник для паперу.",
+            "img": "https://studionand.github.io/quarks-landwirtschaft/static/quiz/recycling/coffee-f1-a1.svg"
+          },
+          "secondAnswer": {
+            "text": "В жовтий смітник.",
+            "img": "https://studionand.github.io/quarks-landwirtschaft/static/quiz/recycling/coffee-f1-a2.svg"
+          }
+        }
+      }
+    }
+
   }
 }

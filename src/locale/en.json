@@ -39,5 +39,27 @@
     "sub-titel": "Hottest summer",
     "titel": "Where does the extreme weather come from?",
     "p": "Heat, hurricanes, floods: this summer the weather around the world went crazy. Is climate change behind this or just natural fluctuations?"
+  },
+  "quiz" : {
+    "sub-titel": "Test your knowledge!",
+    "titel": "Are you separating your garbage properly?",
+    "button": "Start quiz",
+
+    "questions" : {
+      "firstQuestion": {
+        "titel": "Where do coffee-to-go cups go??",
+        "answers": {
+          "firstAnswer": {
+            "text": "In the paper bin.",
+            "img": "https://studionand.github.io/quarks-landwirtschaft/static/quiz/recycling/coffee-f1-a1.svg"
+          },
+          "secondAnswer": {
+            "text": "In the yellow bin.",
+            "img": "https://studionand.github.io/quarks-landwirtschaft/static/quiz/recycling/coffee-f1-a2.svg"
+          }
+        }
+      }
+    }
+
   }
 }

@@ -39,5 +39,27 @@
     "sub-titel": "Heißester Sommer",
     "titel": "Woher kommen die krassen Extremwetter?",
     "p": "Hitze, Hurrikans, Hochwasser: Diesen Sommer hat das Wetter weltweit verrückt gespielt. Steckt dahinter der Klimawandel oder doch nur natürliche Schwankungen?"
+  },
+  "quiz" : {
+    "sub-titel": "Teste dein Wissen!",
+    "titel": "Trennst du deinen Müll richtig?",
+    "button": "Quiz starten",
+
+    "questions" : {
+      "firstQuestion": {
+        "titel": "Wohin kommen Coffee-To-Go Becher?",
+        "answers": {
+          "firstAnswer": {
+            "text": "In die Papier Tonne.",
+            "img": "https://studionand.github.io/quarks-landwirtschaft/static/quiz/recycling/coffee-f1-a1.svg"
+          },
+          "secondAnswer": {
+            "text": "In die Gelbe Tonne.",
+            "img": "https://studionand.github.io/quarks-landwirtschaft/static/quiz/recycling/coffee-f1-a2.svg"
+          }
+        }
+      }
+    }
+
   }
 }

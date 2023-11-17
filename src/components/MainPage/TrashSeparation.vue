@@ -1,10 +1,18 @@
 <template>
-  <div class="text-center pt-12">
-    <t1 class="text-5xl text-uppercase ">{{$t('accordion-trash-separation.titel')}}</t1>
-    <div class="d-flex mt-8">
-      <img class="p-8" style="width: 50%;" src="https://mags.de/Medien/_processed_/e/1/csm_Abfall-trennen-Titelbild-Webseite_01_d0a16769b3.jpg" />
-      <v-expansion-panels class="text-left h-52 m-24">
-        <v-expansion-panel v-for="item in items" :key="item">
+  <div class="text-center pt-12 ">
+
+    <div class="bg-my-dark-blue h-0.5 line"></div>
+    <div class="d-flex justify-center py-3">
+      <div class="w-1/2">
+        <t1 class="text-5xl text-uppercase text-my-dark-blue title">{{$t('accordion-trash-separation.titel')}}</t1>
+      </div>
+    </div>
+    <div class="bg-my-dark-blue h-0.5 line"></div>
+
+    <div class="d-flex mt-8 px-20">
+      <img class="p-8" style="width: 50%;" src="https://img.welt.de/img/wissenschaft/umwelt/mobile141072255/7311354457-ci16x9-w1200/Muelltrennung.jpg" />
+      <v-expansion-panels v-model="panel" class="text-left h-52 mx-24 mt-10">
+        <v-expansion-panel v-model="panel" v-for="(item, index) in items" :key="index">
           <v-expansion-panel-title :style="item.color">{{$t(item.title)}}</v-expansion-panel-title>
           <v-expansion-panel-text>{{$t(item.text)}}</v-expansion-panel-text>
         </v-expansion-panel>
@@ -15,7 +23,7 @@
 <script setup>
 import TheContainer from "@/layout/TheContainer.vue";
 import { ref } from 'vue';
-
+const panel = ref([1]);
 const items = ref([
   {
     title: 'accordion-trash-separation.second.titel',
@@ -43,5 +51,15 @@ const items = ref([
 
 <style>
 
+.title {
+  .body--dark & {
+    color: #edebeb;
+  }
+}
 
+.line {
+  .body--dark & {
+    background-color: #edebeb;
+  }
+}
 </style>

@@ -5,6 +5,9 @@
     <extreme-weather></extreme-weather>
   </the-container>
   <trash-separation></trash-separation>
+<!--  <the-container>-->
+<!--    <the-quiz></the-quiz>-->
+<!--  </the-container>-->
 
 </div>
 </template>
@@ -13,6 +16,7 @@ import TheSlider from "@/components/MainPage/TheSlider.vue";
 import TrashSeparation from "@/components/MainPage/TrashSeparation.vue";
 import TheContainer from "@/layout/TheContainer.vue";
 import ExtremeWeather from "@/components/MainPage/ExtremeWeather.vue";
+import TheQuiz from "@/components/MainPage/Quiz/TheQuiz.vue";
 </script>
 
 <style>

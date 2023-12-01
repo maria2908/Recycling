@@ -41,25 +41,114 @@
     "p": "Hitze, Hurrikans, Hochwasser: Diesen Sommer hat das Wetter weltweit verrückt gespielt. Steckt dahinter der Klimawandel oder doch nur natürliche Schwankungen?"
   },
   "quiz" : {
-    "sub-titel": "Teste dein Wissen!",
-    "titel": "Trennst du deinen Müll richtig?",
+    "sub-title": "Teste dein Wissen!",
+    "title": "Trennst du deinen Müll richtig?",
     "button": "Quiz starten",
-
-    "questions" : {
+    "question": "Frage",
+    "right": "Richtig!",
+    "false": "Leider Falsch!",
+    "nextQuestion": "Nächste Frage",
+    "backQuestion": "Zurück",
+    "score": "Dein Punktestand",
+    "congratulation": "Prima! Du wusstest eine ganze Menge.",
+    "startOneMoreTime": "Zurück auf Anfang",
+    "questions": {
       "firstQuestion": {
-        "titel": "Wohin kommen Coffee-To-Go Becher?",
+        "title": "Wohin kommen Coffee-To-Go Becher?",
         "answers": {
           "firstAnswer": {
-            "text": "In die Papier Tonne.",
-            "img": "https://studionand.github.io/quarks-landwirtschaft/static/quiz/recycling/coffee-f1-a1.svg"
+            "text": "In die Papier Tonne."
           },
           "secondAnswer": {
-            "text": "In die Gelbe Tonne.",
-            "img": "https://studionand.github.io/quarks-landwirtschaft/static/quiz/recycling/coffee-f1-a2.svg"
+            "text": "In die Gelbe Tonne."
           }
-        }
+        },
+        "explanation": "Pappbecher sind innen mit Plastik beschichtet. Nur so können sie heiße Getränke halten, ohne zu durchnässen. Pappbecher bestehen also bis zu 7% aus Kunststoffen. Wie Pommesschalen oder Eisbecher gehören sie in die gelbe Tonne. Da sie nur schwer recycelbar sind, ist die Herstellung von Einweg-Coffee-To-Go Bechern ab Juli 2021 EU-weit verboten."
+      },
+      "secondQuestion": {
+        "title": "Wohin kommt die blaue Prosecco-Flasche?",
+        "answers": {
+          "firstAnswer": {
+            "text": "In den Grünglas Container."
+          },
+          "secondAnswer": {
+            "text": "In den Braunglas Container."
+          }
+        },
+        "explanation": "Altglas muss nach Farben getrennt werden, da sonst beim Einschmelzen die Farben getrübt werden. Grünglas ist jedoch relativ stabil gegen Fehlfarben: Grünem Altglas kann bis zu 15 Prozent andersfarbiges Glas zugemischt und immer noch farbgetreu recycelt werden. Blaues und rotes Altglas gehört deshalb in den Grünglas-Container."
+      },
+      "thirdQuestion": {
+        "title": "Wohin kommen Fleischreste?",
+        "answers": {
+          "firstAnswer": {
+            "text": "In den Biomüll."
+          },
+          "secondAnswer": {
+            "text": "In jeder Kommune anders."
+          }
+        },
+        "explanation": "Ob Fleisch- und Fischreste im Bio- oder Restmüll entsorgt werden sollen, regelt jede Kommune anders. Wenn die anliegenden Kompostieranlagen etwa für Schadnager (Mäuse, Ratten) oder Vögel (Krähen, Störche) zugänglich sind, muss tierischer Abfall normalerweise in den Restmüll. Infos über die genauen lokalen Vorschriften findest du üblicherweise auf den Web-Portalen deiner Gemeinde oder Stadt."
+      },
+      "fourthQuestion": {
+        "title": "Was passiert mit einem Joghurt-Becher mit Aludeckel?",
+        "answers": {
+          "firstAnswer": {
+            "text": "In Gelbe Tonne und Restmüll."
+          },
+          "secondAnswer": {
+            "text": "In die Gelbe Tonne."
+          }
+        },
+        "explanation": "Verpackungen aus unterschiedlichen Materialien müssen wenn möglich in ihre Einzelteile zerlegt werden. Also: Beim Joghurtbecher sollte der Aluminiumdeckel vom Kunststoffbecher abgetrennt werden, bevor beides in die Gelbe Tonne kommt. Sonst ordnet die Sortieranlage den Becher der Aluminiumfraktion zu. Verpackungen müssen übrigens nicht blank gespült werden, sollten aber von groben Speiseresten befreit sein."
+      },
+      "fifthQuestion": {
+        "title": "Wohin kommt die Mundschutzmaske?",
+        "answers": {
+          "firstAnswer": {
+            "text": "In den Restmüll."
+          },
+          "secondAnswer": {
+            "text": "In die Gelbe Tonne."
+          }
+        },
+        "explanation": "Mundschutzmasken oder andere verbrauchte Hygieneartikel gehören grundsätzlich in den Restmüll. Wenn infizierte Personen oder Verdachtsfälle von COVID-19 in häuslicher Quarantäne leben sollten alle Abfälle (auch Verpackungen oder Biomüll) sicherheitshalber über die Restmülltonne entsorgen. Damit landen sie in der Müllverbrennungsanlage."
+      },
+      "sixthQuestion": {
+        "title": "Wohin kommen verfallene Medikamente?",
+        "answers": {
+          "firstAnswer": {
+            "text": "In die Gelbe Tonne."
+          },
+          "secondAnswer": {
+            "text": "Regelt jede Kommune anders."
+          }
+        },
+        "explanation": "Es gibt keine bundeseinheitliche Regelung zur Entsorgung von Arzneimitteln. Überwiegend können sie in der Restmülltonne entsorgt werden, da dieser verbrannt wird und somit keine Arzneimittel-Rückstände in der Umwelt verbleiben. In einigen wenigen Kommunen findet die Entsorgung aber auch durch Schadstoffmobile oder Apotheken statt."
+      },
+      "seventhQuestion": {
+        "title": "Wohin kommt ein kaputter Wecker?",
+        "answers": {
+          "firstAnswer": {
+            "text": "In den Elektronik-Handel."
+          },
+          "secondAnswer": {
+            "text": "In die Gelbe Tonne."
+          }
+        },
+        "explanation": "Kleingeräte mit einer maximalen Länge von 25 Zentimeter können in Elektromärkten ab 400m2 Verkaufsfläche jederzeit kostenlos zurückgeben werden – egal, ob man das Gerät dort gekauft hat oder nicht. Bei größeren Elektrogeräten müssen die Geschäfte bei Neukauf das alte Gerät zurücknehmen. Auch Online-Händler sind zu dieser Rücknahmeregelung verpflichtet. Elektroschrott kann aber auch beim Wertstoffhof abgegeben werden."
+      },
+      "eighthQuestion": {
+        "title": "Wohin kommt ein fett triefender Pizzakarton?",
+        "answers": {
+          "firstAnswer": {
+            "text": "In den Restmüll."
+          },
+          "secondAnswer": {
+            "text": "In die Papiertonne."
+          }
+        },
+        "explanation": "Nur weitgehend sauberes Papier darf ins Altpapier. Leichte Fettflecken sind noch ok, aber ein stark mit Fett und Essensresten verschmutzter Pizzakarton kommt in den Restmüll. Ist nur der Boden stark beschmutzt, kann dieser abgetrennt im Restmüll entsorgt werden und der Deckel im Altpapier. Vorsicht bei innen mit Plastik beschichteter Pappe: Sie gehört (frei von groben Speiseresten) in die Gelbe Tonne."
       }
     }
-
   }
 }

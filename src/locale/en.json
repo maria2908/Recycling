@@ -36,30 +36,119 @@
     }
   },
   "extreme-weather" : {
-    "sub-titel": "Hottest summer",
-    "titel": "Where does the extreme weather come from?",
+    "sub-title": "Hottest summer",
+    "title": "Where does the extreme weather come from?",
     "p": "Heat, hurricanes, floods: this summer the weather around the world went crazy. Is climate change behind this or just natural fluctuations?"
   },
   "quiz" : {
-    "sub-titel": "Test your knowledge!",
-    "titel": "Are you separating your garbage properly?",
+    "sub-title": "Test your knowledge!",
+    "title": "Are you separating your garbage properly?",
     "button": "Start quiz",
-
+    "question": "Question",
+    "right": "Right!",
+    "false": "False!",
+    "nextQuestion": "Next Question",
+    "backQuestion": "Back",
+    "score": "Your score",
+    "congratulation": "Fine! You knew a lot.",
+    "startOneMoreTime": "Try one more time",
     "questions" : {
       "firstQuestion": {
-        "titel": "Where do coffee-to-go cups go??",
+        "title": "Where do coffee-to-go cups go??",
         "answers": {
           "firstAnswer": {
-            "text": "In the paper bin.",
-            "img": "https://studionand.github.io/quarks-landwirtschaft/static/quiz/recycling/coffee-f1-a1.svg"
+            "text": "In the paper bin."
           },
           "secondAnswer": {
-            "text": "In the yellow bin.",
-            "img": "https://studionand.github.io/quarks-landwirtschaft/static/quiz/recycling/coffee-f1-a2.svg"
+            "text": "In the yellow bin."
           }
-        }
+        },
+        "explanation": "Paper cups are coated with plastic on the inside. This is the only way they can hold hot drinks without getting soaked. Paper cups consist of up to 7% plastic. Like chip bowls or ice cream sundaes, they belong in the yellow bin. Since they are difficult to recycle, the production of disposable coffee-to-go cups will be banned across the EU from July 2021."
+      },
+      "secondQuestion": {
+        "title": "Where does the blue Prosecco bottle go?",
+        "answers": {
+          "firstAnswer": {
+            "text": "In the green glass container."
+          },
+          "secondAnswer": {
+            "text": "In the brown glass container."
+          }
+        },
+        "explanation": "Waste glass must be separated by color, otherwise the colors will become cloudy when melted. However, green glass is relatively stable against off-colors: up to 15 percent of glass of a different color can be mixed into green used glass and still be recycled in the same color. Blue and red used glass therefore belongs in the green glass container"
+      },
+      "thirdQuestion": {
+        "title": "Where do leftover meat go?",
+        "answers": {
+          "firstAnswer": {
+            "text": "In the organic waste."
+          },
+          "secondAnswer": {
+            "text": "Different in every municipality."
+          }
+        },
+        "explanation": "Every municipality regulates differently whether meat and fish leftovers should be disposed of as organic or residual waste. If the nearby composting facilities are accessible to rodents (mice, rats) or birds (crows, storks), animal waste usually has to go into the residual waste. You can usually find information about the exact local regulations on the web portals of your municipality or city."
+      },
+      "fourthQuestion": {
+        "title": "What happens to a yogurt cup with an aluminum lid?",
+        "answers": {
+          "firstAnswer": {
+            "text": "In yellow bin and residual waste."
+          },
+          "secondAnswer": {
+            "text": "In the yellow bin."
+          }
+        },
+        "explanation": "Packaging made of different materials must, if possible, be dismantled into its individual parts. So: The aluminum lid of the yoghurt cup should be separated from the plastic cup before both go into the yellow bin. Otherwise the sorting system assigns the cup to the aluminum fraction. By the way, packaging doesn't have to be rinsed clean, but it should be free of any coarse food residue."
+      },
+      "fifthQuestion": {
+        "title": "Where does the face mask go?",
+        "answers": {
+          "firstAnswer": {
+            "text": "In the residual waste."
+          },
+          "secondAnswer": {
+            "text": "In the yellow bin."
+          }
+        },
+        "explanation": "Face masks or other used hygiene items generally belong in the trash. If infected people or suspected cases of COVID-19 live in quarantine at home, all waste (including packaging or organic waste) should be disposed of in the residual waste bin to be on the safe side. This means they end up in the waste incineration plant."
+      },
+      "sixthQuestion": {
+        "title": "Where do expired medications go?",
+        "answers": {
+          "firstAnswer": {
+            "text": "In the yellow bin."
+          },
+          "secondAnswer": {
+            "text": "Every municipality regulates things differently."
+          }
+        },
+        "explanation": "There are no national regulations for the disposal of medicines. Most of them can be disposed of in the residual waste bin, as this is incinerated and no drug residues remain in the environment. In a few municipalities, disposal also takes place through mobile pollutants or pharmacies."
+      },
+      "seventhQuestion": {
+        "title": "Where does a broken alarm clock go?",
+        "answers": {
+          "firstAnswer": {
+            "text": "In the electronics store."
+          },
+          "secondAnswer": {
+            "text": "In the yellow bin."
+          }
+        },
+        "explanation": "Small appliances with a maximum length of 25 centimeters can be returned free of charge at any time in electronics stores with a sales area of 400m2 or more - regardless of whether you bought the device there or not. In the case of larger electrical appliances, stores have to take back the old device if you buy a new one. Online retailers are also obliged to comply with this return policy. Electronic waste can also be dropped off at the recycling center."
+      },
+      "eighthQuestion": {
+        "title": "Where does a dripping pizza box go?",
+        "answers": {
+          "firstAnswer": {
+            "text": "In the residual waste."
+          },
+          "secondAnswer": {
+            "text": "In the trash."
+          }
+        },
+        "explanation": "Only largely clean paper is allowed into the waste paper. Light stains of grease are still ok, but a pizza box that is heavily soiled with grease and food residue goes into the trash. If only the base is heavily soiled, it can be disposed of separately in the residual waste and the lid in waste paper. Be careful with cardboard that is coated with plastic on the inside: it belongs in the yellow bin (free of any coarse food residue)."
       }
     }
-
   }
 }

@@ -5,9 +5,9 @@
     <extreme-weather></extreme-weather>
   </the-container>
   <trash-separation></trash-separation>
-<!--  <the-container>-->
-<!--    <the-quiz></the-quiz>-->
-<!--  </the-container>-->
+  <the-container>
+    <the-quiz></the-quiz>
+  </the-container>
 
 </div>
 </template>

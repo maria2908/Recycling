@@ -1,13 +1,15 @@
 <template>
-  <div class="text-center pt-12 ">
+  <div class="text-center pt-12">
 
-    <div class="bg-my-dark-blue h-0.5 line"></div>
+  <div class="px-32">
+    <div class="bg-my-light-orange  h-0.5 line"></div>
     <div class="d-flex justify-center py-3">
       <div class="w-1/2">
-        <t1 class="text-5xl text-uppercase text-my-dark-blue title">{{$t('accordion-trash-separation.titel')}}</t1>
+        <t1 class="text-4xl text-uppercase text-my-light-orange title">{{$t('accordion-trash-separation.titel')}}</t1>
       </div>
     </div>
-    <div class="bg-my-dark-blue h-0.5 line"></div>
+    <div class="bg-my-light-orange  h-0.5 line"></div>
+  </div>
 
     <div class="d-flex mt-8 px-20">
       <img class="p-8" style="width: 50%;" src="https://img.welt.de/img/wissenschaft/umwelt/mobile141072255/7311354457-ci16x9-w1200/Muelltrennung.jpg" />

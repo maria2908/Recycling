@@ -1,109 +1,297 @@
 <template>
+    <div class="bg-my-dark-blue" style="height: 80vh;">
+      <div class="relative top-60 left-52 w-66" v-if="!startQuiz">
+        <p class="text-2xl text-white font-bold pb-3">{{$t(quiz.subTitle)}}</p>
+        <p class="text-7xl text-white font-bold bg-black p-5">{{$t(quiz.title)}}</p>
+        <button class="bg-my-yellow p-4 rounded-3xl font-bold px-7 mt-9 relative left-1/3" @click="startQuiz = !startQuiz">{{$t(quiz.button)}}</button>
+      </div>
 
-    <div class="bg-green-800" style="height: 65vh">
-      <div class="w-full h-screen relative top-40 left-52 w-66">
+      <div v-else>
+        <div v-if="!quizCompleted" style="height: 80vh;">
+          <div class="relative pt-10 left-40 h-full" v-for="(question, index) in quiz.questions" :key="index" v-show="currentQuestion === index">
+              <p class="text-white font-bold">{{$t(quiz.questionT)}} № {{index + 1}} / {{quiz.questions.length}}</p>
+              <h2 class="text-3xl bg-black w-fit p-2 my-3 font-bold">{{ $t(question.text) }}</h2>
+              <the-score
+                  class="pt-2 relative left-96 ml-36"
+                  :userAnswers="userAnswers"
+                  :correctAnswer="question.correctAnswer"
+                  :questions="quiz.questions"
+              ><slot></slot></the-score>
+              <div class="relative flex left-20 w-fit pt-10">
+                <div v-for="(option, optionIndex) in question.options"  :key="optionIndex">
+                  <div
+                      :class="{
+                      inactive: optionIndex !== currentAnswer,
+                      active: optionIndex === currentAnswer,
+                      disabled: currentAnswer !== null,
+                    }"
+                      @click="userAnswers[currentQuestion] = optionIndex"
+                  >
 
+                    <img class="bg-my-dark-blue" :src="question.imgs[optionIndex]" width="260" />
+                    <p class="text-lg font-bold pt-6">{{$t(option)}}</p>
 
-  <!--      <div v-for="question in questions" :key="question" class="bg-white p-12 rounded-lg shadow-lg w-full mt-8">-->
-  <!--        <p class="text-2xl font-bold">{{$t(question.text)}}</p>-->
-  <!--           <div class="flex">-->
+                    <div v-if="currentAnswer !== null && optionIndex === currentAnswer" class="p-6">
+                      <div
+                          v-if="currentAnswer === quiz.questions[currentQuestion].correctAnswer"
+                          class="relative bottom-72 left-52 bg-white w-16 h-16 p-4 font-bold"
+                          style="border-radius: 50%"
+                      >
+                        <img src="../../../assets/img/right.svg">
+                      </div>
+                      <div
+                          v-else
+                          class="relative bottom-72 right-16 bg-white w-16 h-16 p-4 font-bold"
+                          style="border-radius: 50%"
+                      >
+                        <img src="../../../assets/img/false.svg">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div v-if="currentAnswer !== null" class="mt-5">
+                <div
+                    v-if="currentAnswer === quiz.questions[currentQuestion].correctAnswer"
+                    class="absolute bg-black w-fit px-6 py-3 ml-3 font-bold text-xl text-yellow"
+                >
+                  {{$t(quiz.right)}}
+                </div>
+                <div
+                    v-else
+                    class="absolute bg-black w-fit px-6 py-3 ml-3 font-bold text-xl text-yellow"
+                >
+                  {{$t(quiz.false)}}
+                </div>
+              </div>
+              <div
+                  v-if="currentAnswer !== null"
+                  class="bg-white p-5 pt-8 mt-12"
+                  style="width: 75%"
+              >
+                {{$t(question.explanation)}}
+              </div>
+              <div>
+                <button
+                    class="absolute right-52 bottom-8 bg-my-yellow p-4 rounded-3xl font-bold px-7 mt-9"
+                    @click="nextQuestion"
+                    v-if="currentQuestion < quiz.questions.length && !quizCompleted"
+                    :disabled="userAnswers[currentQuestion] === null"
+                    :class="{disabled:
+                      userAnswers[currentQuestion] === null }"
+                >
+                  {{ $t(quiz.next) }}
+                </button>
+                <button
+                    class="absolute bottom-8 bg-my-yellow p-4 rounded-3xl font-bold px-7 mt-9"
+                    @click="previousQuestion" v-if="currentQuestion > 0"
+                >
+                  {{ $t(quiz.back) }}
+                </button>
+              </div>
+          </div>
+        </div>
+        <div v-else>
+          <div class="relative flex justify-evenly top-72">
+            <div class="bg-white p-2">
+              <img class="bg-my-dark-blue" src="https://studionand.github.io/quarks-landwirtschaft/static/quiz/Trophy.svg">
+            </div>
+            <div>
+              <div class="flex align-center">
+                <h2 class="text-lg fond-bold text-white font-bold mr-3">{{ $t(quiz.score) }} :</h2>
+                <h1 class="text-2xl text-yellow bg-black w-fit p-2">Your Score: {{ calculateScore() }} / {{ quiz.questions.length }}</h1>
+              </div>
+              <the-score
+                  class="py-4 relative right-0"
+                  :userAnswers="userAnswers"
+                  :correctAnswer="quiz.questions.correctAnswer"
+                  :questions="quiz.questions"
+              ><slot></slot></the-score>
 
-  <!--             <label-->
-  <!--                 v-for="(answer, key) in question.answers"-->
-  <!--                 :key="key"-->
-  <!--                 class="block mt-4 border border-gray-300 rounded-lg py-2 px-6 text-lg">-->
-  <!--               <input-->
-  <!--                   type="radio"-->
-  <!--                   :id="key"-->
-  <!--                   class="hidden"-->
-  <!--                   :value="key"-->
-  <!--                   @onclick="answered($event)"-->
-  <!--                   :disabled="selectedAnswer !== ''"-->
-  <!--               />-->
-  <!--               {{$t(answer)}}-->
-  <!--             </label>-->
-  <!--           </div>-->
-  <!--      </div>-->
-
-
-
-  <div class="bg-white p-12 rounded-lg shadow-lg w-full mt-8">
-    <h1 class="text-2xl font-bold">{{ $t(currentQuestion.question) }}</h1>
-    <ul class="flex">
-      <li v-for="(option, index) in currentQuestion.options" :key="index">
-        <input
-            type="radio"
-            :id="'option' + index"
-            :value="index"
-            class="hidden"
-            v-model="selectedOption"
-            @click="nextQuestion"
-        />
-        <label class="block mt-4 border border-gray-300 rounded-lg py-2 px-6 text-lg" :for="'option' + index">{{ $t(option) }}</label>
-      </li>
-    </ul>
-    <div v-if="quizCompleted">
-      <h2>Quiz Completed!</h2>
-      <p>Your score: {{ score }}/{{ questions.length }}</p>
-    </div>
-  </div>
+              <p class="text-4xl bg-black font-bold p-2 w-96 mt-6">{{ $t(quiz.congratulation) }}</p>
+<!--              <button-->
+<!--                  class="bg-my-yellow p-4 rounded-3xl font-bold px-7 mt-9"-->
+<!--                  @click="tryOneTimeMore"-->
+<!--              >-->
+<!--                {{ $t(quiz.startOneMoreTime) }}-->
+<!--              </button>-->
             </div>
           </div>
+        </div>
+      </div>
+    </div>
 </template>
 <script setup>
-import { ref, onMounted  } from 'vue';
+import {ref, computed, reactive} from 'vue';
+import TheScore from "@/components/MainPage/TheScore.vue";
 
-const questions = ref([
-  {
+const quizData = {
+  subTitle: 'quiz.sub-title',
+  title: 'quiz.title',
+  questionT: 'quiz.question',
+  button: 'quiz.button',
+  right: 'quiz.right',
+  false: 'quiz.false',
+  next: 'quiz.nextQuestion',
+  back: 'quiz.backQuestion',
+  score: 'quiz.score',
+  congratulation: 'quiz.congratulation',
+  startOneMoreTime: 'quiz.startOneMoreTime',
 
-    question: 'quiz.questions.firstQuestion.titel',
-    // img: {
-    //   1: 'quiz.questions.firstQuestion.answers.firstAnswer.img',
-    //   2: 'quiz.questions.firstQuestion.answers.secondAnswer.img',
-    // },
-    options: ['quiz.questions.firstQuestion.answers.firstAnswer.text', 'quiz.questions.firstQuestion.answers.secondAnswer.text'],
-    correctAnswer: '0',
-  },
-  {
+  questions: [
+    {
+      text: 'quiz.questions.firstQuestion.title',
+      options: ['quiz.questions.firstQuestion.answers.firstAnswer.text', 'quiz.questions.firstQuestion.answers.secondAns' +
+      'wer.text'],
+      correctAnswer: 1,
+      imgs: [
+        'https://studionand.github.io/quarks-landwirtschaft/static/quiz/recycling/coffee-f1-a1.svg',
+        'https://studionand.github.io/quarks-landwirtschaft/static/quiz/recycling/coffee-f1-a2.svg'
+      ],
+      explanation: 'quiz.questions.firstQuestion.explanation',
+    },
+    {
+      text: 'quiz.questions.secondQuestion.title',
+      options: ['quiz.questions.secondQuestion.answers.firstAnswer.text', 'quiz.questions.secondQuestion.answers.secondAns' +
+      'wer.text'],
+      correctAnswer: 0,
+      imgs: [
+        'https://studionand.github.io/quarks-landwirtschaft/static/quiz/recycling/blaueflasche-f2-a1.svg',
+        'https://studionand.github.io/quarks-landwirtschaft/static/quiz/recycling/blaueflasche-f2-a2.svg'
+      ],
+      explanation: 'quiz.questions.secondQuestion.explanation',
+    },
+    {
+      text: 'quiz.questions.thirdQuestion.title',
+      options: ['quiz.questions.thirdQuestion.answers.firstAnswer.text', 'quiz.questions.thirdQuestion.answers.secondAns' +
+      'wer.text'],
+      correctAnswer: 1,
+      imgs: [
+        'https://studionand.github.io/quarks-landwirtschaft/static/quiz/recycling/fleischreste-f3-a1.svg',
+        'https://studionand.github.io/quarks-landwirtschaft/static/quiz/recycling/fleischreste-f3-a2.svg'
+      ],
+      explanation: 'quiz.questions.thirdQuestion.explanation',
+    },
+    {
+      text: 'quiz.questions.fourthQuestion.title',
+      options: ['quiz.questions.fourthQuestion.answers.firstAnswer.text', 'quiz.questions.fourthQuestion.answers.secondAns' +
+      'wer.text'],
+      correctAnswer: 1,
+      imgs: [
+        'https://studionand.github.io/quarks-landwirtschaft/static/quiz/recycling/joghurtbecher-f4-a1.svg',
+        'https://studionand.github.io/quarks-landwirtschaft/static/quiz/recycling/joghurtbecher-f4-a2.svg'
+      ],
+      explanation: 'quiz.questions.fourthQuestion.explanation',
+    },
+    {
+      text: 'quiz.questions.fifthQuestion.title',
+      options: ['quiz.questions.fifthQuestion.answers.firstAnswer.text', 'quiz.questions.fifthQuestion.answers.secondAns' +
+      'wer.text'],
+      correctAnswer: 0,
+      imgs: [
+        'https://studionand.github.io/quarks-landwirtschaft/static/quiz/recycling/mundschutz-f5-a1.svg',
+        'https://studionand.github.io/quarks-landwirtschaft/static/quiz/recycling/mundschutz-f5-a2.svg'
+      ],
+      explanation: 'quiz.questions.fifthQuestion.explanation',
+    },
+    {
+      text: 'quiz.questions.sixthQuestion.title',
+      options: ['quiz.questions.sixthQuestion.answers.firstAnswer.text', 'quiz.questions.sixthQuestion.answers.secondAns' +
+      'wer.text'],
+      correctAnswer: 1,
+      imgs: [
+        'https://studionand.github.io/quarks-landwirtschaft/static/quiz/recycling/medikamente-f6-a1.svg',
+        'https://studionand.github.io/quarks-landwirtschaft/static/quiz/recycling/medikamente-f6-a2.svg'
+      ],
+      explanation: 'quiz.questions.fifthQuestion.explanation',
+    },
+    {
+      text: 'quiz.questions.seventhQuestion.title',
+      options: ['quiz.questions.seventhQuestion.answers.firstAnswer.text', 'quiz.questions.seventhQuestion.answers.secondAns' +
+      'wer.text'],
+      correctAnswer: 0,
+      imgs: [
+        'https://studionand.github.io/quarks-landwirtschaft/static/quiz/recycling/wecker-f7-a1.svg',
+        'https://studionand.github.io/quarks-landwirtschaft/static/quiz/recycling/wecker-f7-a2.svg'
+      ],
+      explanation: 'quiz.questions.seventhQuestion.explanation',
+    },
+    {
+      text: 'quiz.questions.eighthQuestion.title',
+      options: ['quiz.questions.eighthQuestion.answers.firstAnswer.text', 'quiz.questions.eighthQuestion.answers.secondAns' +
+      'wer.text'],
+      correctAnswer: 0,
+      imgs: [
+        'https://studionand.github.io/quarks-landwirtschaft/static/quiz/recycling/pizzakarton-f8-a1.svg',
+        'https://studionand.github.io/quarks-landwirtschaft/static/quiz/recycling/pizzakarton-f8-a2.svg'
+      ],
+      explanation: 'quiz.questions.eighthQuestion.explanation',
+    },
+  ],
+};
 
-    question: 'quiz.questions.firstQuestion.titel',
-    // img: {
-    //   1: 'quiz.questions.firstQuestion.answers.firstAnswer.img',
-    //   2: 'quiz.questions.firstQuestion.answers.secondAnswer.img',
-    // },
-    options: ['quiz.questions.firstQuestion.answers.firstAnswer.text', 'quiz.questions.firstQuestion.answers.secondAnswer.text'],
-    correctAnswer: '0',
-  },
-])
-
-const currentQuestionIndex = ref(0);
-const selectedOption = ref(null);
-const score = ref(0);
-
-const currentQuestion = ref(questions.value[currentQuestionIndex.value]);
-
+const quiz = ref(quizData);
+const userAnswers = reactive(Array(quizData.questions.length).fill(null));
 const quizCompleted = ref(false);
+const currentQuestion = ref(0);
+const currentAnswer = computed(() => { return userAnswers[currentQuestion.value] });
+const startQuiz = ref(false);
 
 const nextQuestion = () => {
-  if (selectedOption.value !== null) {
-    if (selectedOption.value === currentQuestion.value.correctAnswer) {
-      score.value++;
-    }
-
-    selectedOption.value = null;
-
-    if (currentQuestionIndex.value < questions.value.length - 1) {
-      currentQuestionIndex.value++;
-      currentQuestion.value = questions.value[currentQuestionIndex.value];
-    } else {
-      quizCompleted.value = true;
-    }
+  if (currentQuestion.value === quiz.value.questions.length - 1) {
+    quizCompleted.value = true;
   } else {
-    alert('Please select an option before moving to the next question.');
+    currentQuestion.value += 1;
   }
 };
 
-onMounted(() => {
-  currentQuestion.value = questions.value[currentQuestionIndex.value];
-});
+const tryOneTimeMore = () => {
+  quizCompleted.value = false;
+  startQuiz.value = false;
+  userAnswers.value = Array(quizData.questions.length).fill(null);
+  currentQuestion.value = 0;
+}
+
+const previousQuestion = () => {
+  currentQuestion.value -= 1;
+}
+const calculateScore = () => {
+  let correctAnswers = 0;
+
+  for (let i = 0; i < quiz.value.questions.length; i++) {
+    if (userAnswers[i] === quiz.value.questions[i].correctAnswer) {
+      correctAnswers++;
+    }
+  }
+
+  return correctAnswers;
+};
+
 </script>
+<style>
+.inactive {
+  box-shadow: 0px 7px 27px -2px rgba(0, 0, 0, 0.56);
+  padding: 10px;
+  background-color: white;
+  width: 280px !important;
+  height: 30vh;
+  text-align: center;
+  margin-right: 80px;
+}
+
+.active {
+  box-shadow: 0px 7px 27px -2px rgba(0,0,0,0.56);
+  padding: 10px;
+  background-color: white;
+  width: 280px !important;
+  height: 30vh;
+  text-align: center;
+  margin-right: 80px;
+  opacity: 1 !important;
+}
+
+.disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+</style>

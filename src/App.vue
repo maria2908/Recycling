@@ -8,7 +8,7 @@ import {onMounted} from "vue";
 import TheHeader from "@/components/TheHeader.vue";
 
 onMounted(() => {
-  document.cookie = 'locale=UK'
+  document.cookie = 'locale=DE'
 })
 </script>
 

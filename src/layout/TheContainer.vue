@@ -1,5 +1,5 @@
 <template>
-  <div class="m-16 mx-auto" style="width: 60%;">
+  <div class="mx-16 mx-auto py-16" style="width: 60%;">
     <slot></slot>
   </div>
 </template>

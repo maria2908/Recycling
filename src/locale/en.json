@@ -150,5 +150,19 @@
         "explanation": "Only largely clean paper is allowed into the waste paper. Light stains of grease are still ok, but a pizza box that is heavily soiled with grease and food residue goes into the trash. If only the base is heavily soiled, it can be disposed of separately in the residual waste and the lid in waste paper. Be careful with cardboard that is coated with plastic on the inside: it belongs in the yellow bin (free of any coarse food residue)."
       }
     }
-  }
+  },
+  "tips": {
+    "title": "8 tips for environmental protection in everyday life",
+    "subtitle": "Collecting garbage bags at the edge of the forest, cycling more distances or planting a bee-friendly garden – protecting the environment can be so easy. These eight measures can be easily integrated into everyday life.\n\n",
+    "first-tip" : "Save energy",
+    "second-tip" : "Avoid plastic waste",
+    "third-tip" : "Recycle things",
+    "fourth-tip" : "Save water",
+    "fifth-tip" : "Promote biodiversity",
+    "sixth-tip" : "Eat consciously",
+    "seventh-tip" : "Move around sustainably",
+    "eighth-tip" : "Use environmentally friendly cleaning products",
+    "button": "More information"
+  },
+  "contact-us": "Contact uns"
 }

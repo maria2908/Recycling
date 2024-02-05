@@ -1,11 +1,17 @@
 <template>
-    <div class="bg-my-dark-blue" style="height: 80vh;">
-      <div class="relative top-60 left-52 w-66" v-if="!startQuiz">
-        <p class="text-2xl text-white font-bold pb-3">{{$t(quiz.subTitle)}}</p>
-        <p class="text-7xl text-white font-bold bg-black p-5">{{$t(quiz.title)}}</p>
-        <button class="bg-my-yellow p-4 rounded-3xl font-bold px-7 mt-9 relative left-1/3" @click="startQuiz = !startQuiz">{{$t(quiz.button)}}</button>
-      </div>
+    <div class="bg-my-dark-blue relative " style="height: 80vh;">
+      <div class="absolute top-0 w-100 h-100" v-if="!startQuiz">
+        <img class="absolute top-8 right-16" height="200" width="200" src="https://ouch-cdn2.icons8.com/nYcU_Ks_YvQgPjuVFJ4Af_cj0z1duoG-EcTF8Bi0R4Y/rs:fit:368:368/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9wbmcvNjgv/YTAyNTQyZGItZjZl/OS00ZDUxLTlhOGUt/NjIxZThjNGYzYzlh/LnBuZw.png" />
+        <img class="absolute top-8 left-12" height="200" width="200" src="https://ouch-cdn2.icons8.com/4TJ7VxPziBcCBu7cWzkVnorXV3lFOyhWUu6WB_uT6YA/rs:fit:368:368/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9wbmcvMTAw/L2VjZDQ4MzcwLWVh/NjAtNGQzNC05OWM1/LThmNjk1YzJhMzYz/MC5wbmc.png" />
+        <img class="absolute bottom-8 left-8" height="230" width="230" src="https://ouch-cdn2.icons8.com/7BKRMlP5LqqjkXX_ejuI-hnohZqIXjL8LCNzMRyh11U/rs:fit:368:368/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9wbmcvNTA5/L2U1OGQyNThmLTZi/NGMtNDAyNC04YjM1/LTFmYjE2YWU0MTU3/Ni5wbmc.png" />
+        <img class="absolute bottom-8 right-20" height="200" width="200" src="https://ouch-cdn2.icons8.com/TjLgyKzoyN05NzAqfAu2mYLsoB2wu6jWC_pmiWJCVes/rs:fit:368:368/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9wbmcvMTEy/LzgxNTQ5Njg0LTU3/NzYtNDBmZi05ZDFl/LTg1MDBkY2ViOTZm/ZC5wbmc.png" />
 
+        <div class="absolute top-64 w-66 left-52">
+          <p class="text-2xl text-white font-bold pb-3">{{$t(quiz.subTitle)}}</p>
+          <p class="text-6xl text-white font-bold bg-black p-5">{{$t(quiz.title)}}</p>
+          <button class="bg-my-yellow text-black p-4 rounded-3xl font-bold px-7 mt-9 absolute right-80" @click="startQuiz = !startQuiz">{{$t(quiz.button)}}</button>
+        </div>
+      </div>
       <div v-else>
         <div v-if="!quizCompleted" style="height: 80vh;">
           <div class="relative pt-10 left-40 h-full" v-for="(question, index) in quiz.questions" :key="index" v-show="currentQuestion === index">
@@ -229,7 +235,6 @@ const quizData = {
     },
   ],
 };
-
 const quiz = ref(quizData);
 const userAnswers = reactive(Array(quizData.questions.length).fill(null));
 const quizCompleted = ref(false);

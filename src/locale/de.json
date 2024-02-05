@@ -150,5 +150,19 @@
         "explanation": "Nur weitgehend sauberes Papier darf ins Altpapier. Leichte Fettflecken sind noch ok, aber ein stark mit Fett und Essensresten verschmutzter Pizzakarton kommt in den Restmüll. Ist nur der Boden stark beschmutzt, kann dieser abgetrennt im Restmüll entsorgt werden und der Deckel im Altpapier. Vorsicht bei innen mit Plastik beschichteter Pappe: Sie gehört (frei von groben Speiseresten) in die Gelbe Tonne."
       }
     }
-  }
+  },
+  "tips": {
+    "title": "8 Tipps für Umweltschutz im Alltag",
+    "subtitle": "Die Mülltüte am Waldrand einsammeln, mehr Strecken mit dem Fahrrad zurücklegen oder einen bienenfreundlichen Garten anlegen – Umweltschutz kann so einfach sein. Diese acht Maßnahmen lassen sich problemlos in den Alltag integrieren.\n\n",
+    "first-tip" : "Energie sparen",
+    "second-tip" : "Plastikmüll vermeiden",
+    "third-tip" : "Sachen wiederverwerten",
+    "fourth-tip" : "Wasser sparen",
+    "fifth-tip" : "Artenvielfalt fördern",
+    "sixth-tip" : "Bewusst ernähren",
+    "seventh-tip" : "Nachhaltig fortbewegen",
+    "eighth-tip" : "Umweltschonende Putzmittel verwenden",
+    "button": "Mehr erfahren"
+  },
+  "contact-us": "Kontaktiere uns"
 }

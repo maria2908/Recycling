@@ -11,6 +11,7 @@
     "@mdi/font": "^7.3.67",
     "@panter/vue-i18next": "^0.15.2",
     "@quasar/extras": "^1.0.0",
+    "@tomtom-international/web-sdk-maps": "^6.25.0",
     "i18next": "^23.6.0",
     "quasar": "^2.0.0",
     "swiper": "^11.0.3",

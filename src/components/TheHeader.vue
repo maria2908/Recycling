@@ -4,7 +4,6 @@
       <img alt="Vue logo" class="logo" src="@/assets/img/logo.png" width="45" height="45" />
       <p class="text-lg text-my-green ml-1 font-semibold">GREEN POINT</p>
     </div>
-
     <div class="d-flex justify-around ">
       <router-link
           class="font-semibold hover:border-b-4 hover:border-b-my-dark-green border-transparent py-5 px-8 hover:text-pink-400"

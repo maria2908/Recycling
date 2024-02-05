@@ -8,7 +8,9 @@
   <the-container>
     <the-quiz></the-quiz>
   </the-container>
-
+  <the-container>
+    <the-tips />
+  </the-container>
 </div>
 </template>
 <script setup>
@@ -17,6 +19,7 @@ import TrashSeparation from "@/components/MainPage/TrashSeparation.vue";
 import TheContainer from "@/layout/TheContainer.vue";
 import ExtremeWeather from "@/components/MainPage/ExtremeWeather.vue";
 import TheQuiz from "@/components/MainPage/Quiz/TheQuiz.vue";
+import TheTips from "@/components/MainPage/TheTips.vue";
 </script>
 
 <style>

@@ -164,5 +164,10 @@
     "eighth-tip" : "Umweltschonende Putzmittel verwenden",
     "button": "Mehr erfahren"
   },
-  "contact-us": "Kontaktiere uns"
+  "contact-us": {
+    "title": "Kontaktiere uns",
+    "info": "Information",
+    "text" : "Nehmen Sie jederzeit gerne Kontakt mit uns auf. Wir werden uns so schnell wie möglich bei Ihnen melden!",
+    "send": "Senden"
+  }
 }

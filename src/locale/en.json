@@ -164,5 +164,10 @@
     "eighth-tip" : "Use environmentally friendly cleaning products",
     "button": "More information"
   },
-  "contact-us": "Contact uns"
+  "contact-us": {
+    "title": "Contact us",
+    "info": "Info",
+    "text" : "Feel free to contact us any time. We will get back to you as soon as we can!",
+    "send": "Send"
+  }
 }

@@ -9,6 +9,7 @@ import {onMounted} from "vue";
 import TheHeader from "@/components/TheHeader.vue";
 import TheFooter from "@/components/TheFooter.vue";
 
+
 onMounted(() => {
   document.cookie = 'locale=DE'
 })

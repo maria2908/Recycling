@@ -40,7 +40,7 @@
 <style>
 .footer {
   .body--dark & {
-    background-color: #2c2929;
+    background-color: #151515;
     color: white;
   }
   .body--light & {

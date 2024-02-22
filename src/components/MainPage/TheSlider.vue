@@ -1,11 +1,20 @@
+<script setup>
+import { Autoplay, Scrollbar } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/vue';
+import 'swiper/css';
+import 'swiper/css/navigation';
+
+
+const modules = [Autoplay, Scrollbar ];
+</script>
+
 <template>
   <swiper
+      :loop="true"
+      :loopedSlides="3"
       :modules="modules"
       :space-between="0"
-      @swiper="onSwiper"
-      navigation
-      @slideChange="onSlideChange"
-
+      autoplay
   >
     <swiper-slide class="w-full">
       <div class="absolute top-10 h-screen w-33 pr-6 main-slider" >
@@ -39,39 +48,11 @@
     </swiper-slide>
   </swiper>
 </template>
-<script>
-import { Autoplay, Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
-import { Swiper, SwiperSlide } from 'swiper/vue';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import 'swiper/css/scrollbar';
-
-export default {
-  components: {
-    Swiper,
-    SwiperSlide,
-  },
-  setup() {
-    const onSwiper = (swiper) => {
-      console.log(swiper);
-    };
-    const onSlideChange = () => {
-      console.log('slide change');
-    };
-    return {
-      onSwiper,
-      onSlideChange,
-      modules: [Autoplay, Navigation, Pagination, Scrollbar, A11y],
-    };
-  },
-};
-</script>
 
 <style>
 .main-slider {
   .body--dark & {
-    background-color: #2c2929;
+    background-color: #151515;
     color: white;
 
     h1 {

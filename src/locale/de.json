@@ -1,7 +1,13 @@
 {
-  "environment": "Umwelt",
-  "health": "Gesundheit",
+  "health": "Nachrichten",
   "contact": "Kontakt",
+  "trash-separation": "Abfalltrennung",
+  "recycling-cycle": "Recyclingkreislauf",
+  "plastic": "Kunststoff",
+  "paper": "Papier",
+  "beverage-cartons": "Getränkekartons",
+  "metal": "Metal",
+  "glass": "Glas",
   "home": "Haupt",
   "environmental-protection": "Umweltschutz",
   "main-page-slider1-t1": "Was ist Recycling? Definition, Beispiele und Erklärung",
@@ -11,34 +17,40 @@
   "main-page-slider3-t1": "Woher kommen die krassen Extremwetter?",
   "main-page-slider3-p": "Hitze, Hurrikans, Hochwasser: Diesen Sommer hat das Wetter weltweit verrückt gespielt. Steckt dahinter der Klimawandel oder doch nur natürliche Schwankungen?",
   "button-more": "Mehr",
-  "accordion-trash-separation": {
-    "titel": "Müll richtig trennen und entsorgen",
-    "text": "Manchmal ist es gar nicht so leicht, Abfall richtig zu trennen. Restmüll gehört beispielsweise auf keinen Fall in den Gelben Sack. Er behindert die Sortierung sowie das Recycling der gesammelten Verpackungen erheblich, teilweise wird es so unmöglich gemacht. Nur die wenigsten Verpackungen haben Trenn-Hinweise aufgedruckt. Folgende Entsorgungsmöglichkeiten gibt es:",
+  "recycling-circle": {
+    "title": "Recyclingkreisläufe: Rohstoffe erhalten, Ressourcen schonen",
+    "text": "Ein Recyclingkreislauf ist der Weg, den ein (Alt-)Stoff oder ein (Alt-)Produkt von der Verwendung über das Rezyklieren bis zur erneuten Verwendung/Nutzung nimmt..."
+  },
+  "trash-separation-not-home": {
+    "title": "Einige Abfälle kannst du nicht bei dir zuhause entsorgen. Für diese Abfälle stehen öffentliche Sammelbehälter und Sammelstellen zur Verfügung, beispielsweise:",
     "first": {
-      "titel": "Gelbe Tonne/Gelber Sack",
-      "p": "Gelbe Tonne/Gelber Sack: hier hinein gehören alle Leichtverpackungen aus Kunststoff, Aluminium, Weißblech und Verbundmaterialien wie Getränkekartons. Mancherorts gibt es auch regionale Besonderheiten, dann dürfen auch Plastikgegenstände, wie zum Beispiel Gießkannen, die keine Verpackung sind, ebenfalls im gelben Sack entsorgt werden.\",\n"
+      "title": "Altglascontainer",
+      "text": "Um braunes, grünes, weißes und buntes Glas (Glasbehälter und -flaschen) zu entsorgen."
     },
     "second": {
-      "titel": "Restmüll (Graue oder schwarze Tonne)",
-      "p": "Graue oder schwarze Tonne: für Restmüll (z.B. Babywindeln, Asche, Knochen)."
+      "title": "Recycling- und Wertstoffhöfe",
+      "text": "Die Sondermüll wie z. B. Farbreste, Elektroschrott und Tapetenreste entgegennehmen und die Abholung von Sperrmüll und Elektro-Altgeräten organisieren. Genauere Informationen findest Du auf der Webseite der jeweiligen öffentlich-rechtlichen Entsorgungsträger (Recycling- oder Wertstoffhöfe)."
     },
     "third": {
-      "titel": "Papiertonne (Grün oder Blau)",
-      "p": "Papiertonne: für Papiermüll (Papier, Pappe und Karton). So gut es geht zusammenfalten, das spart Platz. Manche Verpackungen sehen aus wie aus Papier, sind aber beschichtet. Sie gehören in den gelben Sack oder die gelbe Tonne."
+      "title": "Papiercontainer",
+      "text": "In denen größere Mengen Pappe, Kartons und Papier entsorgt werden können, gibt es nur mancherorts in Deutschland."
     },
     "fourth": {
-      "titel": "Biotonne (Braun)",
-      "p": "Biotonne: für organische Abfälle (außer Knochen). Häufig landet Biomüll nach wie vor im Hausmüll. So geht wertvoller Abfall verloren, denn richtig entsorgter Biomüll bekommt ein zweites Leben als Dünger."
+      "title": "Wertstofftonnen",
+      "text": "In manchen Regionen gibt es Wertstofftonnen, in denen alle Abfälle aus Kunststoff, Aluminium, Weißblech und Verbundmaterialien entsorgt werden können, auch, wenn sie keine Verpackung sind."
     },
     "fifth": {
-      "titel": "Glascontainer",
-      "p": "Glascontainer: Altglas wird bei der Herstellung von neuem Glas verwendet, wodurch große Mengen Energie und Rohstoffe eingespart werden. Dafür ist es notwendig, dass das Glas sortenrein vorliegt. Glasbehälter und -flaschen gehören nach Farben sortiert in die unterschiedlichen Glascontainer. Blaues Glas gehört in den Container für Grünglas. Keramik, Porzellan, Trinkgläser und Bleikristall gehören nicht in den Glascontainer, sie müssen im Restmüll entsorgt werden."
+      "title": "Container für Altkleider",
+      "text": "In denen ausrangierte Kleidung zu Wiederverwertung gesammelt wird."
+    },
+    "sixth": {
+      "title": "Sammelbehälter",
+      "text": "Sammelboxen für Batterien und Akkus findet man nicht nur im Supermarkt oder auf dem kommunalen Wertstoffhof. Es gilt: Überall dort, wo sie verkauft werden, müssen sie auch zurückgenommen werden, unter anderem an Tankstellen, im Elektrofachhandel und in Drogeriemärkten."
+    },
+    "seventh": {
+      "title": "Einzelhändler",
+      "text": "Nehmen defekte Elektrogeräte wie Handys, Batterien oder Tintenpatronen/ Drucker-Toner zurück. Diese sorgen für eine fachgerechte Entsorgung. Kleinere Elektro-Geräte müssen vom Einzelhändler zurückgenommnen werden, auch wenn vor Ort kein neues Gerät gekauft wird. Größere Elektro-Altgeräte können beim Kauf eines neuen Gerätes der gleichen Art kostenfrei zurückgegeben werden."
     }
-  },
-  "extreme-weather" : {
-    "sub-titel": "Heißester Sommer",
-    "titel": "Woher kommen die krassen Extremwetter?",
-    "p": "Hitze, Hurrikans, Hochwasser: Diesen Sommer hat das Wetter weltweit verrückt gespielt. Steckt dahinter der Klimawandel oder doch nur natürliche Schwankungen?"
   },
   "quiz" : {
     "sub-title": "Teste dein Wissen!",
@@ -169,5 +181,86 @@
     "info": "Information",
     "text" : "Nehmen Sie jederzeit gerne Kontakt mit uns auf. Wir werden uns so schnell wie möglich bei Ihnen melden!",
     "send": "Senden"
+  },
+  "environment-site" : {
+    "title": "8 Tipps für Umweltschutz im Alltag",
+    "sub-title": "Die Mülltüte am Waldrand einsammeln, mehr Strecken mit dem Fahrrad zurücklegen oder einen bienenfreundlichen Garten anlegen – Umweltschutz kann so einfach sein. Diese acht Maßnahmen lassen sich problemlos in den Alltag integrieren.",
+    "contents": "Inhalte im Überblick",
+    "contents-list-title": {
+      "first": "Wieso ist Umweltschutz wichtig?",
+      "second": "Umweltschutz-Tipp Nr. 1: Energie sparen",
+      "third": "Umweltschutz-Tipp Nr. 2: Plastikmüll vermeiden",
+      "fourth": "Umweltschutz-Tipp Nr. 3: Sachen wiederverwerten",
+      "fifth": "Umweltschutz-Tipp Nr. 4: Wasser sparen",
+      "sixth": "Umweltschutz-Tipp Nr. 5: Artenvielfalt fördern",
+      "seventh": "Umweltschutz-Tipp Nr. 6: Bewusst ernähren",
+      "eighth": "Umweltschutz-Tipp Nr. 7: Nachhaltig fortbewegen",
+      "ninth": "Umweltschutz-Tipp Nr. 8: Umweltschonende Putzmittel verwenden"
+    },
+    "contents-list-text": {
+      "first": "Böse Zungen behaupten, dass es keinen Unterschied macht, ob sich ein Mensch mehr oder weniger für Klimaschutz einsetzt. Denn was kann ich schon für die Umwelt tun? Doch wer sich auf diesem Gedanken ausruht, schadet der Umwelt umso mehr. Schließlich können nur diejenigen etwas verändern, die auch handeln. So sind Umweltschutzmaßnahmen wichtig, um das Gleichgewicht im Ökosystem zu bewahren und zu verhindern, dass sich die Klimafolgen weiter auf Natur, Gesellschaft und Wirtschaft auswirken. Ein großes Vorhaben, für das auch die Politik eintreten muss. Dennoch kann jeder Mensch einen Teil zum Umweltschutz beitragen und mit gutem Beispiel vorangehen. Viele Umweltmaßnahmen lassen sich einfach in den Alltag integrieren und schonen zusätzlich das Portemonnaie.",
+      "second": {
+        "text": "Wer Energie spart, schont nicht nur den Geldbeutel, sondern auch die Umwelt. Denn nach wie vor werden große Mengen Erdgas, Öl und Kohle für die Energieproduktion verbrannt. Dabei tritt Kohlendioxid (CO₂) aus und verstärkt so über den Treibhauseffekt die Erderwärmung. Daher ist der Ausbau erneuerbarer Energien von großer Bedeutung. Um Energie zu sparen, müssen Sie jedoch nicht sofort eine eigene Solarstromanlage auf Ihrem Dach betreiben. Ein Umstieg auf Ökostrom beispielsweise und die achtsame Nutzung von Energie tragen ebenfalls zum Klimaschutz bei. Beispiele für wichtige Maßnahmen, die beim Energiesparen helfen:",
+        "list": {
+          "first": "Setzen Sie überall LED-Leuchten ein, welche noch effizienter sind als Energiesparlampen.",
+          "second": "Lassen Sie keine Lampen oder Geräte an, wenn Sie nicht zu Hause sind. Mit Bewegungsmeldern, etwa im Flur oder im Bad, sparen Sie zusätzlich Strom.",
+          "third": "Schalten Sie Geräte vollständig aus. Der Stand-by-Modus verbraucht ebenfalls Energie.",
+          "fourth": "Stellen Sie Ihren Kühlschrank nicht zu kalt ein. Das Umweltbundesamt empfiehlt eine Temperatur von sieben Grad Celsius.",
+          "fifth": "Waschen Sie mit Sparprogrammen. Teilweise werden diese auch als Eco-Programme bezeichnet.",
+          "sixth": "Duschen Sie möglichst kurz.",
+          "seventh": "Nutzen Sie moderne Haushaltsgeräte, die wenig Strom benötigen. Am umweltfreundlichsten sind Geräte mit der Energieeffizienzklasse A.",
+          "eighth": "Öffnen Sie im Winter nur kurz das Fenster, dafür aber weit (Stoßlüften).",
+          "ninth": "Erwägen Sie, die Raumtemperatur im Winter um ein oder zwei Grad herunterzuregulieren. Digitale Thermometer können dabei helfen."
+        }
+      },
+      "third": {
+        "text": "Plastik schadet der Umwelt. Besonders den Meeren, in denen sehr viel Plastikmüll landet. Zudem sorgt die chemische Zusammensetzung dafür, dass sich der Kunststoff nur sehr langsam zersetzt. Die Folge: Mikroplastik gelangt über die Nahrungskette in den menschlichen Körper. Neu ist diese Erkenntnis nicht und dennoch fällt es schwer, Plastik im Alltag zu vermeiden.",
+        "list": {
+          "title": "Diese Tipps helfen, Plastikmüll im Alltag zu reduzieren:",
+          "first": "Benutzen Sie beim Einkaufen wiederverwendbare Obst- und Gemüsenetze.",
+          "second": "Vermeiden Sie Plastiktüten, indem Sie bei Erledigungen immer einen Stoffbeutel oder einen Rucksack dabeihaben.",
+          "third": "Kaufen Sie möglichst Produkte, die nicht in Plastik eingepackt sind – zum Beispiel in Unverpacktläden.",
+          "fourth": "Trinken Sie Leitungswasser und kaufen Sie keine Getränke in Plastikflaschen.",
+          "fifth": "Sammeln Sie Plastikmüll ein, wenn Sie welchen in der Natur finden.",
+          "sixth": "Verwenden Sie Brotdosen anstelle von Alu- oder Frischhaltefolie.",
+          "seventh": "Kaufen Sie Kleidung aus natürlichen Materialien, zum Beispiel Bio-Leinen."
+        }
+      },
+      "fourth": "Wer Sachen wiederverwertet, anstatt sie gleich wegzuwerfen, spart wertvolle Ressourcen und schont damit die Umwelt. Mit Wiederverwertung ist jedoch nicht zwangsläufig Upcycling – das Aufwerten („up“) alter Gegenstände zu neuwertigen Produkten – gemeint, um sie wieder in den Wirtschaftskreislauf einführen zu können („cycling“). Der bewusste Umgang mit Ressourcen zielt vielmehr auf einen kontrollierten Konsum ab: Brauche ich ein neues Fahrrad, wenn ich damit nur hin und wieder in die Stadt fahren möchte, oder reicht auch ein gebrauchtes aus? Muss ich den siebten Pullover kaufen, wenn ich schon sechs habe? Und kann ich den wackeligen Stuhl noch reparieren, bevor ich ihn wegschmeiße?\n\n Grundsätzlich gilt: Je länger ein Gegenstand in der Kreislaufwirtschaft gehalten wird (mit Ausnahme von Pfandflaschen oder Recyclingprodukten), desto besser ist seine Gesamtökobilanz, also die Verträglichkeit mit der Umwelt. Daher ist es ratsam, vor dem nächsten Neukauf gut zu überlegen, ob die Investition wirklich nötig ist. Gut erhaltene Kleidung und Gegenstände, die man selbst nicht mehr benötigt, können zum Beispiel gespendet oder verkauft werden, um ihnen ein längeres Leben zu ermöglichen.",
+      "fifth":  {
+        "text": "Wasser ist für den Erhalt des gesamten Ökosystems essenziell und damit die Voraussetzung für Leben. Wasser dient außerdem zur Produktion von Nahrungsmitteln, als Energiequelle und als Transportmedium. Zwar herrscht bislang kein allgemeiner Wassermangel in Deutschland, dennoch sollte die Bevölkerung achtsam mit der wertvollen Ressource umgehen. Denn vor seiner Nutzung muss Wasser zunächst gefördert, aufbereitet und in die Haushalte transportiert werden. Diese Vorgänge verbrauchen Energie und fördern den indirekten CO₂-Ausstoß. Wer Wasser spart, schont folglich die Umwelt.",
+        "list": {
+          "title": "Diese Praxistipps können helfen:",
+          "first": "Nutzen Sie Regenwasser zur Bewässerung der Pflanzen.",
+          "second": "Lassen Sie das Wasser nicht unnötig beim Zähneputzen oder Einseifen laufen.",
+          "third": "Vermeiden Sie Waschgänge mit wenig Kleidung. Die Maschinentrommel sollte möglichst voll beladen sein.",
+          "fourth": "Duschen Sie nicht länger als nötig.",
+          "fifth": "Installieren Sie Wassersparer an Wasserhähnen, Duschköpfen und Toilettenspülungen. Diese finden Sie in fast jedem Baumarkt."
+        }
+      },
+      "sixth": {
+        "text": "In Folge der zunehmenden Bebauung von Grünflächen und dem Einsatz von Insektenschutzmitteln wird der Lebensraum der Insekten immer kleiner. Dabei sind Insekten von großer Bedeutung für das gesamte Ökosystem. Aber wie schützt man die Umwelt im eigenen Garten? Mit den folgenden Tipps können Sie die Artenvielfalt auf Ihrem Balkon oder in Ihrem Garten fördern und Lebensraum für Bienen und andere Insekten schaffen:",
+        "list": {
+          "first": "Pflanzen Sie Blumen und Gewächse mit unterschiedlichen Blühzeiten. So finden die Bienen und Insekten über einen langen Zeitraum Nahrung.",
+          "second": "Bauen Sie ein artgerechtes Insektenhotel.",
+          "third": "Setzen Sie auf bienenfreundliche Pflanzen wie Glockenblumen, Schafgarbe, Löwenmäulchen, Kapuzinerkresse, Kornblumen oder Kräuter.",
+          "fourth": "Nutzen Sie nur natürlichen Pflanzenschutz.",
+          "fifth": "Achten Sie darauf, bei Nacht möglichst kein Licht im Garten anzulassen."
+        }
+      },
+      "seventh": "Für die Produktion von Lebensmitteln wird eine Menge Energie aufgewendet. Für ein Kilogramm Rindfleisch beispielsweise werden 30,5 Kilogramm Treibhausgase verursacht und Tausende Liter Wasser verbraucht. Je weniger Fleisch die Bevölkerung also konsumiert, desto besser für die Umwelt. Gleichzeitig werden in Deutschland jährlich etwa 78 Kilogramm Lebensmittel pro Person weggeworfen. Es empfiehlt sich daher, bewusst einzukaufen und eine umfangreiche Vorratshaltung von verderblichen Lebensmitteln zu vermeiden.\n Wer seinen CO₂-Fußabdruck weiter minimieren möchte, sollte neben wenig Fleisch auf regionale und saisonale Lebensmittel sowie wenig verarbeitete Lebensmittel setzen. Durch die kürzeren Transportwege und den geringeren Produktionsaufwand haben diese Lebensmittel eine deutlich bessere Umweltbilanz. Außerdem fördern Sie damit die regionale Landwirtschaft. Wer aber auf Bananen, Avocados und Kaffee nicht verzichten mag, sollte auf Siegel achten, die umweltbewusste Produkte kennzeichnen. Dazu gehören Siegel wie Fairtrade, Bioland, Demeter oder Followfish.",
+      "eighth": "Sich nachhaltig fortzubewegen, bedeutet nicht, ab sofort alle Strecken zu Fuß oder mit dem Fahrrad zurücklegen. Vielmehr meint nachhaltige Mobilität eine umweltschonende, möglichst emissionsfreie Fortbewegung bei einer bewussten und effizienten Nutzung von Ressourcen. Das bedeutet, wer nur einen Kilometer von der Arbeit entfernt wohnt, kann problemlos laufen oder das Fahrrad nehmen. Menschen, die hingegen viele Kilometer von ihrer Arbeitsstätte entfernt wohnen, können nicht immer auf den öffentlichen Nahverkehr umsteigen und auf ein Auto verzichten. In solchen Fällen ist es ratsam, sich nach Fahrgemeinschaften oder Car-sharing-Angeboten umzuhören. Oder Sie lassen Ihr Auto mal für eine Freizeitaktivität stehen und nutzen den Bus oder das E-Bike. Das spart CO₂-Emissionen und obendrein den immer teurer werdenden Sprit.",
+      "ninth": {
+        "text": "Ob für das Badezimmer, die Küche, Schuhe oder Terrasse – mittlerweile gibt es für jede Oberfläche und jeden Einsatzzweck das passende Putzmittel. Das Problem dabei: Oft enthalten die gängigen Allzweckreiniger giftige Chemikalien wie Duftstoffe, antibakterielle Inhalts- und Konservierungsstoffe sowie Weichmacher, die über den Abfluss ins Trinkwasser gelangen können. Zudem sind die Dämpfe einiger Putzmittel gesundheitsschädlich. Besser ist es, nachhaltige Putzmittel zu nutzen. Diese sind deutlich günstiger, umweltfreundlich und schützen zudem Ihre Gesundheit.",
+        "list": {
+          "title": "Alles, was Sie brauchen:",
+          "first": "ein Essigreiniger zur Reinigung des Kühlschranks sowie zur Beseitigung von Kalkablagerungen.",
+          "second": "ein neutraler Allzweckreiniger für das Reinigen von Fenstern, Böden und Oberflächen.",
+          "third": "eine Scheuermilch für die Entfernung von hartnäckigen Verschmutzungen.",
+          "fourth": "Geschirrspülmittel zum Abwasch von Geschirr und Küchenutensilien."
+        },
+        "tip": "Tipp: Siegel wie der Blaue Engel, Ecocert, der Nature-Care-Produkt-Standard (NCP) oder das Europäische Umweltzeichen kennzeichnen nachhaltige Putzmittel, die der Umwelt möglichst wenig schaden."
+      }
+    }
   }
 }

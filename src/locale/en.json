@@ -1,7 +1,13 @@
 {
-  "environment": "Environment",
-  "health": "Health",
+  "health": "News",
   "contact": "Contact",
+  "trash-separation": "Trash separation",
+  "recycling-cycle": "Recycling cycle",
+  "plastic": "Plastic",
+  "paper": "Paper",
+  "beverage-cartons": "Beverage сartons",
+  "metal": "Metal",
+  "glass": "Glass",
   "home": "Home",
   "environmental-protection": "Environmental Protection",
   "main-page-slider1-t1": "What is recycling? Definition, examples and explanation",
@@ -11,34 +17,40 @@
   "main-page-slider3-t1": "Where does the extreme weather come from?",
   "main-page-slider3-p": "Heat, hurricanes, floods: this summer the weather around the world went crazy. Is climate change behind this or just natural fluctuations?",
   "button-more": "More",
-  "accordion-trash-separation": {
-    "titel": "Separate and dispose of waste properly",
-    "text": "Sometimes it's not that easy to separate waste properly. For example, residual waste definitely does not belong in the yellow bag. It significantly hinders the sorting and recycling of the collected packaging, sometimes making it impossible. Only very few packages have separation instructions printed on them. The following disposal options are available:",
+  "recycling-circle": {
+    "title": "Recycling cycles: preserving raw materials, conserving resources",
+    "text": "A recycling loop is the path that a (used) material or a (used) product takes from use to recycling to reuse/recyclin..."
+  },
+  "trash-separation-not-home": {
+    "title": "Some waste cannot be disposed of at home. Public collection containers and collection points are available for this waste, for example:",
     "first": {
-      "titel": "Yellow bin/yellow bag",
-      "p": "Yellow bin/yellow bag: All lightweight packaging made of plastic, aluminum, tinplate and composite materials such as beverage cartons belong here. In some places there is alsoregional peculiarities , then plastic items such as watering cans that are not packaging can also be disposed of in the yellow bag."
+      "title": "Used glass container",
+      "text": "To dispose of brown, green, white and colored glass (glass containers and bottles)."
     },
     "second": {
-      "titel": "For residual waste (Gray or black bin)",
-      "p": "Gray or black bin: for residual waste (e.g. baby diapers, ashes, bones)."
+      "title": "Recycling and recycling centers",
+      "text": "They accept hazardous waste such as paint residues, electronic waste and wallpaper residues and organize the collection of bulky waste and old electrical appliances. You can find more detailed information on the website of the respective public waste disposal authorities (recycling or reusable material depots)."
     },
     "third": {
-      "titel": "Paper bin (green or blue)",
-      "p": "Paper bin: for paper waste (paper, cardboard and cardboard). Fold it up as best you can to save space. Some packaging looks like it is made of paper, but is coated. They belong in the yellow bag or yellow bin."
+      "title": "Paper containers",
+      "text": "In which larger quantities of cardboard, cartons and paper can be disposed of, there are only some places in Germany."
     },
     "fourth": {
-      "titel": "Organic waste bin (brown",
-      "p": "Organic waste bin: for organic waste (except bones). Organic waste often still ends up in household waste. This means that valuable waste is lost because properly disposed of organic waste gets a second life as fertilizer."
+      "title": "Recycling garbage cans",
+      "text": "In some regions, there are recycling garbage cans in which all waste made of plastic, aluminum, tinplate and composite materials can be disposed of, even if they are not packaging."
     },
-    "fifth": {
-      "titel": "Glass containers",
-      "p": "Glass containers: Waste glass is used in the production of new glass, saving large amounts of energy and raw materials. For this it is necessary that the glass is of the same type. Glass containers and bottles belong in the different glass containers sorted by color. Blue glass belongs in the container for green glass. Ceramics, porcelain, drinking glasses and lead crystal do not belong in the glass container; they must be disposed of with residual waste."
+   "fifth": {
+      "title": "Containers for used clothing",
+      "text": "In which discarded clothing is collected for recycling."
+   },
+    "sixth": {
+      "title": "Collection containers",
+      "text": "Collection boxes for batteries and rechargeable batteries are not only found in supermarkets or at municipal recycling centers. The following applies: Wherever they are sold, they must also be taken back, including at petrol stations, electrical retailers and drugstores."
+    },
+    "seventh": {
+      "title": "Retailers",
+      "text": "Take back defective electrical appliances such as cell phones, batteries or ink cartridges/printer toner. They will ensure proper disposal. Smaller electrical appliances must be taken back by the retailer, even if no new appliance is purchased on site. Larger old electrical appliances can be returned free of charge when purchasing a new appliance of the same type."
     }
-  },
-  "extreme-weather" : {
-    "sub-title": "Hottest summer",
-    "title": "Where does the extreme weather come from?",
-    "p": "Heat, hurricanes, floods: this summer the weather around the world went crazy. Is climate change behind this or just natural fluctuations?"
   },
   "quiz" : {
     "sub-title": "Test your knowledge!",
@@ -169,5 +181,86 @@
     "info": "Info",
     "text" : "Feel free to contact us any time. We will get back to you as soon as we can!",
     "send": "Send"
+  },
+  "environment-site": {
+    "title": "8 Tips for Environmental Protection in Everyday Life",
+    "sub-title": "Collecting litter bags at the edge of the forest, covering more distances by bicycle, or creating a bee-friendly garden – environmental protection can be so simple. These eight measures can easily be integrated into daily life.",
+    "contents": "Contents Overview",
+    "contents-list-title": {
+      "first": "Why is Environmental Protection Important?",
+      "second": "Environmental Tip No. 1: Save Energy",
+      "third": "Environmental Tip No. 2: Avoid Plastic Waste",
+      "fourth": "Environmental Tip No. 3: Recycle Items",
+      "fifth": "Environmental Tip No. 4: Conserve Water",
+      "sixth": "Environmental Tip No. 5: Promote Biodiversity",
+      "seventh": "Environmental Tip No. 6: Eat Consciously",
+      "eighth": "Environmental Tip No. 7: Move Sustainably",
+      "ninth": "Environmental Tip No. 8: Use Eco-Friendly Cleaning Products"
+    },
+    "contents-list-text": {
+      "first": "Some say that it doesn't make a difference whether a person is more or less committed to climate protection. After all, what can one person do for the environment? However, those who rest on this thought harm the environment even more. Only those who take action can make a difference. Environmental protection measures are crucial to maintaining the balance in the ecosystem and preventing climate impacts from further affecting nature, society, and the economy. It's a significant undertaking that requires political support, but each individual can contribute to environmental protection and set a good example. Many environmental measures can be easily integrated into daily life and also save money.",
+      "second": {
+        "text": "Saving energy not only benefits your wallet but also the environment. Large amounts of natural gas, oil, and coal are still burned for energy production, releasing carbon dioxide (CO₂) and intensifying global warming through the greenhouse effect. Therefore, the expansion of renewable energies is crucial. However, you don't need to install your own solar power system immediately to save energy. Switching to green energy and mindful energy use also contribute to climate protection. Examples of important measures for energy saving include:",
+        "list": {
+          "first": "Use LED lights everywhere, which are more efficient than energy-saving bulbs.",
+          "second": "Turn off lights or devices when you're not at home. Motion detectors, such as in the hallway or bathroom, can save additional electricity.",
+          "third": "Completely turn off devices. Standby mode also consumes energy.",
+          "fourth": "Set your refrigerator to not too cold. The Environmental Protection Agency recommends a temperature of seven degrees Celsius.",
+          "fifth": "Use energy-saving programs when washing. These are sometimes labeled as Eco programs.",
+          "sixth": "Take shorter showers.",
+          "seventh": "Use modern household appliances that consume less electricity. Devices with the A energy efficiency class are the most environmentally friendly.",
+          "eighth": "In winter, open the window briefly but wide (ventilate).",
+          "ninth": "Consider lowering the room temperature by one or two degrees in winter. Digital thermometers can help with this."
+        }
+      },
+      "third": {
+        "text": "Plastic harms the environment, especially the oceans where a significant amount of plastic waste ends up. Additionally, the chemical composition of plastic causes it to decompose very slowly. As a result, microplastics enter the human body through the food chain. While this is not a new discovery, it is challenging to avoid plastic in everyday life.",
+        "list": {
+          "title": "These tips help reduce plastic waste in daily life:",
+          "first": "Use reusable produce bags when shopping for fruits and vegetables.",
+          "second": "Avoid plastic bags by always having a fabric bag or backpack when running errands.",
+          "third": "Opt for products that are not packaged in plastic, such as those in zero-waste stores.",
+          "fourth": "Drink tap water and avoid buying drinks in plastic bottles.",
+          "fifth": "Pick up plastic litter when you find it in nature.",
+          "sixth": "Use lunch boxes instead of aluminum or plastic wrap.",
+          "seventh": "Choose clothing made from natural materials, such as organic linen."
+        }
+      },
+      "fourth": "Reusing items instead of discarding them immediately saves valuable resources and protects the environment. However, reusing does not necessarily mean upcycling – enhancing ('up') old items into new products – to reintroduce them into the economic cycle ('cycling'). Conscious resource management aims at controlled consumption: Do I need a new bike if I only use it occasionally to go to the city, or is a used one sufficient? Do I need to buy the seventh sweater if I already have six? Can I repair the wobbly chair before throwing it away?\n\nIn general, the longer an item stays in the circular economy (excluding deposit bottles or recycled products), the better its overall ecological balance, meaning its compatibility with the environment. Therefore, it is advisable to think carefully before the next purchase to determine if the investment is truly necessary. Well-maintained clothing and items no longer needed can be donated or sold, extending their lifespan.",
+      "fifth": {
+        "text": "Water is essential for the preservation of the entire ecosystem and is a prerequisite for life. Water also serves in the production of food, as an energy source, and as a means of transportation. While there is currently no general water shortage in Germany, the population should handle this valuable resource with care. Before use, water must be pumped, treated, and transported to households, consuming energy and contributing to indirect CO₂ emissions. Therefore, saving water is an environmentally friendly practice.",
+        "list": {
+          "title": "These practical tips can help:",
+          "first": "Use rainwater for plant irrigation.",
+          "second": "Do not let water run unnecessarily while brushing your teeth or soaping up.",
+          "third": "Avoid washing small loads of laundry. The machine drum should be as full as possible.",
+          "fourth": "Keep showers as short as necessary.",
+          "fifth": "Install water-saving devices on faucets, showerheads, and toilet flushes. These can be found in almost any hardware store."
+        }
+      },
+      "sixth": {
+        "text": "Due to increasing urbanization of green spaces and the use of insecticides, the habitat for insects is shrinking. Insects play a crucial role in the entire ecosystem. How can you protect the environment in your own garden? With the following tips, you can promote biodiversity on your balcony or in your garden, creating a habitat for bees and other insects:",
+        "list": {
+          "first": "Plant flowers and plants with different blooming times. This provides food for bees and insects over an extended period.",
+          "second": "Build a suitable insect hotel.",
+          "third": "Opt for bee-friendly plants such as bellflowers, yarrow, snapdragons, nasturtiums, cornflowers, or herbs.",
+          "fourth": "Use only natural pest control methods.",
+          "fifth": "Avoid leaving lights on in the garden at night."
+        }
+      },
+      "seventh": "For the production of food, a significant amount of energy is consumed. For example, producing one kilogram of beef generates 30.5 kilograms of greenhouse gases and uses thousands of liters of water. The less meat the population consumes, the better for the environment. Additionally, about 78 kilograms of food per person are discarded annually in Germany. Therefore, it is advisable to shop consciously and avoid extensive stockpiling of perishable foods.\n\nTo further minimize your carbon footprint, focus on consuming less meat and opting for regional, seasonal, and minimally processed foods. These choices result in shorter transport distances and lower production efforts, leading to a significantly better environmental impact. Furthermore, it supports local agriculture. If you cannot do without bananas, avocados, or coffee, look for labels indicating environmentally conscious products, such as Fairtrade, Bioland, Demeter, or Followfish.",
+      "eighth": "Sustainable transportation doesn't mean walking or biking for every journey. Rather, it refers to environmentally friendly, preferably emission-free, movement with a conscious and efficient use of resources. If you live only a kilometer from work, walking or biking is an easy option. However, people who live far from their workplace may not always be able to switch to public transportation and give up their car. In such cases, consider looking into carpooling or car-sharing options. Alternatively, leave your car for a recreational activity and use public transport or an e-bike. This not only saves CO₂ emissions but also reduces the ever-increasing cost of fuel.",
+      "ninth": {
+        "text": "Whether for the bathroom, kitchen, shoes, or terrace – nowadays, there's a suitable cleaning product for every surface and purpose. The problem is that common all-purpose cleaners often contain toxic chemicals like fragrances, antibacterial agents, and preservatives, as well as plasticizers that can end up in drinking water through the drain. Moreover, the fumes from some cleaning products can be harmful to health. It's better to use sustainable cleaning products. These are more affordable, environmentally friendly, and also protect your health.",
+        "list": {
+          "title": "Everything you need:",
+          "first": "a vinegar cleaner for cleaning the refrigerator and removing limescale deposits.",
+          "second": "a neutral all-purpose cleaner for cleaning windows, floors, and surfaces.",
+          "third": "a scouring milk for removing stubborn dirt.",
+          "fourth": "dishwashing detergent for washing dishes and kitchen utensils."
+        },
+        "tip": "Tip: Look for labels such as the Blue Angel, Ecocert, the Nature-Care-Product Standard (NCP), or the European Ecolabel, which indicate sustainable cleaning products that are less harmful to the environment."
+      }
+    }
   }
 }

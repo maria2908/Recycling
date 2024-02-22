@@ -15,7 +15,7 @@ export default {
       'my-beg': '#fee3a2',
       'my-yellow': '#fff61a',
       'my-dark-orange': '#ee5601',
-      'my-light-orange': '#f48540',
+      'my-light-orange': '#f48f50',
       'black': '#000',
       'gray' : '#b3b3b3'
     }

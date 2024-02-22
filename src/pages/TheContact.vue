@@ -36,7 +36,7 @@ export default {
 </script>
 
 <template>
-  <div  class="contact mt-12 flex justify-around pt-12" style="height: 80vh;">
+  <div  class="contact flex justify-around pt-12" style="height: 80vh;">
     <div class="info absolute bg-black p-12 top-1/4 " style="right: 18%;">
       <div class="absolute w-10 bg-my-yellow h-10" style="top: -5%; left: -5%;"></div>
       <h1 class="font-bold text-4xl py-6">{{ $t('contact-us.info') }}</h1>
@@ -103,7 +103,7 @@ export default {
 <style lang="scss" scoped>
   .contact {
     .body--dark & {
-      background-color: #2c2929;
+      background-color: #151515;
       color: white;
 
       .form input, textarea {

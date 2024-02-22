@@ -22,10 +22,11 @@
     "emailjs-com": "^3.2.0",
     "i18next": "^23.6.0",
     "quasar": "^2.0.0",
-    "swiper": "^11.0.3",
+    "swiper": "^11.0.6",
     "vue": "^3.3.4",
     "vue-i18n": "^9.6.2",
     "vue-router": "^4.2.5",
+    "vue3-carousel": "^0.3.1",
     "vueperslides": "^3.5.1",
     "vuetify": "^3.3.23"
   },

@@ -1,11 +1,15 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import TheHome from "@/pages/TheHome.vue";
-import TheEnvironment from "@/pages/TheEnvironment.vue";
-import TheHealth from "@/pages/TheHealth.vue";
+import TheNews from "@/pages/TheNews.vue";
 import TheContact from "@/pages/TheContact.vue";
 import EnvironmentalProtection from "@/pages/EnvironmentalProtection.vue";
-import TrashSeparation from "@/components/MainPage/TrashSeparation.vue";
-import ExtremeWeather from "@/components/MainPage/ExtremeWeather.vue";
+import TrashSeparation from "@/pages/TrashSeparation.vue";
+import RecyclingCycle from "@/pages/RecyclingCycle.vue";
+import TheMetal from "@/pages/RecyclingCycle/TheMetal.vue";
+import ThePaper from "@/pages/RecyclingCycle/ThePaper.vue";
+import ThePlastic from "@/pages/RecyclingCycle/ThePlastic.vue";
+import BeverageCartons from "@/pages/RecyclingCycle/BeverageCartons.vue";
+import TheGlass from "@/pages/RecyclingCycle/TheGlass.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -13,39 +17,60 @@ const router = createRouter({
     {
       path: '/',
       name: 'TheHome',
-      component: TheHome,
+      component: TheHome
+    },
+    {
+      path: '/recycling-cycle',
+      name: 'RecyclingCycle',
+      component: RecyclingCycle,
       children: [
         {
-          path: 'trash-separation',
-          name: 'TrashSeparation',
-          component: TrashSeparation,
-        },{
-          path: 'extreme-weather',
-          name: 'ExtremeWeather',
-          component: ExtremeWeather,
+          path: 'plastic',
+          name: 'ThePlastic',
+          component: ThePlastic
+        },
+        {
+          path: 'paper',
+          name: 'ThePaper',
+          component: ThePaper
+        },
+        {
+          path: 'beverage-cartons',
+          name: 'BeverageCartons',
+          component: BeverageCartons
+        },
+        {
+          path: 'metal',
+          name: 'TheMetal',
+          component: TheMetal
+        },
+        {
+          path: 'glass',
+          name: 'TheGlass',
+          component: TheGlass
         },
       ]
+    },
+    {
+      path: '/trash-separation',
+      name: 'TrashSeparation',
+      component: TrashSeparation
+    },
+    {
+      path: '/the-news',
+      name: 'TheNews',
+      component: TheNews
+    },
+    {
+      path: '/environmental-protection',
+      name: 'EnvironmentalProtection',
+      component: EnvironmentalProtection
     },
     {
       path: '/contact',
       name: 'TheContact',
       component: TheContact
     },
-    {
-      path: '/environment',
-      name: 'TheEnvironment',
-      component: TheEnvironment
-    },
-    {
-      path: '/health',
-      name: 'TheHealth',
-      component: TheHealth
-    },
-    {
-      path: '/environmental-protection',
-      name: 'EnvironmentalProtection',
-      component: EnvironmentalProtection
-    }
   ]
 })
 

@@ -2,9 +2,9 @@
 <div class="body">
   <the-slider></the-slider>
   <the-container>
-    <extreme-weather></extreme-weather>
+    <recycling-cycle-info></recycling-cycle-info>
   </the-container>
-  <trash-separation></trash-separation>
+  <trash-separation-not-home></trash-separation-not-home>
   <the-container>
     <the-quiz></the-quiz>
   </the-container>
@@ -15,17 +15,17 @@
 </template>
 <script setup>
 import TheSlider from "@/components/MainPage/TheSlider.vue";
-import TrashSeparation from "@/components/MainPage/TrashSeparation.vue";
 import TheContainer from "@/layout/TheContainer.vue";
-import ExtremeWeather from "@/components/MainPage/ExtremeWeather.vue";
 import TheQuiz from "@/components/MainPage/Quiz/TheQuiz.vue";
 import TheTips from "@/components/MainPage/TheTips.vue";
+import TrashSeparationNotHome from "@/components/MainPage/TrashSeparationNotHome.vue";
+import RecyclingCycleInfo from "@/components/MainPage/RecyclingCycleInfo.vue";
 </script>
 
 <style>
 .body {
   .body--dark & {
-    background-color: #2c2929;
+    background-color: #151515;
     color: white;
   }
   .body--light & {

@@ -23,33 +23,6 @@ const router = createRouter({
       path: '/recycling-cycle',
       name: 'RecyclingCycle',
       component: RecyclingCycle,
-      children: [
-        {
-          path: 'plastic',
-          name: 'ThePlastic',
-          component: ThePlastic
-        },
-        {
-          path: 'paper',
-          name: 'ThePaper',
-          component: ThePaper
-        },
-        {
-          path: 'beverage-cartons',
-          name: 'BeverageCartons',
-          component: BeverageCartons
-        },
-        {
-          path: 'metal',
-          name: 'TheMetal',
-          component: TheMetal
-        },
-        {
-          path: 'glass',
-          name: 'TheGlass',
-          component: TheGlass
-        },
-      ]
     },
     {
       path: '/trash-separation',

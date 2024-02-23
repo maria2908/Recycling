@@ -1,11 +1,12 @@
 <script setup>
 import TheContainer from "@/layout/TheContainer.vue";
+import ContainerHalf from "@/layout/ContainerHalf.vue";
 
 </script>
 
 <template >
   <div class="environment">
-    <the-container>
+    <container-half>
       <h1 class="text-center py-12 text-5xl text-my-dark-green font-bold upper">{{ $t("environment-site.title")}}</h1>
       <p class="text-xl">{{ $t("environment-site.sub-title") }}</p>
       <img class="m-auto" width="500" src="https://ouch-cdn2.icons8.com/nU0XxYH-qci-gpttcZXseAkkmS1I6GJAi13HyEtReN4/rs:fit:456:456/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9wbmcvODUx/LzIzNzM4MjFlLWU5/YjAtNGMyNy1iZDFh/LTI3NTI2ZjA3NGVh/Zi5wbmc.png" alt="sdfsdfsdf" />
@@ -103,7 +104,7 @@ import TheContainer from "@/layout/TheContainer.vue";
           <span>{{ $t("environment-site.contents-list-text.ninth.tip") }}</span>
         </li>
       </ol>
-    </the-container>
+    </container-half>
   </div>
 </template>
 

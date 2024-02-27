@@ -29,28 +29,15 @@ const dropdownActive = ref(false);
       >
         {{ $t('trash-separation') }}
       </router-link>
-      <div class="dropdown">
         <router-link
             :class="dropdownActive ? 'border-b-my-dark-green text-my-dark-green' : '' "
             class="dropdown-main font-semibold hover:border-b-4 hover:border-b-my-dark-green border-b-4 border-transparent py-5 px-8 hover:text-green-400"
             :to="{ name: 'RecyclingCycle'}"
         >
           {{ $t('recycling-cycle') }}
-          <div class="dropdown-content" @click="dropdownActive = true">
-            <router-link
-                style="border-bottom: transparent"
-                class="text-black"
-                :to="{ name: 'ThePlastic'}"
-            >
-              {{ $t('plastic')}}</router-link>
-            <router-link style="border-bottom: transparent" class="text-black" :to="{ name: 'ThePaper'}">{{ $t('paper')}}</router-link>
-            <router-link style="border-bottom: transparent" class="text-black" :to="{ name: 'BeverageCartons'}">{{ $t('beverage-cartons')}}</router-link>
-            <router-link style="border-bottom: transparent" class="text-black" :to="{ name: 'TheMetal'}">{{ $t('metal')}}</router-link>
-            <router-link style="border-bottom: transparent" class="text-black" :to="{ name: 'TheGlass'}">{{ $t('glass')}}</router-link>
-          </div>
+
         </router-link>
 
-      </div>
       <router-link
           @click="dropdownActive = false"
           class="font-semibold hover:border-b-4 hover:border-b-my-yellow border-b-4 border-transparent py-5 px-8 hover:text-yellow-400"

@@ -1,7 +1,10 @@
 <script setup>
-import TheContainer from "@/layout/TheContainer.vue";
 import ContainerHalf from "@/layout/ContainerHalf.vue";
+import { onMounted } from 'vue';
 
+onMounted(() => {
+  window.scrollTo(0, 0);
+});
 </script>
 
 <template >

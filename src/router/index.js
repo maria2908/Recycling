@@ -10,6 +10,8 @@ import ThePaper from "@/pages/RecyclingCycle/ThePaper.vue";
 import ThePlastic from "@/pages/RecyclingCycle/ThePlastic.vue";
 import BeverageCartons from "@/pages/RecyclingCycle/BeverageCartons.vue";
 import TheGlass from "@/pages/RecyclingCycle/TheGlass.vue";
+import NewsInfo from "@/components/NewsInfo.vue";
+import NotFound from "@/pages/NotFound.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -22,7 +24,32 @@ const router = createRouter({
     {
       path: '/recycling-cycle',
       name: 'RecyclingCycle',
-      component: RecyclingCycle,
+      component: RecyclingCycle
+    },
+    {
+      path: '/recycling-cycle/the-metal',
+      name: 'TheMetal',
+      component: TheMetal
+    },
+    {
+      path: '/recycling-cycle/the-paper',
+      name: 'ThePaper',
+      component: ThePaper
+    },
+    {
+      path: '/recycling-cycle/the-plastic',
+      name: 'ThePlastic',
+      component: ThePlastic
+    },
+    {
+      path: '/recycling-cycle/beverage-cartons',
+      name: 'BeverageCartons',
+      component: BeverageCartons
+    },
+    {
+      path: '/recycling-cycle/the-glass',
+      name: 'TheGlass',
+      component: TheGlass
     },
     {
       path: '/trash-separation',
@@ -44,7 +71,18 @@ const router = createRouter({
       name: 'TheContact',
       component: TheContact
     },
+    {
+      path: '/news-info/:id',
+      name: 'NewsInfo',
+      component: NewsInfo
+    },
+    {
+      path: '/:pathMatch(.*)*',
+      name: 'NotFound',
+      component: NotFound
+    }
   ]
 })
+
 
 export default router

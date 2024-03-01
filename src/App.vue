@@ -5,14 +5,15 @@
 </template>
 
 <script setup>
-import {onMounted} from "vue";
 import TheHeader from "@/components/TheHeader.vue";
 import TheFooter from "@/components/TheFooter.vue";
-
+import { onMounted } from 'vue';
 
 onMounted(() => {
-  document.cookie = 'locale=DE'
-})
+  window.scrollTo(0, 0);
+});
+localStorage.setItem('locale','de');
+
 </script>
 
 

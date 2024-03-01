@@ -10,6 +10,7 @@
     "glass": "Glas",
     "home": "Haupt",
     "environmental-protection": "Umweltschutz",
+    "button-back": "Zurück",
     "main-page-slider1-t1": "Was ist Recycling? Definition, Beispiele und Erklärung",
     "main-page-slider1-p": "Das Recycling sollte beim Erhalt der Biodiversität und der Ökosysteme im Mittelpunkt der Betrachtung stehen und keine Nebenrolle spielen.",
     "main-page-slider2-t1": "Tipps für Umweltschutz im Alltag",
@@ -270,5 +271,55 @@
       "sub-title": "Wofür interessierst du dich?",
       "title-3": "Recyclingkreisläufe für unterschiedliche Rohstoffe",
       "text-3": "Recyclingkreisläufe gibt es für unterschiedliche Rohstoffe, beispielsweise für Kunststoffe, Metall, Glas, Papier, Pappe oder Karton. In Deutschland schreiben Quoten für das Recycling vor, wie viel Prozent der gesammelten Verpackungen recycelt werden müssen.Die Recyclingquoten dienen dem Schutz unserer Ressourcen sowie von Natur und Umwelt. Jeder kann hierzu einen Beitrag leisten: Richtige Mülltrennung hilft dabei, das Recycling in Deutschland zu verbessern und neue Produkte ohne Einsatz neuer Ressourcen entstehen zu lassen – zum Beispiel Eimer, Blumentöpfe oder Gartenbänke aus recyceltem Kunststoff."
+    },
+    "recycling-cycle-plastic": {
+      "title-1": "Recyclingkreislauf Kunststoff im Überblick",
+      "text-1_1": "Gerade bei Kunststoffabfällen lohnt sich das nachhaltige Recycling, denn für die Herstellung von Kunststoffen werden große Mengen Primärrohstoffe, wie wertvolles Rohöl, verwendet. Werden Verpackungen aus Kunststoff hingegen von den Verbraucher*innen richtig getrennt, können die Materialien wiederverwendet werden und als Sekundärrohstoffe effizient Ressourcen einsparen.",
+      "text-1_2": "Pro Tonne Recyclingkunststoff lassen sich bis zu 3,2 Tonnen Treibhausgase im Vergleich zu neu hergestelltem Kunststoff einsparen. In der Kreislaufwirtschaft werden die Verpackungen gesammelt, sortiert und dem Recycling zugeführt. So werden aus Verpackungsabfällen aus Kunststoff und vermeintlichem Plastikmüll hochwertige Kunststoffprodukte hergestellt.",
+      "title-2": "Wie recycelt man Kunststoff?",
+      "text-2_1": "Die Recyclingquote für Kunststoffverpackungen liegt derzeit bei 58,5 Prozent. Nahezu 60 Prozent aller Verpackungen, die durch die dualen Systeme in der Gelben Tonne und im Gelben Sack gesammelt werden, werden bereits recycelt.",
+      "text-2_2": "Das Recycling von Kunststoffen ist dank moderner Recyclinganlagen heute effizient und nachhaltig möglich. Rohstoffe wie Polyethylen (PE), Polypropylen (PP), Polystyrol (PS) und Polyethylenterephthalat (PET), wie es beispielsweise bei der Herstellung von Flaschen für Getränke verwendet wird, können so verwertet werden und bleiben dem Rohstoffkreislauf erhalten.",
+      "title-3": "Recycling von Kunststoffverpackungen",
+      "text-3": "Beim werkstofflichen Recycling werden Kunststoffverpackungen mechanisch aufbereitet, die chemische Struktur bleibt unverändert. Für einen solchen Prozess geeignet sind sortenrein sortierbare Kunststoffe wie Polyethylen (PE), Polypropylen (PP), Polystyrol (PS) und Polyethylenterephthalat (PET). Sie können zu Rezyklaten aufbereitet werden, die mit Neuware qualitativ vergleichbar sind. Das Verpackungsgesetz schreibt vor, dass ab 2022 für mindestens 63 Prozent der Kunststoffverpackungen eine werkstoffliche Aufbereitung sicherzustellen ist."
+    },
+    "recycling-cycle-glass": {
+      "title-1": "Recyclingkreislauf Glas im Überblick",
+      "text-1_1": "Glas ist der Recycling-Klassiker. Altglascontainer dienen der Sammlung von ausgedienten Glasverpackungen. Glasflaschen und -behälter gehören farblich getrennt in die Behälter für Grünglas, Braunglas und Weißglas. Blaues oder rotes Glas gehört auch in den Container für Grünglas.",
+      "text-1_2": "Dem Animationsfilm kannst du die vier Schritte des Glasrecyclings entnehmen: Spezialisierte Anlagen separieren und zerkleinern die gesammelten Glasverpackungen. Das zerkleinerte Glas wird im Anschluss eingeschmolzen und zu neuen Flaschen und Behältern geformt.",
+      "title-2": "Doch wie oft kann man Glas recyceln?",
+      "text-2": "Es lässt sich ohne jeglichen Qualitätsverlust beliebig oft einschmelzen und wiederverwenden. Der große Vorteil des Glasrecyclings: Der Energieaufwand für das Einschmelzen der ausgedienten Glasbehälter ist geringer als bei der Verarbeitung von Primärrohstoffen wie Quarzsand. Das Recyclingglas kann dann verwendet werden, um daraus neue Glasverpackungen herzustellen.",
+      "title-3": "Recycling von Glasverpackungen",
+      "text-3": "Die durch seit 2019 das Verpackungsgesetz vorgegebene Recyclingquote von 80 Masseprozent wurde in den letzten Jahren bereits übertroffen und wurde ab 2022 auf 90 Prozent gesteigert. Beim Einsatz von Altglas werden gegenüber der Neuproduktion rund ein Drittel der Energie eingespart. Behälterglas gilt damit auch künftig als zuverlässige, ressourcenschonende Verpackungsart."
+    },
+    "recycling-cycle-paper": {
+      "title-1": "Recyclingkreislauf Papier im Überblick",
+      "text-1": "Bei der Herstellung von Frischfaserpapier, Pappe und Karton bilden Holzfasern immer den wichtigsten Rohstoff. Diese werden in Form von Zellstoff oder Holzstoff (Primärfasern) genutzt. Der für die deutsche Papierindustrie wichtigste Rohstoff ist jedoch Altpapier. Aus den Recyclingfasern werden Zeitungspapiere, Hygienepapiere (z. B. Küchenrollen) und Büropapiere (z.B. Druckerpapier) hergestellt. Gebrauchte Verpackungen aus Papier und Pappe liefern auf diese Weise den Ausgangsstoff für neue Kartons oder Wellpappe. Bei der Herstellung von Recyclingpapier können im Vergleich zu Frischfaserpapier etwa 50 Prozent an Energie und rund 70 Prozent der Wassermenge eingespart werden.",
+      "title-2": "Recycling von Glasverpackungen",
+      "text-2": "Papierfasern können zehn- bis 25-mal recycelt werden. Bei jedem Recyclingvorgang verkürzen sich die Fasern, bis sie sich schließlich nicht mehr zu Papier verbinden können. Als wertvolle Rohstoffe werden Recyclingpapier, Recyclingkarton und Recyclingpappe zu einer Vielzahl an neuen Produkten verarbeitet, beispielsweise zu Toilettenpapier und Papierhandtüchern, Zeitungsdruckpapier, Kopierpapier, Recycling-Papiertüten oder Kaffeebechern.",
+      "title-3": "Wie funktioniert Papierrecycling?",
+      "text-3": "Bei der Herstellung von Frischfaserpapier, Pappe und Karton bilden Holzfasern immer den wichtigsten Rohstoff. Diese werden in Form von Zellstoff oder Holzstoff (Primärfasern) genutzt. Der für die deutsche Papierindustrie wichtigste Rohstoff ist jedoch Altpapier. Aus den Recyclingfasern werden Zeitungspapiere, Hygienepapiere (z. B. Küchenrollen) und Büropapiere (z.B. Druckerpapier) hergestellt. Gebrauchte Verpackungen aus Papier und Pappe liefern auf diese Weise den Ausgangsstoff für neue Kartons oder Wellpappe. Bei der Herstellung von Recyclingpapier können im Vergleich zu Frischfaserpapier etwa 50 Prozent an Energie und rund 70 Prozent der Wassermenge eingespart werden."
+    },
+    "recycling-cycle-beverage-cartons": {
+      "title-1": "Recycling von Getränkekartons",
+      "text-1": "Getränkekartons sind vielseitig einsetzbar, leicht und gut transportierbar. Sie bestehen zu 70 bis 80 Prozent aus Zellstoff, sind außen und innen mit dem Kunststoff Polyethylen beschichtet. Für Produkte, die besonders lange haltbar sein sollen, erhalten die Kartons zusätzlich eine dünne Aluminiumschicht. Getränkekartons lassen sich recyceln.",
+      "title-2": "Wie funktioniert das Recycling von Getränkekartons?"
+    },
+    "recycling-cycle-metal": {
+      "title-1": "Recyclingkreislauf Metall im Überblick",
+      "text-1_1": "Metalle und Legierung aus Kupfer, Aluminium, Eisen, Zinn, Blei, Zink, Bronze, Stahl oder Messing sind wertvolle Rohstoffe. Das langlebige Material findet etwa in der Baubranche Verwendung oder als Werkstoff in Unternehmen der Automobilindustrie. Haben sie ihren Zweck erfüllt, werden die Altmetalle jedoch nicht als Schrott entsorgt, sondern der Verwertung zugeführt. Da Metalle besonders robust sind, können sie beliebig oft recycelt werden.",
+      "text-1_2": "Auch Verpackungen aus Aluminium oder Weißblech für Lebensmittel und andere Haushaltsprodukte kommen in das Recycling: Deshalb sammelst du deine Verpackungen in der Gelben Tonne oder im Gelben Sack, je nach Region auch in der Wertstofftonne. Entsorgungsunternehmen übergeben die gesammelten und sortierten Verpackungen zur Wiederverwertung und Aufbereitung an spezialisierte Unternehmen.",
+      "title-2": "Warum ist Metallrecycling sinnvoll?",
+      "text-2": "In der Kreislaufwirtschaft bleiben die Metalle erhalten und finden nach dem Recycling als Sekundärrohstoff erneut Verwendung. Moderne Prozesse im Metallrecycling sparen wertvolle Ressourcen und schonen die Umwelt. Das Aluminiumrecycling spart beispielsweise bis zu 95 Prozent der für die Primärerzeugung notwendigen Energie ein. Etwa 75 Prozent des aktuell im Gebrauch befindlichen Aluminiums ist aus Recyclingprozessen gewonnen.",
+      "title-3": "Wähle eine Kategorie:",
+      "aluminiumverpackungen": {
+        "title": "Aluminiumverpackungen",
+        "title-1": "Recycling von Aluminiumverpackungen",
+        "text-1": "Primäraluminium wird aus dem Erz Bauxit gewonnen. In steigendem Umfang erfolgt jedoch ein Wiedergewinnen des Rohstoffs durch das Recycling gebrauchter Produkte. In Deutschland wird über die Hälfte des produzierten Aluminiums aus Aluminiumschrott hergestellt. Beim Recycling dieses Materials werden bis zu 95 Prozent der bei einer Primärerzeugung benötigten Energie eingespart. Aluminium kann immer wieder recycelt und ohne Qualitätseinbußen für neue Produkte und Verpackungen genutzt werden."
+      },
+      "weißblechverpackungen": {
+        "title": "Weißblechverpackungen",
+        "title-2": "Recycling von Weißblechverpackungen",
+        "text-2": "Wichtigster Bestandteil des Verpackungsstahls ist Eisen, ein unzerstörbares Element. 80 Prozent des jemals auf der Welt hergestellten Stahls sind bis heute weiterhin im Gebrauch. Verpackungen aus Stahl lassen sich unbegrenzt recyceln. Die Recyclingrate liegt deutlich über 90 Prozent. Damit ist in Deutschland der Wertstoffkreislauf für dieses Material geschlossen."
+      }
     }
 }

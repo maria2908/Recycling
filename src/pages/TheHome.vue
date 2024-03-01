@@ -20,6 +20,11 @@ import TheQuiz from "@/components/MainPage/Quiz/TheQuiz.vue";
 import TheTips from "@/components/MainPage/TheTips.vue";
 import TrashSeparationNotHome from "@/components/MainPage/TrashSeparationNotHome.vue";
 import RecyclingCycleInfo from "@/components/MainPage/RecyclingCycleInfo.vue";
+import {onMounted} from "vue";
+
+onMounted(() => {
+  window.scrollTo(0, 0);
+});
 </script>
 
 <style>

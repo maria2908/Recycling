@@ -1,5 +1,10 @@
 <script>
 import emailjs from 'emailjs-com';
+import { onMounted } from 'vue';
+
+onMounted(() => {
+  window.scrollTo(0, 0);
+});
 
 export default {
   data() {
@@ -36,7 +41,7 @@ export default {
 </script>
 
 <template>
-  <div  class="contact flex justify-around pt-12" style="height: 80vh;">
+  <div class="contact flex justify-around pt-24 mx-auto" style="height: 80vh; ">
     <div class="info absolute bg-black p-12 top-1/4 " style="right: 18%;">
       <div class="absolute w-10 bg-my-yellow h-10" style="top: -5%; left: -5%;"></div>
       <h1 class="font-bold text-4xl py-6">{{ $t('contact-us.info') }}</h1>

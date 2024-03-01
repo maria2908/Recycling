@@ -4,7 +4,7 @@
       <div class="bg-my-dark-green  h-0.5 line"></div>
       <div class="d-flex justify-center py-3">
         <div >
-          <t1 class="text-4xl text-uppercase text-my-dark-green">{{$t('tips.title')}}</t1>
+          <h1 class="text-4xl text-uppercase text-my-dark-green">{{$t('tips.title')}}</h1>
         </div>
       </div>
       <div class="bg-my-dark-green  h-0.5 line"></div>

@@ -41,7 +41,7 @@ const modules = [Autoplay, Scrollbar ];
         <div class="absolute top-1/3 pl-14 ">
           <h1 class=" text-6xl" >{{ $t('main-page-slider3-t1')}}</h1>
           <p class="mt-7 mb-9" style="width: 80%">{{ $t('main-page-slider3-p')}}</p>
-          <router-link class=" p-3 px-6 mt-6 rounded border-green-600 border-2 text-green" to="">{{ $t('button-more') }}</router-link>
+          <router-link class="p-3 px-6 mt-6 rounded border-green-600 border-2 text-green" to="">{{ $t('button-more') }}</router-link>
         </div>
       </div>
       <img alt="slider-image" class="object-cover h-screen w-full" src="../../assets/img/slider_04.jpg">

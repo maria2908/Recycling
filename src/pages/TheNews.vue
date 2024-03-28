@@ -41,7 +41,7 @@ onMounted(async () => {
   <div class="the-news">
     <div v-if="loaded" >
       <the-container>
-        <div class="all-news ">
+        <div class="all-news pt-12">
           <TheNew class="mx-4 text-center" :post="post" v-for="(post,index) in posts" :key="index"  />
         </div>
       </the-container>
@@ -56,6 +56,7 @@ onMounted(async () => {
 .all-news {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 5rem;
 }
 .the-news {
   .body--dark & {

@@ -21,7 +21,7 @@
       <li class="item">{{ $t('tips.seventh-tip') }}</li>
       <li class="item">{{ $t('tips.eighth-tip') }}</li>
     </ul>
-    <router-link to="/environmental-protection" class="bg-my-dark-green text-white p-4 rounded-3xl px-7 text-center">{{ $t('tips.button') }}</router-link>
+    <router-link to="/environmental-protection" class="bg-my-dark-green hover:bg-my-green text-white ml-4 p-4 rounded px-7 text-center">{{ $t('tips.button') }}</router-link>
   </div>
 </template>
 <script setup>

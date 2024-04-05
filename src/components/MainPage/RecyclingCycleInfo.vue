@@ -4,7 +4,7 @@
     <div class="px-12">
       <p class="text-4xl text-bold text-my-dark-green">{{$t('recycling-circle.title')}}</p>
       <p class="pt-7 mb-10">{{$t('recycling-circle.text')}}</p>
-      <router-link :to="{name: 'RecyclingCycle'}" class="p-3 px-6 mt-6 rounded border-green-600 border-2 text-green">{{ $t('tips.button') }}</router-link>
+      <router-link :to="{name: 'RecyclingCycle'}" class="p-3 px-6 mt-6 rounded border-my-dark-green border-2 text-my-dark-green hover:border-my-green hover:text-my-green">{{ $t('tips.button') }}</router-link>
     </div>
   </div>
 </template>

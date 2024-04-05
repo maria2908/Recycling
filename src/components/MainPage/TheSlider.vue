@@ -1,70 +1,67 @@
 <script setup>
-import { Autoplay, Scrollbar } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import 'swiper/css';
-import 'swiper/css/navigation';
-
-
-const modules = [Autoplay, Scrollbar ];
+import 'swiper/css/pagination';
 </script>
 
 <template>
-  <swiper
-      :loop="true"
-      :loopedSlides="3"
-      :modules="modules"
-      :space-between="0"
-      autoplay
-  >
-    <swiper-slide class="w-full">
-      <div class="absolute top-10 h-screen w-33 pr-6 main-slider" >
-        <div class="absolute top-1/4 pl-14 ">
-          <h1 class=" text-6xl" >{{ $t('main-page-slider1-t1')}}</h1>
-          <p class="mt-7 mb-9" style="width: 80%">{{ $t('main-page-slider1-p')}}</p>
-          <router-link class=" p-3 px-6 mt-6 rounded border-green-600 border-2 text-green" to="">{{ $t('button-more') }}</router-link>
-        </div>
-      </div>
-      <img alt="slider-image" class="object-cover h-screen w-full z-0" src="../../assets/img/slider_05.jpg">
-    </swiper-slide>
-    <swiper-slide class="w-full relative">
-      <div class="absolute top-10 h-screen w-33 pr-6 main-slider" >
-        <div class="absolute top-52 pl-14 ">
-          <h1 class=" text-6xl pr-2" >{{ $t('main-page-slider2-t1')}}</h1>
-          <p class="mt-7 mb-9" style="width: 80%">{{ $t('main-page-slider2-p')}}</p>
-          <router-link class=" p-3 px-6 mt-6 rounded border-green-600 border-2 text-green" to="">{{ $t('button-more') }}</router-link>
-        </div>
-      </div>
-      <img alt="slider-image" class="object-cover h-screen w-full" src="../../assets/img/slider_03.jpg">
-    </swiper-slide>
-    <swiper-slide class="w-full relative">
-      <div class="absolute top-10 h-screen w-33 pr-6 main-slider" >
-        <div class="absolute top-1/3 pl-14 ">
-          <h1 class=" text-6xl" >{{ $t('main-page-slider3-t1')}}</h1>
-          <p class="mt-7 mb-9" style="width: 80%">{{ $t('main-page-slider3-p')}}</p>
-          <router-link class="p-3 px-6 mt-6 rounded border-green-600 border-2 text-green" to="">{{ $t('button-more') }}</router-link>
-        </div>
-      </div>
-      <img alt="slider-image" class="object-cover h-screen w-full" src="../../assets/img/slider_04.jpg">
-    </swiper-slide>
-  </swiper>
+  <div class="flex justify-around align-center">
+    <div style="width: 750px;">
+      <h1 class="text-6xl text-my-dark-green" style="font-size: 100px; font-weight: 900;">{{ $t('main-title')}}</h1>
+      <p class="my-12" style="font-weight: 600;">{{ $t('main-text')}}</p>
+      <router-link :to="{}" class="p-4 rounded border-my-dark-green border-2 text-my-dark-green hover:border-my-green hover:text-my-green">{{ $t('read-more')}}</router-link>
+      <router-link :to="{}" class="bg-my-dark-green hover:bg-my-green border-my-dark-green hover:border-my-green border-2 text-white ml-4 p-4 rounded px-7 text-center">{{ $t('read-news')}}</router-link>
+    </div>
+    <div class="flex">
+      <swiper
+          class="mr-12 pt-16"
+          style="height: 100vh; width: 250px"
+          :loop="true"
+          :space-between="0"
+          :direction="'vertical'"
+          :slidesPerView="2.5"
+          :mousewheel="true"
+      >
+        <swiper-slide class="my-6"><img src="https://images.pexels.com/photos/1933386/pexels-photo-1933386.jpeg?auto=compress&cs=tinysrgb&w=600" /></swiper-slide>
+        <swiper-slide class="my-6"><img src="https://images.pexels.com/photos/3737675/pexels-photo-3737675.jpeg?auto=compress&cs=tinysrgb&w=600" /></swiper-slide>
+        <swiper-slide class="my-6"><img src="https://images.pexels.com/photos/3962260/pexels-photo-3962260.jpeg?auto=compress&cs=tinysrgb&w=600" /></swiper-slide>
+        <swiper-slide class="my-6"><img src="https://images.pexels.com/photos/2570304/pexels-photo-2570304.jpeg?auto=compress&cs=tinysrgb&w=600" /></swiper-slide>
+        <swiper-slide class="my-6"><img src="https://images.pexels.com/photos/9324359/pexels-photo-9324359.jpeg?auto=compress&cs=tinysrgb&w=600" /></swiper-slide>
+        <swiper-slide class="my-6"><img src="https://images.pexels.com/photos/6990304/pexels-photo-6990304.jpeg?auto=compress&cs=tinysrgb&w=600" /></swiper-slide>
+      </swiper>
+      <swiper
+          class="mr-12"
+          style="height: 100vh; width: 250px"
+          :loop="true"
+          :space-between="0"
+          :direction="'vertical'"
+          :slidesPerView="2.5"
+      >
+        <swiper-slide class="my-2"><img src="https://images.pexels.com/photos/3010250/pexels-photo-3010250.jpeg?auto=compress&cs=tinysrgb&w=600" /></swiper-slide>
+        <swiper-slide class="my-2"><img src="https://images.pexels.com/photos/4167579/pexels-photo-4167579.jpeg?auto=compress&cs=tinysrgb&w=600" /></swiper-slide>
+        <swiper-slide class="my-2"><img src="https://images.pexels.com/photos/2927582/pexels-photo-2927582.jpeg?auto=compress&cs=tinysrgb&w=600" /></swiper-slide>
+        <swiper-slide class="my-2"><img src="https://images.pexels.com/photos/2927582/pexels-photo-2927582.jpeg?auto=compress&cs=tinysrgb&w=600" /></swiper-slide>
+        <swiper-slide class="my-2"><img src="https://images.pexels.com/photos/7772006/pexels-photo-7772006.jpeg?auto=compress&cs=tinysrgb&w=600" /></swiper-slide>
+        <swiper-slide class="my-2"><img src="https://images.pexels.com/photos/12033659/pexels-photo-12033659.jpeg?auto=compress&cs=tinysrgb&w=600" /></swiper-slide>
+      </swiper>
+      <swiper
+          style="height: 100vh; width: 250px"
+          class="pt-16"
+          :loop="true"
+          :space-between="0"
+          :direction="'vertical'"
+          :slidesPerView="2.5"
+      >
+        <swiper-slide class="my-6"><img src="https://images.pexels.com/photos/6591429/pexels-photo-6591429.jpeg?auto=compress&cs=tinysrgb&w=600" /></swiper-slide>
+        <swiper-slide class="my-6"><img src="https://images.pexels.com/photos/5719894/pexels-photo-5719894.jpeg?auto=compress&cs=tinysrgb&w=600" /></swiper-slide>
+        <swiper-slide class="my-6"><img src="https://images.pexels.com/photos/8543607/pexels-photo-8543607.jpeg?auto=compress&cs=tinysrgb&w=600" /></swiper-slide>
+        <swiper-slide class="my-6"><img src="https://images.pexels.com/photos/7262474/pexels-photo-7262474.jpeg?auto=compress&cs=tinysrgb&w=600" /></swiper-slide>
+        <swiper-slide class="my-6"><img src="https://images.pexels.com/photos/8287265/pexels-photo-8287265.jpeg?auto=compress&cs=tinysrgb&w=600" /></swiper-slide>
+        <swiper-slide class="my-6"><img src="https://images.pexels.com/photos/3616656/pexels-photo-3616656.jpeg?auto=compress&cs=tinysrgb&w=600" /></swiper-slide>
+      </swiper>
+    </div>
+  </div>
 </template>
 
 <style>
-.main-slider {
-  .body--dark & {
-    background-color: #151515;
-    color: white;
-
-    h1 {
-      color: #87c159;
-    }
-  }
-  .body--light & {
-    background-color: #ffffff;
-
-    h1 {
-      color: #058240;
-    }
-  }
-}
 </style>

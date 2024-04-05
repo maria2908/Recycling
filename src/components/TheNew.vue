@@ -1,6 +1,10 @@
 <script setup>
 import { defineProps } from "vue";
+import { onMounted } from 'vue';
 
+onMounted(() => {
+  window.scrollTo(0, 0);
+});
 defineProps({
   post: Object,
 });
@@ -15,7 +19,7 @@ const truncateText = (text, maxLength) => {
 
 <template>
   <div class=" the-new" >
-    <div class="news w-96 pt-4 rounded-xl bg-white text-gray-700 shadow-md" style="min-height: 430px; max-height: 430px ">
+    <div class="news w-96 pt-4 rounded-xl bg-white text-gray-700 shadow-md" style="min-height: 465px; max-height: 430px ">
       <div class="mx-4 h-40 overflow-hidden rounded-xl bg-blue-gray-500 text-white shadow-lg shadow-blue-gray-500/40 bg-gradient-to-r">
         <img width="400" :src="post.img" />
       </div>
@@ -26,7 +30,7 @@ const truncateText = (text, maxLength) => {
         <p class="text-justify mt-4 font-light" v-html="truncateText(post['text_' + $i18n.locale], 200)">
         </p>
       </div>
-      <div class="p-6 pt-0">
+      <div class="p-6" style="margin-top: -15px">
         <router-link :to="{path: `/news-info/${post.id}`}" data-ripple-light="true" type="button" class="select-none rounded-lg bg-blue-500 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-black shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none">
           {{ $t('button-more') }}
         </router-link>

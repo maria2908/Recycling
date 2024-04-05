@@ -7,6 +7,9 @@ import NotFound from "@/pages/NotFound.vue";
 import TheLoading from "@/components/TheLoading.vue";
 import ContainerHalf from "@/layout/ContainerHalf.vue";
 
+onMounted(() => {
+  window.scrollTo(0, 0);
+});
 const post = ref({});
 const loaded = ref(false);
 const route = useRoute()
@@ -30,12 +33,15 @@ onMounted(async () => {
           text_de: doc.data().text_de,
           text_ua: doc.data().text_ua,
         };
+
       });
 
       loaded.value = true;
     }
   }, 1000);
 });
+
+
 </script>
 
 <template>

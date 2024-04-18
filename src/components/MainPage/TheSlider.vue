@@ -5,14 +5,14 @@ import 'swiper/css/pagination';
 </script>
 
 <template>
-  <div class="flex justify-around align-center">
+  <div class="main flex justify-around align-center">
     <div style="width: 750px;">
-      <h1 class="text-6xl text-my-dark-green" style="font-size: 100px; font-weight: 900;">{{ $t('main-title')}}</h1>
-      <p class="my-12" style="font-weight: 600;">{{ $t('main-text')}}</p>
+      <h1 class="text-my-dark-green font-black xl:text-9xl md:text-7xl">{{ $t('main-title')}}</h1>
+      <p class="my-12 font-semibold">{{ $t('main-text')}}</p>
       <router-link :to="{}" class="p-4 rounded border-my-dark-green border-2 text-my-dark-green hover:border-my-green hover:text-my-green">{{ $t('read-more')}}</router-link>
       <router-link :to="{}" class="bg-my-dark-green hover:bg-my-green border-my-dark-green hover:border-my-green border-2 text-white ml-4 p-4 rounded px-7 text-center">{{ $t('read-news')}}</router-link>
     </div>
-    <div class="flex">
+    <div class="flex slider">
       <swiper
           class="mr-12 pt-16"
           style="height: 100vh; width: 250px"
@@ -64,4 +64,11 @@ import 'swiper/css/pagination';
 </template>
 
 <style>
+@media (min-width: 1440px) {
+  slider {
+    img {
+      width: 100px;
+    }
+  }
+}
 </style>

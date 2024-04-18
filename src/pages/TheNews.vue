@@ -38,13 +38,13 @@ onMounted(async () => {
 });
 
 const displayedPosts = computed(() => {
-  const startIndex = (currentPage.value - 1) * 3;
-  const endIndex = startIndex + 3;
+  const startIndex = (currentPage.value - 1) * 6;
+  const endIndex = startIndex + 6;
   return posts.value.slice(startIndex, endIndex);
 });
 
 const totalPages = computed(() => {
-  return Math.ceil(posts.value.length / 3);
+  return Math.ceil(posts.value.length / 6);
 });
 
 const prevPage = () => {
@@ -80,7 +80,7 @@ const gotoPage = (pageNumber) => {
             <button @click="gotoPage(pageNumber)" class="pag-num" :class="{ active: currentPage === pageNumber }">{{ pageNumber }}</button>
           </span>
 
-          <button @click="nextPage" :disabled="currentPage * 3 >= posts.length">
+          <button @click="nextPage" :disabled="currentPage * 6 >= posts.length">
             <svg fill="#ffffff" width="15px" height="15px" viewBox="0 0 42 42"><polygon fill-rule="evenodd" points="13.933,1 34,21.068 14.431,40.637 9.498,35.704 24.136,21.068 9,5.933 "/>
             </svg>
           </button>

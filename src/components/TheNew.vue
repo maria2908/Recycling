@@ -30,7 +30,7 @@ const truncateText = (text, maxLength) => {
         <p class="text-justify mt-4 font-light" v-html="truncateText(post['text_' + $i18n.locale], 200)">
         </p>
       </div>
-      <div class="p-6" style="margin-top: -15px">
+      <div class="btn p-6" style="margin-top: -15px">
         <router-link :to="{path: `/news-info/${post.id}`}" data-ripple-light="true" type="button" class="select-none rounded-lg bg-blue-500 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-black shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none">
           {{ $t('button-more') }}
         </router-link>
@@ -56,6 +56,17 @@ const truncateText = (text, maxLength) => {
   }
   .body--light & {
     background-color: white;
+  }
+}
+
+@media (max-width: 768px) {
+  .news {
+    width: 340px;
+    padding-bottom: 30px;
+
+    .btn {
+      margin-top: -30px !important;
+    }
   }
 }
 </style>

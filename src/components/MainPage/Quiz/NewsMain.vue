@@ -1,5 +1,5 @@
 <script setup>
-import { onMounted, ref, computed } from "vue";
+import { onUnmounted, onMounted, ref, computed } from "vue";
 import { collection, getDocs } from "firebase/firestore";
 import { db } from '@/firebase'
 import TheNew from "@/components/TheNew.vue";
@@ -34,6 +34,22 @@ const displayedPosts = computed(() => {
   const endIndex = startIndex + 3;
   return posts.value.slice(startIndex, endIndex);
 });
+
+const displayedPosts2 = computed(() => {
+  const startIndex = (currentPage.value - 1) * 2;
+  const endIndex = startIndex + 2;
+  return posts.value.slice(startIndex, endIndex);
+});
+
+function useInnerWidth(query){
+  const width = ref(window.innerWidth);
+  const syncWidth = () => width.value = window.innerWidth;
+  window.addEventListener('resize', syncWidth);
+  onUnmounted(() => window.removeEventListener('resize', syncWidth));
+  return width;
+}
+
+const innerWidth = useInnerWidth();
 </script>
 
 <template>
@@ -47,8 +63,11 @@ const displayedPosts = computed(() => {
         </div>
         <div class="bg-my-dark-green  h-0.5 line"></div>
       </div>
-      <div class="all-news mb-16" style="margin-left: -20px">
+      <div v-if="innerWidth > 1500" class="all-news mb-16" style="margin-left: -20px">
         <TheNew class="mr-6 text-center" :post="post" v-for="(post,index) in displayedPosts" :key="index"  />
+      </div>
+      <div v-else class="all-news mb-16" >
+        <TheNew class="mr-20 text-center mt-12" :post="post" v-for="(post,index) in displayedPosts2" :key="index"  />
       </div>
       <router-link to="/environmental-protection" class="bg-my-dark-green hover:bg-my-green text-white ml-4 p-4 rounded px-7 text-center">{{ $t('tips.button') }}</router-link>
     </div>
@@ -59,14 +78,21 @@ const displayedPosts = computed(() => {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
-.the-news {
-  .body--dark & {
-    background-color: #151515;
-    color: white;
+
+@media (max-width: 768px) {
+  .all-news {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 
   }
-  .body--light & {
-    background-color: white;
+}
+
+@media (max-width: 425px) {
+  .all-news {
+    margin-left: 50px;
+    display: grid;
+    grid-template-columns: 1fr;
+
   }
 }
 </style>

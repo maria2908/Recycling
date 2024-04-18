@@ -15,4 +15,38 @@
       box-shadow: -2px 2px 25px -2px rgba(216, 214, 214, 0.42);
     }
   }
+
+  @media (max-width: 1500px) {
+    .card {
+      width: 100%;
+      height: 45vh;
+      img {
+        width: 50% !important;
+        height: 45vh !important;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .card {
+      margin: 15px auto;
+      width: 80%;
+      height: 35vh;
+      img {
+        display: none;
+      }
+    }
+  }
+
+  @media (max-width: 425px) {
+    .card {
+      margin-top: 30px;
+      padding: 20px;
+      width: 100%;
+      height: 50vh;
+      img {
+        display: none;
+      }
+    }
+  }
 </style>

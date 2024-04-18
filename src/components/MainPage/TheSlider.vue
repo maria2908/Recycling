@@ -63,7 +63,7 @@ import 'swiper/css/pagination';
 </template>
 
 <style scoped lang="scss">
-@media (max-width: 1440px) {
+@media (max-width: 1500px) {
     .main {
       width: 100%;
       .text {
@@ -80,15 +80,54 @@ import 'swiper/css/pagination';
         }
       }
 
-
       .slider {
         width: 55% !important;
 
         .swiper-slide {
+          width: 80%;
           height: 30vh !important;
         }
       }
 
     }
+}
+
+@media (max-width: 768px) {
+  .main {
+    width: 100%;
+    .text {
+      padding: 15px;
+      width: 45%;
+      h1 {
+        font-size: 50px !important;
+      }
+      p {
+        font-size: 12px;
+      }
+      a {
+        padding: 10px;
+      }
+    }
+
+    .slider {
+      width: 55% !important;
+
+      .swiper-slide {
+        width: 90%;
+        height: 20vh !important;
+      }
+    }
+
+  }
+}
+
+@media (max-width: 425px) {
+  .text {
+    width: 100%;
+    margin-top: 200px;
+  }
+  .slider {
+    display: none !important;
+  }
 }
 </style>

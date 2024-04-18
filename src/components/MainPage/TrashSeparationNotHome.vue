@@ -1,5 +1,5 @@
 <script setup>
-import {ref} from 'vue'
+import {onUnmounted, ref} from 'vue'
 import { Carousel, Pagination, Slide,  } from 'vue3-carousel'
 import 'vue3-carousel/dist/carousel.css'
 
@@ -40,32 +40,68 @@ const slides_info = ref([
     text: "trash-separation-not-home.seventh.text",
   }
 ]);
+
+function useInnerWidth(query){
+  const width = ref(window.innerWidth);
+  const syncWidth = () => width.value = window.innerWidth;
+  window.addEventListener('resize', syncWidth);
+  onUnmounted(() => window.removeEventListener('resize', syncWidth));
+  return width;
+}
+
+const innerWidth = useInnerWidth();
 </script>
 
 <template>
-  <p class="mx-auto w-33 text-center text-xl mt-12 mb-8">{{$t('trash-separation-not-home.title')}}</p>
-  <Carousel
-      :itemsToShow="5"
-      :wrapAround="true"
-      :transition="500"
-      class="mt-12"
-  >
-    <Slide
-        v-for="(slide, index) in slides_info"
-        :key="index"
+  <p class="mx-auto w-50 text-center text-xl mt-12 mb-8">{{$t('trash-separation-not-home.title')}}</p>
+  <div v-if="innerWidth > 1400">
+    <Carousel
+        :itemsToShow="5"
+        :wrapAround="true"
+        :transition="500"
+        class="mt-12"
     >
-      <div class="block">
-        <img class="mx-auto" width="200" style="height: 150px" alt="recycling" :src="slide.img" />
-        <div class="text-info ">
-          <h2 class="text-xl my-4">{{$t(slide.title)}}</h2>
-          <p class="text-xs my-4 text-justify">{{$t(slide.text)}}</p>
+      <Slide
+          v-for="(slide, index) in slides_info"
+          :key="index"
+      >
+        <div class="block">
+          <img class="mx-auto" width="200" style="height: 150px" alt="recycling" :src="slide.img" />
+          <div class="text-info ">
+            <h2 class="text-xl my-4">{{$t(slide.title)}}</h2>
+            <p class="text-xs my-4 text-justify">{{$t(slide.text)}}</p>
+          </div>
         </div>
-      </div>
-    </Slide>
-    <template #addons>
-      <Pagination class="pagination" />
-    </template>
-  </Carousel>
+      </Slide>
+      <template #addons>
+        <Pagination class="pagination" />
+      </template>
+    </Carousel>
+  </div>
+  <div v-else>
+    <Carousel
+        :itemsToShow="3"
+        :wrapAround="true"
+        :transition="500"
+        class="mt-12"
+    >
+      <Slide
+          v-for="(slide, index) in slides_info"
+          :key="index"
+      >
+        <div class="block">
+          <img class="mx-auto" width="200" style="height: 150px" alt="recycling" :src="slide.img" />
+          <div class="text-info ">
+            <h2 class="text-xl my-4">{{$t(slide.title)}}</h2>
+            <p class="my-4 text-justify" style="font-size: 10px">{{$t(slide.text)}}</p>
+          </div>
+        </div>
+      </Slide>
+      <template #addons>
+        <Pagination class="pagination" />
+      </template>
+    </Carousel>
+  </div>
 </template>
 
 

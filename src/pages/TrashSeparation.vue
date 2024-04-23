@@ -38,7 +38,7 @@ const trash_separations = ref([
              <li><span><a href=''>{{ $t('trash-separation-page.menu.old-clothes') }}</a></span></li>
              <li><span><a href=''>{{ $t('trash-separation-page.menu.recycling-center') }}</a></span></li>
            </ul>
-           <img width="450" style="height: 25vh" alt="kein Restmüll" src="https://www.awm-muenchen.de/fileadmin/Bilder/AWM-0435_Kampagne_Zero_Waste_2022_FacebookPost_twitter_1200x627_6.jpg" />
+           <img width="450" class="img" style="height: 25vh" alt="kein Restmüll" src="https://www.awm-muenchen.de/fileadmin/Bilder/AWM-0435_Kampagne_Zero_Waste_2022_FacebookPost_twitter_1200x627_6.jpg" />
          </div>
        </smaller-container>
      </div>
@@ -66,4 +66,23 @@ const trash_separations = ref([
   .back {
     background: linear-gradient(90deg, #dfac06 2.68%,#fff61a 78.27%);
   }
+
+  @media (max-width: 1500px) {
+    .img {
+      width: 400px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .img {
+      width: 300px;
+    }
+  }
+
+@media (max-width: 425px) {
+  .img {
+      width: 200px;
+    }
+}
+
 </style>

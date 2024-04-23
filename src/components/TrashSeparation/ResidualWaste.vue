@@ -1,7 +1,7 @@
 <template>
-  <container-half class="bg-white rounded-2xl p-12">
+  <the-container class="bg-white rounded-2xl p-12">
 
-    <div class="flex align-center">
+    <div class="residual-waste flex align-center">
       <div>
         <h1 class="text-5xl font-bold py-4" style="color: #dfac06">Restmüll</h1>
         <p>Restmüll ist der Müll, der nicht mehr recycelt werden kann. Er wird in der <b>Müllverbrennungsanlage</b> im Heizkraftwerk München Nord verbrannt und in Strom und Fernwärme umgewandelt. Leider landen immer noch zu viele Wertstoffe, die eigentlich recycelt werden könnten, im Restmüll. Mit konsequenter Mülltrennung kann die Restmüllmenge ganz erheblich reduziert werden.
@@ -23,10 +23,12 @@
       </div>
       <img alt="Residual Waste" src="../../assets/img/trash-separation/1.png" />
     </div>
-  </container-half>
+  </the-container>
 </template>
 <script setup>
 import ContainerHalf from "@/layout/ContainerHalf.vue";
+import TheContainer from "@/layout/TheContainer.vue";
+
 </script>
 
 <style scoped>
@@ -37,4 +39,5 @@ import ContainerHalf from "@/layout/ContainerHalf.vue";
     content: "•  ";
     color: #dfac06;
   }
+
 </style>

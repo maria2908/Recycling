@@ -77,6 +77,7 @@ header {
   }
   .body--light & {
     background-color: white;
+    color: black;
   }
 }
 #nav a.router-link-exact-active:nth-child(2n) {

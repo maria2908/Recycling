@@ -56,6 +56,7 @@ const innerWidth = useInnerWidth();
   }
   .body--light & {
     background-color: white;
+    color: black;
   }
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <container-half class="bg-white rounded-2xl p-12 mt-12">
+  <the-container class="bg-white rounded-2xl p-12 mt-12">
 
     <div class="flex">
       <div>
@@ -16,10 +16,11 @@
       </div>
       <img alt="Residual Waste" src="../../assets/img/trash-separation/2.png" />
     </div>
-  </container-half>
+  </the-container>
 </template>
 <script setup>
-import ContainerHalf from "@/layout/ContainerHalf.vue";
+import TheContainer from "@/layout/TheContainer.vue";
+
 </script>
 
 <style scoped>

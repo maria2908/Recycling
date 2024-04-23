@@ -1,12 +1,13 @@
 <script setup>
-import ContainerHalf from "@/layout/ContainerHalf.vue";
+import TheContainer from "@/layout/TheContainer.vue";
+
 import { ref } from 'vue'
 
 const open = ref(false)
 </script>
 
 <template>
-  <container-half class="bg-white rounded-2xl p-12 mt-12">
+  <the-container class="bg-white rounded-2xl p-12 mt-12">
 
     <div class="flex">
       <div class="w-96">
@@ -50,7 +51,7 @@ const open = ref(false)
         </div>
       </div>
     </div>
-  </container-half>
+  </the-container>
 </template>
 
 <style scoped>

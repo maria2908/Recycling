@@ -8,7 +8,7 @@
       </div>
     </smaller-container>
   </div>
-  <div class="bg-my-yellow">
+  <div class="bg-my-yellow text-black">
     <smaller-container>
       <h1 class="text-4xl font-bold my-12 text-center">{{ $t('recycling-cycle-beverage-cartons.title-2') }}</h1>
       <iframe class="mx-auto my-12" width="640" height="360" src="https://www.youtube.com/embed/jHzrJft7xxc" title="Der Recyclingkreislauf von Getränkekartons - Mülltrennung wirkt (ohne Untertitel)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -36,6 +36,12 @@ onMounted(() => {
   }
   .body--light & {
     background-color: white;
+    color: black;
   }
+}
+@media (max-width: 1500px) {
+  iframe {
+      width: 550px;
+    }
 }
 </style>

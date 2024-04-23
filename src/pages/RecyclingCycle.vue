@@ -45,17 +45,17 @@ const buttons_info = ref([
       </div>
     </smaller-container>
   </div>
-  <div class="bg-my-yellow text-center" >
+  <div class="bg-my-yellow text-center text-black" >
     <smaller-container>
       <h1 class="text-4xl font-bold">{{ $t('recycling-cycle-page.title-2') }}</h1>
       <p class="text-xl my-8">{{ $t('recycling-cycle-page.sub-title') }}</p>
       <div
-          class="bg-my-green cursor-pointer  my-2 p-4 px-8 w-50 mx-auto rounded align-center hover:text-my-yellow"
+          class="bg-my-green cursor-pointer my-2 p-4 px-8 w-50 mx-auto rounded align-center hover:text-my-yellow"
           v-for="(button_info, index) in buttons_info"
           :key="index"
       >
         <router-link :to=button_info.router class="flex justify-space-between">
-          <div class="flex align-center ml-4">
+          <div class="flex align-center ">
             <div class="border-2 rounded p-1">
               <svg width="10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
             </div>
@@ -94,6 +94,13 @@ const buttons_info = ref([
   }
   .body--light & {
     background-color: white;
+    color: black;
   }
+}
+
+@media (max-width: 1500px) {
+  iframe {
+      width: 550px;
+    }
 }
 </style>

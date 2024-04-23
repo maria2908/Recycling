@@ -1,12 +1,12 @@
 <script setup>
-import ContainerHalf from "@/layout/ContainerHalf.vue";
+import TheContainer from "@/layout/TheContainer.vue";
 import { ref } from 'vue'
 
 const open = ref(false)
 </script>
 
 <template>
-  <container-half class="bg-white rounded-2xl mt-12 ">
+  <the-container class="bg-white rounded-2xl mt-12 ">
     <div class="flex align-center px-12">
       <div>
         <h1 class="text-5xl font-bold py-4" style="color: #dfac06">Papier</h1>
@@ -44,7 +44,7 @@ const open = ref(false)
        </div>
      </div>
     </div>
-  </container-half>
+  </the-container>
 
 </template>
 

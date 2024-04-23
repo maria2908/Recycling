@@ -81,7 +81,7 @@ import 'swiper/css/pagination';
       }
 
       .slider {
-        width: 55% !important;
+        width: 45% !important;
 
         .swiper-slide {
           width: 80%;

@@ -132,6 +132,7 @@ onMounted(() => {
   }
   .body--light & {
     background-color: white;
+    color: black;
 
   }
 }

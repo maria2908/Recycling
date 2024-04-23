@@ -18,7 +18,7 @@ onMounted(() => {
       </div>
     </smaller-container>
   </div>
-  <div class="bg-my-yellow">
+  <div class="bg-my-yellow text-black">
     <smaller-container>
       <img alt="frage" width="150" class='mx-auto my-4' src="https://svgur.com/i/13mK.svg">
       <h1 class="text-2xl font-bold my-12 text-center">{{ $t('recycling-cycle-plastic.title-2') }}</h1>
@@ -55,6 +55,14 @@ onMounted(() => {
   }
   .body--light & {
     background-color: white;
+    color: black;
+
   }
+}
+
+@media (max-width: 1500px) {
+  iframe {
+      width: 550px;
+    }
 }
 </style>

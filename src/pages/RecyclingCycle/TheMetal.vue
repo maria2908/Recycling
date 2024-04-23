@@ -25,7 +25,7 @@ const changeCategories = (value) => {
       </div>
     </smaller-container>
   </div>
-  <div class="bg-my-yellow">
+  <div class="bg-my-yellow text-black">
     <smaller-container>
       <img alt="frage" width="150" class='mx-auto my-4' src="https://svgur.com/i/13mK.svg">
       <h1 class="text-2xl font-bold my-12 text-center">{{ $t('recycling-cycle-metal.title-2') }}</h1>
@@ -93,6 +93,8 @@ const changeCategories = (value) => {
   }
   .body--light & {
     background-color: white;
+    color: black;
+
   }
 }
 
@@ -132,5 +134,10 @@ const changeCategories = (value) => {
 .radio-inputs .radio input:checked + .name {
   background-color: #fff;
   font-weight: 600;
+}
+@media (max-width: 1500px) {
+  iframe {
+      width: 550px;
+    }
 }
 </style>

@@ -130,6 +130,8 @@ export default {
     }
     .body--light & {
       background-color: white;
+      color: black;
+
     }
   }
 </style>

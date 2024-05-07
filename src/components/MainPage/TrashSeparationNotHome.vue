@@ -66,10 +66,10 @@ const innerWidth = useInnerWidth();
           :key="index"
       >
         <div class="block">
-          <img class="mx-auto" width="200" style="height: 150px" alt="recycling" :src="slide.img" />
+          <img class="mx-auto" width="150" style="height: 100px" alt="recycling" :src="slide.img" />
           <div class="text-info ">
-            <h2 class="text-xl my-4">{{$t(slide.title)}}</h2>
-            <p class="text-xs my-4 text-justify">{{$t(slide.text)}}</p>
+            <h2 class="text-md my-4">{{$t(slide.title)}}</h2>
+            <p class="my-4 text-justify" style="font-size: 10px;">{{$t(slide.text)}}</p>
           </div>
         </div>
       </Slide>

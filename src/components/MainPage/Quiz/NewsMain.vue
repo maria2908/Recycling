@@ -83,15 +83,14 @@ const innerWidth = useInnerWidth();
   .all-news {
     display: grid;
     grid-template-columns: 1fr 1fr;
-
+    padding-left: 20px;
   }
 }
 
 @media (max-width: 425px) {
   .all-news {
     margin-left: 50px;
-    display: grid;
-    grid-template-columns: 1fr;
+    display: block !important;
 
   }
 }

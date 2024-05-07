@@ -99,6 +99,7 @@ const gotoPage = (pageNumber) => {
   grid-template-columns: 1fr 1fr 1fr;
   row-gap: 5rem;
 }
+
 .the-news {
   .body--dark & {
     background-color: #151515;
@@ -145,10 +146,17 @@ const gotoPage = (pageNumber) => {
   cursor: not-allowed;
 }
 .pagination .active {
-  //box-shadow: none;
+  box-shadow: none;
   background-color: rgba(5, 130, 64);;
   color: white;
   width: 30px !important;
   height: 30px;
+}
+
+@media (max-width: 1500px) {
+  .all-news {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 </style>

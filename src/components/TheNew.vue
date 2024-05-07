@@ -18,8 +18,8 @@ const truncateText = (text, maxLength) => {
 </script>
 
 <template>
-  <div class="the-new" >
-    <div class="news w-96 pt-4 rounded-xl bg-white text-gray-700 shadow-md" style="min-height: 465px; max-height: 430px ">
+  <div class=" the-new" >
+    <div class="news w-96 pt-4 rounded-xl bg-white text-gray-700 shadow-md" style="min-height: 450px; max-height: 430px ">
       <div class="mx-4 h-40 overflow-hidden rounded-xl bg-blue-gray-500 text-white shadow-lg shadow-blue-gray-500/40 bg-gradient-to-r">
         <img width="400" :src="post.img" />
       </div>
@@ -56,6 +56,27 @@ const truncateText = (text, maxLength) => {
   }
   .body--light & {
     background-color: white;
+    color: black;
+  }
+}
+
+@media (max-width: 1500px) {
+  .news {
+    width: 340px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+
+    h5 {
+      font-size: 15px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+
+    .btn {
+      margin-top: -30px !important;
+    }
   }
 }
 

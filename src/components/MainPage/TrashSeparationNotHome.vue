@@ -54,33 +54,9 @@ const innerWidth = useInnerWidth();
 
 <template>
   <p class="mx-auto w-50 text-center text-xl mt-12 mb-8">{{$t('trash-separation-not-home.title')}}</p>
-  <div v-if="innerWidth > 1400">
+  <div v-if="innerWidth > 1550">
     <Carousel
         :itemsToShow="5"
-        :wrapAround="true"
-        :transition="500"
-        class="mt-12"
-    >
-      <Slide
-          v-for="(slide, index) in slides_info"
-          :key="index"
-      >
-        <div class="block">
-          <img class="mx-auto" width="150" style="height: 100px" alt="recycling" :src="slide.img" />
-          <div class="text-info ">
-            <h2 class="text-md my-4">{{$t(slide.title)}}</h2>
-            <p class="my-4 text-justify" style="font-size: 10px;">{{$t(slide.text)}}</p>
-          </div>
-        </div>
-      </Slide>
-      <template #addons>
-        <Pagination class="pagination" />
-      </template>
-    </Carousel>
-  </div>
-  <div v-else>
-    <Carousel
-        :itemsToShow="3"
         :wrapAround="true"
         :transition="500"
         class="mt-12"
@@ -93,6 +69,30 @@ const innerWidth = useInnerWidth();
           <img class="mx-auto" width="200" style="height: 150px" alt="recycling" :src="slide.img" />
           <div class="text-info ">
             <h2 class="text-xl my-4">{{$t(slide.title)}}</h2>
+            <p class="text-xs my-4 text-justify">{{$t(slide.text)}}</p>
+          </div>
+        </div>
+      </Slide>
+      <template #addons>
+        <Pagination class="pagination" />
+      </template>
+    </Carousel>
+  </div>
+  <div v-else>
+    <Carousel
+        :itemsToShow="5"
+        :wrapAround="true"
+        :transition="500"
+        class="mt-12"
+    >
+      <Slide
+          v-for="(slide, index) in slides_info"
+          :key="index"
+      >
+        <div class="block">
+          <img class="mx-auto" width="100" style="height: 100px" alt="recycling" :src="slide.img" />
+          <div class="text-info ">
+            <h2 class="font-bold my-4">{{$t(slide.title)}}</h2>
             <p class="my-4 text-justify" style="font-size: 10px">{{$t(slide.text)}}</p>
           </div>
         </div>
@@ -167,4 +167,6 @@ const innerWidth = useInnerWidth();
     opacity: 1;
   }
 }
+
+
 </style>

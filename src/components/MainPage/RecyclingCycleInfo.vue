@@ -2,7 +2,7 @@
   <div class="flex shadow-2xl align-center card">
     <img alt="photo" src="https://www.badenova.de/blog/content/images/2021/08/Kreislaufwirtschaft.jpg" style="width: 60%; height: 50vh">
     <div class="px-12">
-      <p class="text-4xl text-bold text-my-dark-green">{{$t('recycling-circle.title')}}</p>
+      <h1 class="text-4xl font-bold text-my-dark-green">{{$t('recycling-circle.title')}}</h1>
       <p class="pt-7 mb-10">{{$t('recycling-circle.text')}}</p>
       <router-link :to="{name: 'RecyclingCycle'}" class="p-3 px-6 mt-6 rounded border-my-dark-green border-2 text-my-dark-green hover:border-my-green hover:text-my-green">{{ $t('tips.button') }}</router-link>
     </div>
@@ -23,6 +23,17 @@
       img {
         width: 50% !important;
         height: 45vh !important;
+      }
+      h1 {
+        font-size: 25px;
+        line-height: 35px;
+      }
+      p {
+        font-size: 13px;
+      }
+      a {
+        padding: 8px;
+        font-size: 13px;
       }
     }
   }

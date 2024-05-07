@@ -50,7 +50,7 @@ export default {
       <img src="https://cdn.pixabay.com/photo/2020/04/16/15/23/containers-5051093_640.jpg">
       <img src="https://images.pexels.com/photos/3457243/pexels-photo-3457243.jpeg?auto=compress&cs=tinysrgb&w=600">
     </div>
-    <div class="form mx-auto pt-40" style="width: 25%">
+    <div class="form mx-auto pt-20" style="width: 25%">
       <form class="block mt-24"  @submit.prevent="sendEmail">
         <h1 class="text-5xl font-bold mb-6">{{ $t('contact-us.title') }}</h1>
         <p class="my-4">{{ $t('contact-us.text') }}</p>

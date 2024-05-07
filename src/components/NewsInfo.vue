@@ -74,6 +74,7 @@ onMounted(async () => {
   }
   .body--light & {
     background-color: white;
+    color: black;
   }
 }
 </style>

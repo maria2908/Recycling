@@ -3,7 +3,7 @@
     <img alt="footer image" src="../assets/img/footer.webp" class="w-auto">
     <div class="bg-footer-green block text-white p-14">
       <div class="words text-5xl font-bold w-96">You can help shape the future</div>
-      <div class="link flex">
+      <div class="link flex justify-between">
         <div class="copyright mt-20">
           <div class="flex align-center py-2">
             <img alt="Vue logo" class="logo" src="@/assets/img/logo.png" width="45" height="45" />

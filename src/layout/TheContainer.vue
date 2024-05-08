@@ -13,4 +13,18 @@
     background-color: white;
   }
 }
+
+@media (max-width: 768px) {
+  .container {
+    width: 70% !important;
+  }
+
+}
+
+@media (max-width: 425px) {
+  .container {
+    width: 90% !important;
+  }
+
+}
 </style>

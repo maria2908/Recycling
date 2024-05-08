@@ -44,4 +44,10 @@ onMounted(() => {
       width: 550px;
     }
 }
+
+@media (max-width: 425px) {
+  iframe {
+    width: 300px;
+  }
+}
 </style>

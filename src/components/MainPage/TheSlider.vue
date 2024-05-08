@@ -122,9 +122,10 @@ import 'swiper/css/pagination';
 }
 
 @media (max-width: 425px) {
-  .text {
+  .text
+  {
     width: 100%;
-    margin-top: 200px;
+    margin-top: 100px;
   }
   .slider {
     display: none !important;

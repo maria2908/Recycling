@@ -332,5 +332,64 @@
       "old-clothes": "Old Clothes",
       "recycling-center": "Recycling Center"
     }
+  },
+  "residual-waste-block": {
+    "residual-waste": "Residual Waste",
+    "residual-waste-text": "Residual waste is the waste that cannot be recycled anymore. It is incinerated at the waste incineration plant in the Munich Nord combined heat and power plant and converted into electricity and district heating. Unfortunately, too many recyclable materials still end up in residual waste. Consistent waste separation can significantly reduce the amount of residual waste. Your advantage: If you separate your waste better and throw less waste into the residual waste bin, you can reduce your waste disposal fees by switching to smaller or fewer residual waste bins.",
+    "residual-waste-h2": "What belongs in the gray residual waste bin?",
+    "residual-waste-li": {
+      "1": "Vacuum cleaner bags",
+      "2": "Street sweepings, ash",
+      "3": "Cigarette butts",
+      "4": "Cat litter and small animal bedding",
+      "5": "Painter's foils, carpet remnants, wallpapers",
+      "6": "Diapers, hygiene papers",
+      "7": "Dried paints packed in bags",
+      "8": "Dirty or coated papers, wax papers, and carbon copy papers"
+    }
+  },
+
+  "paper-block": {
+    "h1": "Paper",
+    "p": "Dispose of paper and cardboard in the blue paper bin. Separating is important because using recycled paper in paper production saves energy and water and preserves forests. If recycled paper from Munich's paper bins were replaced with fresh wood in paper production, an additional area of forest the size of the Trudering district would need to be cut down every year.",
+    "button": "The journey of recycled paper",
+    "h2": "What belongs in the blue paper bin?",
+    "paper-li": {
+      "1": "Newspapers, magazines, catalogs, brochures",
+      "2": "Letters, envelopes",
+      "3": "Forms, computer paper",
+      "4": "Exercise books, books without covers",
+      "5": "Folded cardboard boxes, packing paper without adhesive tape",
+      "6": "Clean paper bags, including those with windows",
+      "7": "Paper packaging",
+      "8": "Pizza box without food residue"
+    },
+    "modal": {
+      "h1_1": "What happens to the contents of the blue bin?",
+      "h1_2": "The journey of recycled paper",
+      "p": "Paper recycling refers to the collection, processing, and reuse of waste paper or cardboard. I only use notebooks made of recycled paper at school. It's better for the environment."
+    }
+  },
+  "bio-block": {
+    "h1": "Organic Waste",
+    "p": "Dispose of your kitchen and garden waste in the brown organic waste bin. Plastic bags (including so-called compostable plastic bio bags) are not allowed in the organic waste bin! At the same time, eco-electricity is generated during the fermentation process.",
+    "button": "The Journey of Organic Waste",
+    "p2": "You can dispose of larger amounts of tree and shrub trimmings at the Munich recycling centers.",
+    "h2": "What belongs in the brown organic waste bin?",
+    "bio-li": {
+      "1": "Vegetable, salad, and fruit scraps (raw and cooked)",
+      "2": "Potato, egg, nut, and fruit peels",
+      "3": "Meat and fish scraps (raw and cooked)",
+      "4": "(old) bread and bakery products",
+      "5": "Coffee grounds, coffee filters, coffee pads",
+      "6": "Flowers and plants (without pots), potting soil",
+      "7": "Leaves, grass, tree, and shrub trimmings",
+      "8": "Newspaper and kitchen paper in small quantities to absorb moisture"
+    },
+    "modal": {
+      "h1_1": "What happens to the contents of the brown bin?",
+      "h1_2": "The Journey of Organic Waste",
+      "p": "In the organic waste treatment plant, bacteria convert organic waste into biogas and compost. Munich soils are produced from the compost, and electricity is generated from the biogas. Your parents can buy potting soil at the recycling centers and the Freimann earthworks, and you can plant flowers or vegetables in it."
+    }
   }
 }

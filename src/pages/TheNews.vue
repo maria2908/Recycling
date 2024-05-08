@@ -67,7 +67,7 @@ const gotoPage = (pageNumber) => {
 <template>
   <div class="the-news">
     <div v-if="loaded" >
-      <the-container>
+      <div class="container mx-16 mx-auto py-16" style="width: 70%">
         <div class="all-news pt-12">
           <TheNew class="mx-4 text-center" :post="post" v-for="(post,index) in displayedPosts" :key="index"  />
         </div>
@@ -85,7 +85,7 @@ const gotoPage = (pageNumber) => {
             </svg>
           </button>
         </div>
-      </the-container>
+      </div>
     </div>
     <div v-else class="pt-48 mx-auto">
       <TheLoading />
@@ -157,6 +157,29 @@ const gotoPage = (pageNumber) => {
   .all-news {
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 100% !important;
+
+    .pagination {
+      padding-right: 20px;
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .container {
+    width: 100% !important;
+    .all-news {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+    .pagination {
+      padding-right: 20px;
+    }
   }
 }
 </style>

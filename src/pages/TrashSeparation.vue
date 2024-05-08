@@ -73,15 +73,10 @@ const trash_separations = ref([
     }
   }
 
-  @media (max-width: 768px) {
-    .img {
-      width: 300px;
-    }
-  }
 
 @media (max-width: 425px) {
   .img {
-      width: 200px;
+      display: none;
     }
 }
 

@@ -89,9 +89,9 @@ export default {
         <button type="submit" class="text-black mt-8 py-4 w-full bg-my-yellow rounded">{{ $t('contact-us.send') }}</button>
       </form>
     </div>
-    <div class="block my-auto mr-8">
+    <div class="links block my-auto mr-8">
       <a href="mailto:maria.spam2002@gmail.com">
-        <div class="p-4 rounded-xl" style="background-color: rgba(5,130,64,0.15)">
+        <div class="mt-4 p-4 rounded-xl" style="background-color: rgba(5,130,64,0.15)">
             <svg width="15" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#058240" d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg>
         </div>
       </a>
@@ -110,7 +110,50 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@media (max-width: 425px) {
   .contact {
+    display: block !important;
+    .images {
+      display: none !important;
+    }
+    .form {
+      width: 100% !important;
+      padding: 0 !important;
+    }
+    .links {
+      display: flex;
+      align-items: center;
+      position: absolute;
+      bottom: -25%;
+      left: 20% !important;
+      width: 20% !important;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .contact {
+    display: flex !important;
+    .images {
+      width: 50% !important;
+      height: 50%;
+    }
+    .form {
+      width: 50% !important;
+      padding: 20px;
+    }
+    .links {
+      display: flex !important;
+      align-items: center;
+      position: absolute;
+      left: 10%;
+      top: 55%;
+    }
+  }
+}
+  .contact {
+    .links {
+      display: block;
+    }
     .images {
       display: grid;
       grid-template-columns: 1fr 1fr;

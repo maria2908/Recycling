@@ -9,27 +9,27 @@ const open = ref(false)
 <template>
   <the-container class="bg-white rounded-2xl p-12 mt-12">
 
-    <div class="flex">
-      <div class="w-96">
-        <h1 class="text-5xl font-bold py-4" style="color: #dfac06">Bioabfall</h1>
-        <p>Entsorgen Sie Ihre Küchen- und Gartenabfälle in der braunen Biotonne. Plastiktüten (auch sogenannte "kompostierbare Plastik-Biobeutel") dürfen nicht in die Biotonne! Zugleich entsteht beim Vergärungsprozess Ökostrom</p>
+    <div class="bio ">
+      <div>
+        <h1 class="text-5xl font-bold py-4" style="color: #dfac06">{{ $t("bio-block.h1") }}</h1>
+        <p>{{ $t("bio-block.p") }}</p>
         <br>
-        <button @click="open = true" class="underline cursor-pointer font-bold" style="color: #dfac06">Der Weg des Bioabfalls</button>
+        <button @click="open = true" class="underline cursor-pointer font-bold" style="color: #dfac06">{{ $t("bio-block.button") }}</button>
         <br>
         <br>
-        <p>Größere Mengen Baum- und Strauchschnitt können Sie an den Münchner <b>Wertstoffhöfen</b>  entsorgen. </p>
+        <p>{{ $t("bio-block.p2") }}</p>
       </div>
-      <div class="px-12">
-        <h2 class="text-2xl font-bold py-4" style="color: #dfac06">Was gehört in die braune Biotonne?</h2>
+      <div class="list px-12">
+        <h2 class="text-2xl font-bold py-4" style="color: #dfac06">{{ $t("bio-block.h2") }}</h2>
         <ul>
-          <li>Gemüse-, Salat- und Obstreste (roh und gekocht)</li>
-          <li>Fleisch- und Fischreste (roh und gekocht)</li>
-          <li>Kartoffel-, Eier-, Nuß- und Obstschalen</li>
-          <li>(alte) Brot und Backwaren</li>
-          <li>Kaffeesatz, Kaffeefilter, Kaffeepads</li>
-          <li>Blumen und Pflanzen (ohne Topf), Blumenerde</li>
-          <li>Laub, Gras, Baum- und Strauchschnitt</li>
-          <li>Zeitungs- und Küchenpapier in kleinen Mengen, um Feuchtigkeit aufzusaugen</li>
+          <li>{{ $t("bio-block.bio-li.1") }}</li>
+          <li>{{ $t("bio-block.bio-li.2") }}</li>
+          <li>{{ $t("bio-block.bio-li.3") }}</li>
+          <li>{{ $t("bio-block.bio-li.4") }}</li>
+          <li>{{ $t("bio-block.bio-li.5") }}</li>
+          <li>{{ $t("bio-block.bio-li.6") }}</li>
+          <li>{{ $t("bio-block.bio-li.7") }}</li>
+          <li>{{ $t("bio-block.bio-li.8") }}</li>
         </ul>
       </div>
     </div>
@@ -42,12 +42,12 @@ const open = ref(false)
       <div class="modal-content bio">
         <button class="close" @click="open = false">&times;</button>
         <div class="">
-          <h1 class="text-4xl font-bold py-4" style="color: #dfac06">Was passiert mit dem Inhalt der braunen Tonne?</h1>
+          <h1 class="text-4xl font-bold py-4" style="color: #dfac06">{{ $t("bio-block.modal.h1_1") }}</h1>
           <img class="" alt='paper' src="../../assets/img/trash-separation/6.png">
         </div>
-        <div class="px-12">
-          <h1 class="text-4xl font-bold py-4" style="color: #dfac06">Der Weg des Bioabfalls</h1>
-          <p>In der Verwertungsanlage für Bioabfälle verwandeln Bakterien die Bioabfälle in Biogas und Kompost. Aus dem Kompost werden die Münchner Erden hergestellt, aus dem Biogas entsteht Strom. Die Blumenerde können deine Eltern an den Wertstoffhöfen und am Erdenwerk Freimann kaufen und du kannst darin Blumen oder Gemüse pflanzen.</p>
+        <div class="text px-12">
+          <h1 class="text-4xl font-bold py-4" style="color: #dfac06">{{ $t("bio-block.modal.h1_2") }}</h1>
+          <p>{{ $t("paper-block.modal.p") }}</p>
         </div>
       </div>
     </div>
@@ -101,6 +101,9 @@ li:before {
 }
 
 @media (max-width: 1500px) {
+  .bio {
+    display: flex;
+  }
   .modal {
     h1 {
       font-size: 30px;
@@ -109,11 +112,52 @@ li:before {
     img {
       width: 80%;
     }
-
     .modal-content {
       display: grid;
       grid-template-columns: 1.5fr 1fr;
     }
+  }
+}
+@media (max-width: 768px) {
+
+  .bio {
+    display: block !important;
+
+    .list {
+      padding: 0 !important;
+    }
+  }
+  .modal {
+    margin-top: 100px;
+    height: 100% !important;
+
+    .close {
+      top: 12%;
+      right: 15%;
+    }
+    h1 {
+      font-size: 20px;
+      line-height: 25px;
+    }
+
+    img {
+      width: 80%;
+    }
+
+    .modal-content {
+      width: 80%;
+      height: 60%;
+      display: block;
+
+      .text {
+        padding: 0 !important;
+      }
+    }
+  }
+}
+@media (max-width: 425px) {
+  button {
+    display: none;
   }
 }
 </style>

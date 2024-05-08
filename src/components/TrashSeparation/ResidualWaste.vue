@@ -3,22 +3,18 @@
 
     <div class="residual-waste flex align-center">
       <div>
-        <h1 class="text-5xl font-bold py-4" style="color: #dfac06">Restmüll</h1>
-        <p>Restmüll ist der Müll, der nicht mehr recycelt werden kann. Er wird in der <b>Müllverbrennungsanlage</b> im Heizkraftwerk München Nord verbrannt und in Strom und Fernwärme umgewandelt. Leider landen immer noch zu viele Wertstoffe, die eigentlich recycelt werden könnten, im Restmüll. Mit konsequenter Mülltrennung kann die Restmüllmenge ganz erheblich reduziert werden.
-          <br>
-          <br>
-          <b>Ihr Vorteil</b>: Wenn Sie Ihren Abfall besser trennen und weniger Abfall in die Restmülltonne werfen, können Sie Ihre Müllgebühren durch den Umstieg auf kleinere oder weniger Restmülltonnen senken.
-        </p>
-        <h2 class="text-2xl font-bold py-4" style="color: #dfac06">Was gehört in die graue Restmülltonne?</h2>
+        <h1 class="text-5xl font-bold py-4" style="color: #dfac06">{{ $t("residual-waste-block.residual-waste") }}</h1>
+        <p>{{ $t("residual-waste-block.residual-waste-text") }}</p>
+        <h2 class="text-2xl font-bold py-4" style="color: #dfac06">{{ $t("residual-waste-block.residual-waste-h2") }}</h2>
         <ul>
-          <li>Staubsaugerbeutel</li>
-          <li>Straßenkehricht, Asche</li>
-          <li>Zigarettenkippen</li>
-          <li>Katzen- und Kleintierstreu</li>
-          <li>Malerfolien, Teppichbodenreste, Tapeten</li>
-          <li>Windeln, Hygienepapiere</li>
-          <li>Eingetrocknete Farben in Tüten gepackt</li>
-          <li>Schmutzige oder beschichtete Papiere, Wachspapiere und Durchschreibepapiere</li>
+          <li>{{ $t("residual-waste-block.residual-waste-li.1") }}</li>
+          <li>{{ $t("residual-waste-block.residual-waste-li.2") }}</li>
+          <li>{{ $t("residual-waste-block.residual-waste-li.3") }}</li>
+          <li>{{ $t("residual-waste-block.residual-waste-li.4") }}</li>
+          <li>{{ $t("residual-waste-block.residual-waste-li.5") }}</li>
+          <li>{{ $t("residual-waste-block.residual-waste-li.6") }}</li>
+          <li>{{ $t("residual-waste-block.residual-waste-li.7") }}</li>
+          <li>{{ $t("residual-waste-block.residual-waste-li.8") }}</li>
         </ul>
       </div>
       <img alt="Residual Waste" src="../../assets/img/trash-separation/1.png" />
@@ -38,6 +34,12 @@ import TheContainer from "@/layout/TheContainer.vue";
   li:before {
     content: "•  ";
     color: #dfac06;
+  }
+
+  @media (max-width: 1500px) {
+    img {
+      display: none;
+    }
   }
 
 </style>

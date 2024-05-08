@@ -49,12 +49,12 @@ const changeCategories = (value) => {
         </div>
 
         <div v-if="show_text === 'aluminiumverpackungen'">
-          <h1 class="mt-16 text-3xl font-bold">{{ $t('recycling-cycle-metal.aluminiumverpackungen.title-1') }}</h1>
+          <h1 class="title mt-16 text-3xl font-bold">{{ $t('recycling-cycle-metal.aluminiumverpackungen.title-1') }}</h1>
           <iframe class="my-12 mx-auto" width="640" height="360" src="https://www.youtube.com/embed/bLT4fF7E3M0" title="Der Recyclingkreislauf von Aluminium-Verpackungen - Mülltrennung wirkt (ohne Untertitel)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
           <p class="pt-12 text-justify">{{ $t('recycling-cycle-metal.aluminiumverpackungen.text-1') }}</p>
         </div>
         <div v-else >
-          <h1 class="mt-16 text-3xl font-bold">{{ $t('recycling-cycle-metal.weißblechverpackungen.title-2') }}</h1>
+          <h1 class="title mt-16 text-3xl font-bold">{{ $t('recycling-cycle-metal.weißblechverpackungen.title-2') }}</h1>
           <iframe class="my-12 mx-auto" width="640" height="360" src="https://www.youtube.com/embed/-w7-A2yVlIg" title="Der Recyclingkreislauf von Weißblech-Verpackungen - Mülltrennung wirkt (ohne Untertitel)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
           <p class="pt-12 text-justify">{{ $t('recycling-cycle-metal.weißblechverpackungen.text-2') }}</p>
         </div>
@@ -139,5 +139,24 @@ const changeCategories = (value) => {
   iframe {
       width: 550px;
     }
+}
+
+@media (max-width: 425px) {
+  iframe {
+    width: 300px;
+  }
+  .title {
+    font-size: 25px;
+  }
+
+  .radio-inputs {
+    width: 250px;
+    label {
+      width: 30px;
+    }
+    span {
+      font-size: 9px;
+    }
+  }
 }
 </style>

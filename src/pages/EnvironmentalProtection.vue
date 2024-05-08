@@ -10,8 +10,8 @@ onMounted(() => {
 <template >
   <div class="environment">
     <container-half>
-      <h1 class="text-center py-12 text-5xl text-my-dark-green font-bold upper">{{ $t("environment-site.title")}}</h1>
-      <p class="text-xl">{{ $t("environment-site.sub-title") }}</p>
+      <h1 class="title text-center py-12 text-5xl text-my-dark-green font-bold upper">{{ $t("environment-site.title")}}</h1>
+      <p class="paragraph text-xl">{{ $t("environment-site.sub-title") }}</p>
       <img class="m-auto" width="500" src="https://ouch-cdn2.icons8.com/nU0XxYH-qci-gpttcZXseAkkmS1I6GJAi13HyEtReN4/rs:fit:456:456/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9wbmcvODUx/LzIzNzM4MjFlLWU5/YjAtNGMyNy1iZDFh/LTI3NTI2ZjA3NGVh/Zi5wbmc.png" alt="sdfsdfsdf" />
       <div class="lists pb-12">
         <h2 class="font-bold text-3xl text-my-dark-green">{{ $t("environment-site.contents") }}</h2>
@@ -113,7 +113,17 @@ onMounted(() => {
 
 <style lang="scss" scoped>
 @import url(https://fonts.googleapis.com/css?family=Montserrat:900|Raleway:400,400i,700,700i);
+@media (max-width: 768px) {
+  .environment {
+    .title {
+      font-size: 35px;
+    }
+    .paragraph {
+      font-size: 15px;
+    }
+  }
 
+}
 .environment {
   .body--dark & {
     background-color: #151515;

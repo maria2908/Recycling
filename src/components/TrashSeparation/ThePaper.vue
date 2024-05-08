@@ -9,23 +9,22 @@ const open = ref(false)
   <the-container class="bg-white rounded-2xl mt-12 ">
     <div class="flex align-center px-12">
       <div>
-        <h1 class="text-5xl font-bold py-4" style="color: #dfac06">Papier</h1>
-        <p class="w-96 mb-4">Entsorgen Sie Papier und Pappe in der blauen Papiertonne. Das Trennen ist wichtig, denn der Einsatz von Altpapier bei der Papierherstellung spart Energie und Wasser und schont die Wälder. Wenn man bei der Papierproduktion das Altpapier aus den Münchner Papiertonnen durch Frischholz ersetzen würde, müsste man jedes Jahr eine zusätzliche Waldfläche in der Größe des Stadtteils Trudering abholzen.
-        </p>
-        <button @click="open = true" class="underline cursor-pointer font-bold" style="color: #dfac06">Der Weg des Altpapiers</button>
-        <h2 class="text-2xl font-bold py-4" style="color: #dfac06">Was gehört in die blaue Papiertonne?</h2>
+        <h1 class="text-5xl font-bold py-4" style="color: #dfac06">{{ $t("paper-block.h1") }}</h1>
+        <p class=" mb-4">{{ $t("paper-block.p") }}</p>
+        <button @click="open = true" class="underline cursor-pointer font-bold" style="color: #dfac06">{{ $t("paper-block.button") }}</button>
+        <h2 class="text-2xl font-bold py-4" style="color: #dfac06">{{ $t("paper-block.h2") }}</h2>
         <ul>
-          <li>Zeitungen, Illustrierte, Kataloge, Prospekte</li>
-          <li>Briefe, Briefumschläge</li>
-          <li>Formulare, Computerpapier</li>
-          <li>Schulhefte, Bücher ohne Einband</li>
-          <li>Gefaltete Pappkartons, Packpapier ohne Klebeband</li>
-          <li>Saubere Papiertüten auch mit Sichtfenster</li>
-          <li>Verpackungen aus Papier</li>
-          <li>Pizzakarton ohne Essensreste</li>
+          <li>{{ $t("paper-block.paper-li.1") }}</li>
+          <li>{{ $t("paper-block.paper-li.2") }}</li>
+          <li>{{ $t("paper-block.paper-li.3") }}</li>
+          <li>{{ $t("paper-block.paper-li.4") }}</li>
+          <li>{{ $t("paper-block.paper-li.5") }}</li>
+          <li>{{ $t("paper-block.paper-li.6") }}</li>
+          <li>{{ $t("paper-block.paper-li.7") }}</li>
+          <li>{{ $t("paper-block.paper-li.8") }}</li>
         </ul>
       </div>
-      <div class="block p-12">
+      <div class="images block p-12">
         <img alt="Paper" src="https://www.awm-muenchen.de/fileadmin/Bilder/Trennkampagne_2022_Zeitungen.jpg" />
         <img alt="Paper" src="https://www.awm-muenchen.de/fileadmin/Bilder/Trennkampagne_2022_Beilagen.jpg" />
       </div>
@@ -35,12 +34,12 @@ const open = ref(false)
      <div class="modal-content paper">
        <button class="close" @click="open = false">&times;</button>
        <div>
-         <h1 class="text-4xl font-bold py-4" style="color: #dfac06">Was passiert mit dem Inhalt der blauen Tonne?</h1>
+         <h1 class="text-4xl font-bold py-4" style="color: #dfac06">{{ $t("paper-block.modal.h1_1") }}</h1>
          <img alt='paper' src="../../assets/img/trash-separation/5.png">
        </div>
-       <div class="px-12">
-         <h1 class="text-4xl font-bold py-4" style="color: #dfac06">Der Weg des Altpapiers</h1>
-         <p>Als Papierrecycling bezeichnet man das Sammeln, die Aufbereitung und Wiederverwertung von Altpapier oder Karton. Ich verwende in der Schule nur Hefte aus Recyclingpapier. Das schont die Umwelt.</p>
+       <div class="text px-12">
+         <h1 class="text-4xl font-bold py-4" style="color: #dfac06">{{ $t("paper-block.modal.h1_2") }}</h1>
+         <p>{{ $t("paper-block.modal.p") }}</p>
        </div>
      </div>
     </div>
@@ -93,4 +92,44 @@ const open = ref(false)
     content: "•  ";
     color: #dfac06;
   }
+.modal {
+  margin-top: 100px;
+  height: 100% !important;
+
+  .close {
+    top: 12%;
+    right: 13%;
+  }
+  h1 {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  img {
+    width: 80%;
+  }
+
+  .modal-content {
+    width: 80%;
+    height: 60%;
+    display: block;
+
+    .text {
+      padding: 0 !important;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .images {
+    display: none;
+  }
+
+}
+
+@media (max-width: 425px) {
+  button {
+    display: none;
+  }
+}
 </style>

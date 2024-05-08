@@ -52,8 +52,7 @@
   @media (max-width: 425px) {
     .card {
       margin-top: 30px;
-      padding: 20px;
-      width: 100%;
+      width: 80%;
       height: 50vh;
       img {
         display: none;

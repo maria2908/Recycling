@@ -333,5 +333,63 @@
       "old-clothes": "Altkleider",
       "recycling-center": "Wertstoffhof"
     }
+  },
+  "residual-waste-block": {
+    "residual-waste": "Restmüll",
+    "residual-waste-text": "Restmüll ist der Müll, der nicht mehr recycelt werden kann. Er wird in der Müllverbrennungsanlage im Heizkraftwerk München Nord verbrannt und in Strom und Fernwärme umgewandelt. Leider landen immer noch zu viele Wertstoffe, die eigentlich recycelt werden könnten, im Restmüll. Mit konsequenter Mülltrennung kann die Restmüllmenge ganz erheblich reduziert werden. Ihr Vorteil: Wenn Sie Ihren Abfall besser trennen und weniger Abfall in die Restmülltonne werfen, können Sie Ihre Müllgebühren durch den Umstieg auf kleinere oder weniger Restmülltonnen senken.",
+    "residual-waste-h2": "Was gehört in die graue Restmülltonne?",
+    "residual-waste-li": {
+      "1": "Staubsaugerbeutel",
+      "2": "Straßenkehricht, Asche",
+      "3": "Zigarettenkippen",
+      "4": "Katzen- und Kleintierstreu",
+      "5": "Malerfolien, Teppichbodenreste, Tapeten",
+      "6": "Windeln, Hygienepapiere",
+      "7": "Eingetrocknete Farben in Tüten gepackt",
+      "8": "Schmutzige oder beschichtete Papiere, Wachspapiere und Durchschreibepapiere"
+    }
+  },
+  "paper-block": {
+    "h1": "Papier",
+    "p": "Entsorgen Sie Papier und Pappe in der blauen Papiertonne. Das Trennen ist wichtig, denn der Einsatz von Altpapier bei der Papierherstellung spart Energie und Wasser und schont die Wälder. Wenn man bei der Papierproduktion das Altpapier aus den Münchner Papiertonnen durch Frischholz ersetzen würde, müsste man jedes Jahr eine zusätzliche Waldfläche in der Größe des Stadtteils Trudering abholzen.",
+    "button": "Der Weg des Altpapiers",
+    "h2": "Was gehört in die blaue Papiertonne?",
+    "paper-li": {
+      "1": "Zeitungen, Illustrierte, Kataloge, Prospekte",
+      "2": "Briefe, Briefumschläge",
+      "3": "Formulare, Computerpapier",
+      "4": "Schulhefte, Bücher ohne Einband",
+      "5": "Gefaltete Pappkartons, Packpapier ohne Klebeband",
+      "6": "Saubere Papiertüten auch mit Sichtfenster",
+      "7": "Verpackungen aus Papier",
+      "8": "Pizzakarton ohne Essensreste"
+    },
+    "modal": {
+      "h1_1": "Was passiert mit dem Inhalt der blauen Tonne?",
+      "h1_2": "Der Weg des Altpapiers",
+      "p": "Als Papierrecycling bezeichnet man das Sammeln, die Aufbereitung und Wiederverwertung von Altpapier oder Karton. Ich verwende in der Schule nur Hefte aus Recyclingpapier. Das schont die Umwelt."
+    }
+  },
+  "bio-block": {
+    "h1": "Bioabfall",
+    "p": "Entsorgen Sie Ihre Küchen- und Gartenabfälle in der braunen Biotonne. Plastiktüten (auch sogenannte kompostierbare Plastik-Biobeutel) dürfen nicht in die Biotonne! Zugleich entsteht beim Vergärungsprozess Ökostrom.",
+    "button": "Der Weg des Bioabfalls",
+    "p2": "Größere Mengen Baum- und Strauchschnitt können Sie an den Münchner Wertstoffhöfen  entsorgen.",
+    "h2": "Was gehört in die braune Biotonne?",
+    "bio-li": {
+      "1": "Gemüse-, Salat- und Obstreste (roh und gekocht)",
+      "2": "Kartoffel-, Eier-, Nuß- und Obstschalen",
+      "3": "Fleisch- und Fischreste (roh und gekocht)",
+      "4": "(alte) Brot und Backwaren",
+      "5": "Kaffeesatz, Kaffeefilter, Kaffeepads",
+      "6": "Blumen und Pflanzen (ohne Topf), Blumenerde",
+      "7": "Laub, Gras, Baum- und Strauchschnitt",
+      "8": "Zeitungs- und Küchenpapier in kleinen Mengen, um Feuchtigkeit aufzusaugen"
+    },
+    "modal": {
+      "h1_1": "Was passiert mit dem Inhalt der braunen Tonne?",
+      "h1_2": "Der Weg des Bioabfalls",
+      "p": "In der Verwertungsanlage für Bioabfälle verwandeln Bakterien die Bioabfälle in Biogas und Kompost. Aus dem Kompost werden die Münchner Erden hergestellt, aus dem Biogas entsteht Strom. Die Blumenerde können deine Eltern an den Wertstoffhöfen und am Erdenwerk Freimann kaufen und du kannst darin Blumen oder Gemüse pflanzen."
+    }
   }
 }

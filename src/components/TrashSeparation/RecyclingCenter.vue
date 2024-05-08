@@ -35,4 +35,9 @@ li:before {
   content: "•  ";
   color: #dfac06;
 }
+@media (max-width: 768px) {
+  img {
+    display: none;
+  }
+}
 </style>

@@ -67,7 +67,7 @@ const innerWidth = useInnerWidth();
         <TheNew class="mr-6 text-center" :post="post" v-for="(post,index) in displayedPosts" :key="index"  />
       </div>
       <div v-else class="all-news mb-16" >
-        <TheNew class="text-center" :post="post" v-for="(post,index) in displayedPosts2" :key="index"  />
+        <TheNew class="new text-center" :post="post" v-for="(post,index) in displayedPosts2" :key="index"  />
       </div>
       <router-link to="/environmental-protection" class="bg-my-dark-green hover:bg-my-green text-white ml-4 p-4 rounded px-7 text-center">{{ $t('tips.button') }}</router-link>
     </div>
@@ -96,9 +96,11 @@ const innerWidth = useInnerWidth();
 
 @media (max-width: 425px) {
   .all-news {
-    margin-left: 50px;
     display: block !important;
 
+    .new {
+      margin-top: 30px;
+    }
   }
 }
 </style>

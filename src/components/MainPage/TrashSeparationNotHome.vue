@@ -89,7 +89,7 @@ const innerWidth = useInnerWidth();
           v-for="(slide, index) in slides_info"
           :key="index"
       >
-        <div class="block">
+        <div class="carusel block">
           <img class="mx-auto" width="100" style="height: 100px" alt="recycling" :src="slide.img" />
           <div class="text-info ">
             <h2 class="font-bold my-4">{{$t(slide.title)}}</h2>
@@ -131,28 +131,22 @@ const innerWidth = useInnerWidth();
 .carousel__viewport {
   perspective: 2000px;
 }
-
 .carousel__track {
   transform-style: preserve-3d;
 }
-
 .carousel__slide--sliding {
   transition: 0.5s;
 }
-
 .carousel__slide {
   opacity: 0.4;
   transform: rotateY(-20deg) scale(0.7);
 }
-
 .carousel__slide--active ~ .carousel__slide {
   transform: rotateY(20deg) scale(0.7);
 }
-
 .carousel__slide--prev {
   transform: rotateY(-10deg) scale(0.9);
 }
-
 .carousel__slide--next {
   transform: rotateY(10deg) scale(0.9);
 }
@@ -168,6 +162,24 @@ const innerWidth = useInnerWidth();
   }
 }
 
+@media (max-width: 425px) {
+  p {
+    font-size: 17px;
+    font-weight: 600;
+  }
 
+  .carusel {
+    img {
+      width: 100px;
+    }
+    h2 {
+      font-weight: 500;
+      font-size: 15px;
+    }
+    p {
+      display: none !important;
+    }
+  }
+}
 
 </style>

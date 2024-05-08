@@ -69,6 +69,21 @@ ul {
     }
   }
 }
+@media (max-width: 425px) {
+  ul {
+    display: block;
+  }
+  .item:before {
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 15px;
+    margin: 10px 15px 15px 0;
+  }
+  .item {
+    padding-bottom: 0;
+    font-size: 15px;
+  }
+}
 </style>
 
 

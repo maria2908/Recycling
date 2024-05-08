@@ -3,15 +3,14 @@
 
     <div class="flex">
       <div>
-        <h1 class="text-4xl font-bold py-4" style="color: #dfac06">Verpackungen</h1>
-        <p>Sammeln Sie Verpackungen getrennt, denn sie können verwertet werden. Vor der Abgabe müssen die Verpackungen geleert sein, ausspülen ist nicht notwendig. Trennen Sie bitte unterschiedliche Materialien voneinander, z. B. den Aludeckel vom Joghurtbecher.
-        </p>
-        <h2 class="text-2xl font-bold py-4" style="color: #dfac06">Was gehört an die Wertstoffinsel?</h2>
+        <h1 class="text-4xl font-bold py-4" style="color: #dfac06">{{ $t("packing-block.h1") }}</h1>
+        <p>{{ $t("packing-block.p") }}</p>
+        <h2 class="text-2xl font-bold py-4" style="color: #dfac06">{{ $t("packing-block.h2") }}</h2>
         <ul>
-          <li>Glas (weiß, braun, grün). Deckel müssen nicht abgeschraubt werden</li>
-          <li>Andersfarbiges Glas (z. B. blau, rot, schwarz) gehört zum Grünglas</li>
-          <li>Kunststoffe (z. B. Getränkekartons, Kunststoffverpackungen, Kunststoff-Flaschen, Kunststoff-Becher, Styropor, Verpackungsfolien)</li>
-          <li>Dosen/Alu (z. B. Alufolien, Aluminium, Spraydosen, Kronkorken, Schraubverschlüsse von Flaschen und Gläsern, Weißblech, Konservendosen)</li>
+          <li>{{ $t("packing-block.bio-li.1") }}</li>
+          <li>{{ $t("packing-block.bio-li.2") }}</li>
+          <li>{{ $t("packing-block.bio-li.3") }}</li>
+          <li>{{ $t("packing-block.bio-li.4") }}</li>
         </ul>
       </div>
       <img alt="Residual Waste" src="../../assets/img/trash-separation/2.png" />

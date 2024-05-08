@@ -54,7 +54,7 @@ const innerWidth = useInnerWidth();
 
 <template>
   <p class="mx-auto w-50 text-center text-xl mt-12 mb-8">{{$t('trash-separation-not-home.title')}}</p>
-  <div v-if="innerWidth > 1550">
+  <div v-if="innerWidth > 1400">
     <Carousel
         :itemsToShow="5"
         :wrapAround="true"
@@ -66,9 +66,9 @@ const innerWidth = useInnerWidth();
           :key="index"
       >
         <div class="block">
-          <img class="mx-auto" width="200" style="height: 150px" alt="recycling" :src="slide.img" />
-          <div class="text-info ">
-            <h2 class="text-xl my-4">{{$t(slide.title)}}</h2>
+          <img class="mx-auto" width="100" style="height: 100px" alt="recycling" :src="slide.img" />
+          <div class="text-info">
+            <h2 class="text-md my-4">{{$t(slide.title)}}</h2>
             <p class="text-xs my-4 text-justify">{{$t(slide.text)}}</p>
           </div>
         </div>
@@ -108,9 +108,16 @@ const innerWidth = useInnerWidth();
 
 <style scoped lang="scss">
 .carousel__slide {
-  height: 40vh;
+  height: 45vh;
   padding: 5px;
   .text-info {
+    h2 {
+      font-size: 15px;
+      font-weight: 600;
+    }
+    p {
+      font-size: 10px;
+    }
     .body--dark & {
       color: white !important;
     }
@@ -161,6 +168,7 @@ const innerWidth = useInnerWidth();
     opacity: 1;
   }
 }
+
 
 @media (max-width: 425px) {
   p {

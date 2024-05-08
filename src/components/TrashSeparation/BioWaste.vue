@@ -102,7 +102,11 @@ li:before {
 
 @media (max-width: 1500px) {
   .bio {
-    display: flex;
+    display: block;
+
+    .list {
+      padding: 0 !important;
+    }
   }
   .modal {
     h1 {

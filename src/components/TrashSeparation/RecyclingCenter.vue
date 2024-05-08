@@ -3,19 +3,19 @@
 
     <div class="flex">
       <div>
-        <h1 class="text-4xl font-bold py-4" style="color: #dfac06">Wertstoffhof</h1>
-        <p>An den Wertstoffhöfen können Sie sperrige Abfälle, Problemstoffe und Grünschnitt in haushaltsüblicher Art und Menge gebührenfrei abgeben.</p>
-        <h2 class="text-2xl font-bold py-4" style="color: #dfac06">Was gehört an die Wertstoffhof?</h2>
+        <h1 class="text-4xl font-bold py-4" style="color: #dfac06">{{ $t("recycling-center-block.h1") }}</h1>
+        <p>{{ $t("recycling-center-block.p") }}</p>
+        <h2 class="text-2xl font-bold py-4" style="color: #dfac06">{{ $t("recycling-center-block.h2") }}</h2>
         <ul>
-          <li>Bauschutt</li>
-          <li>Elektro-und Elektronikschrott</li>
-          <li>Problemabfälle</li>
-          <li>Gartenabfälle</li>
-          <li>Holz</li>
-          <li>Altkleider und Schuhe</li>
-          <li>Kunststoff/Styropor</li>
-          <li>Papier/Kartonagen</li>
-          <li>Sperrmüll</li>
+          <li>{{ $t("recycling-center-block.recycling-center-li.1") }}</li>
+          <li>{{ $t("recycling-center-block.recycling-center-li.2") }}</li>
+          <li>{{ $t("recycling-center-block.recycling-center-li.3") }}</li>
+          <li>{{ $t("recycling-center-block.recycling-center-li.4") }}</li>
+          <li>{{ $t("recycling-center-block.recycling-center-li.5") }}</li>
+          <li>{{ $t("recycling-center-block.recycling-center-li.6") }}</li>
+          <li>{{ $t("recycling-center-block.recycling-center-li.7") }}</li>
+          <li>{{ $t("recycling-center-block.recycling-center-li.8") }}</li>
+          <li>{{ $t("recycling-center-block.recycling-center-li.9") }}</li>
         </ul>
       </div>
       <img alt="Residual Waste" src="../../assets/img/trash-separation/4.png" />

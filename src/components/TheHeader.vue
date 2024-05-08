@@ -10,7 +10,7 @@ const language = ref('de')
       <img alt="Vue logo" src="@/assets/img/logo.png" width="45" height="45" />
       <p class="text-lg text-my-green ml-1 font-semibold">GREEN POINT</p>
     </router-link>
-    <div id="nav" class="link d-flex align-center justify-around">
+    <div id="nav" class="link d-flex align-center ">
       <router-link
           class="font-semibold hover:border-b-4 hover:border-b-my-dark-green border-b-4 border-transparent py-5 px-8 hover:text-pink-400"
           :to="{ name: 'TheHome'}"
@@ -193,6 +193,14 @@ header {
   color: #058240 !important;
 }
 
+@media (max-width: 1550px) {
+  .header {
+    .link {
+      margin-right: 200px;
+    }
+  }
+
+}
 @media (max-width: 768px) {
   .header {
     .menu-burger {

@@ -3,20 +3,19 @@
 
     <div class="flex">
       <div>
-        <h1 class="text-4xl font-bold py-4" style="color: #dfac06">Altkleider und Schuhe</h1>
-        <p>Leider landen noch viele Altkleider in den Restmülltonnen. Altkleider sind einfach zu schade für die Restmülltonne. Nutzen Sie die zahlreichen Altkleidecontainer des AWM im Stadtgebiet oder auf den Wertstoffhöfen.
-        </p>
-        <h2 class="text-2xl font-bold py-4" style="color: #dfac06">Was gehört an die Altkleider und Schuhe?</h2>
+        <h1 class="text-4xl font-bold py-4" style="color: #dfac06">{{ $t("old-clothes-block.h1") }}</h1>
+        <p>{{ $t("old-clothes-block.p") }}</p>
+        <h2 class="text-2xl font-bold py-4" style="color: #dfac06">{{ $t("old-clothes-block.h2") }}</h2>
         <ul>
-          <li>Damen-, Herren- und Kinderbekleidung</li>
-          <li>Saubere Schuhe</li>
-          <li>Hüte, Handschuhe</li>
-          <li>Haushaltswäsche (Tischtücher, Badetücher usw.)</li>
-          <li>Vorhänge, Gardinen</li>
-          <li>Bettwäsche</li>
+          <li>{{ $t("old-clothes-block.old-clothes-li.1") }}</li>
+          <li>{{ $t("old-clothes-block.old-clothes-li.2") }}</li>
+          <li>{{ $t("old-clothes-block.old-clothes-li.3") }}</li>
+          <li>{{ $t("old-clothes-block.old-clothes-li.4") }}</li>
+          <li>{{ $t("old-clothes-block.old-clothes-li.5") }}</li>
+          <li>{{ $t("old-clothes-block.old-clothes-li.6") }}</li>
         </ul>
         <br>
-        <p><b>Nur Altkleider in gut verschlossenen Tüten können wiederverwendet werden!</b></p>
+        <p><b>{{ $t("old-clothes-block.p2") }}</b></p>
       </div>
       <img alt="Residual Waste" src="../../assets/img/trash-separation/3.png" />
     </div>

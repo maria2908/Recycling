@@ -391,5 +391,46 @@
       "h1_2": "The Journey of Organic Waste",
       "p": "In the organic waste treatment plant, bacteria convert organic waste into biogas and compost. Munich soils are produced from the compost, and electricity is generated from the biogas. Your parents can buy potting soil at the recycling centers and the Freimann earthworks, and you can plant flowers or vegetables in it."
     }
+  },
+  "packing-block": {
+    "h1": "Packaging",
+    "p": "Separate your packaging for recycling. Make sure they are empty before disposal; rinsing is not necessary. Please separate different materials, for example, the aluminum lid from the yogurt container.",
+    "h2": "What belongs in the recycling center?",
+    "bio-li": {
+    "1": "Glass (white, brown, green). Lids do not need to be unscrewed.",
+    "2": "Different colored glass (e.g., blue, red, black) belongs with green glass.",
+    "3": "Plastics (e.g., beverage cartons, plastic packaging, plastic bottles, plastic cups, Styrofoam, packaging films)",
+    "4": "Cans/Aluminum (e.g., aluminum foil, aluminum, spray cans, bottle caps, screw caps from bottles and jars, tinplate, tin cans)"
+    }
+  },
+  "old-clothes-block": {
+    "h1": "Used Clothes and Shoes",
+    "p": "Unfortunately, many used clothes still end up in regular waste bins. Used clothes are too valuable to be discarded in regular waste bins. Utilize the numerous used clothes containers provided by AWM in the city or at recycling centers.",
+    "h2": "What belongs in the used clothes and shoes containers?",
+    "old-clothes-li": {
+    "1": "Women's, men's, and children's clothing",
+    "2": "Clean shoes",
+    "3": "Hats, gloves",
+    "4": "Household linens (tablecloths, towels, etc.)",
+    "5": "Curtains",
+    "6": "Bedding"
+    },
+    "p2": "Only used clothes in well-sealed bags can be reused!"
+  },
+  "recycling-center-block": {
+    "h1": "Recycling Center",
+    "p": "At the recycling centers, you can dispose of bulky waste, hazardous waste, and green waste in household quantities free of charge.",
+    "h2": "What belongs at the recycling center?",
+    "recycling-center-li": {
+    "1": "Construction waste",
+    "2": "Electrical and electronic waste",
+    "3": "Hazardous waste",
+    "4": "Garden waste",
+    "5": "Wood",
+    "6": "Used clothes and shoes",
+    "7": "Plastic/Styrofoam",
+    "8": "Paper/cardboard",
+    "9": "Bulky waste"
+    }
   }
 }

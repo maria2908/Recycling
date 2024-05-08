@@ -391,5 +391,46 @@
       "h1_2": "Der Weg des Bioabfalls",
       "p": "In der Verwertungsanlage für Bioabfälle verwandeln Bakterien die Bioabfälle in Biogas und Kompost. Aus dem Kompost werden die Münchner Erden hergestellt, aus dem Biogas entsteht Strom. Die Blumenerde können deine Eltern an den Wertstoffhöfen und am Erdenwerk Freimann kaufen und du kannst darin Blumen oder Gemüse pflanzen."
     }
+  },
+  "packing-block": {
+    "h1": "Verpackungen",
+    "p": "Sammeln Sie Verpackungen getrennt, denn sie können verwertet werden. Vor der Abgabe müssen die Verpackungen geleert sein, ausspülen ist nicht notwendig. Trennen Sie bitte unterschiedliche Materialien voneinander, z. B. den Aludeckel vom Joghurtbecher.",
+    "h2": "Was gehört an die Wertstoffinsel?",
+    "bio-li": {
+      "1": "Glas (weiß, braun, grün). Deckel müssen nicht abgeschraubt werden",
+      "2": "Andersfarbiges Glas (z. B. blau, rot, schwarz) gehört zum Grünglas",
+      "3": "Kunststoffe (z. B. Getränkekartons, Kunststoffverpackungen, Kunststoff-Flaschen, Kunststoff-Becher, Styropor, Verpackungsfolien)",
+      "4": "Dosen/Alu (z. B. Alufolien, Aluminium, Spraydosen, Kronkorken, Schraubverschlüsse von Flaschen und Gläsern, Weißblech, Konservendosen)"
+    }
+  },
+  "old-clothes-block": {
+    "h1": "Altkleider und Schuhe",
+    "p": "Leider landen noch viele Altkleider in den Restmülltonnen. Altkleider sind einfach zu schade für die Restmülltonne. Nutzen Sie die zahlreichen Altkleidecontainer des AWM im Stadtgebiet oder auf den Wertstoffhöfen.",
+    "h2": "Was gehört an die Altkleider und Schuhe?",
+    "old-clothes-li": {
+      "1": "Damen-, Herren- und Kinderbekleidung",
+      "2": "Saubere Schuhe",
+      "3": "Hüte, Handschuhe",
+      "4": "Haushaltswäsche (Tischtücher, Badetücher usw.)",
+      "5": "Vorhänge, Gardinen",
+      "6": "Bettwäsche"
+    },
+    "p2": "Nur Altkleider in gut verschlossenen Tüten können wiederverwendet werden!"
+  },
+  "recycling-center-block": {
+    "h1": "Wertstoffhof",
+    "p": "An den Wertstoffhöfen können Sie sperrige Abfälle, Problemstoffe und Grünschnitt in haushaltsüblicher Art und Menge gebührenfrei abgeben.",
+    "h2": "Was gehört an die Wertstoffhof?",
+    "recycling-center-li": {
+      "1": "Bauschutt",
+      "2": "Elektro-und Elektronikschrott",
+      "3": "Problemabfälle",
+      "4": "Gartenabfälle",
+      "5": "Holz",
+      "6": "Altkleider und Schuhe",
+      "7": "unststoff/Styropor",
+      "8": "Papier/Kartonagen",
+      "9": "Sperrmüll"
+    }
   }
 }

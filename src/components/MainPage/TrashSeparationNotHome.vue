@@ -80,7 +80,7 @@ const innerWidth = useInnerWidth();
   </div>
   <div v-else>
     <Carousel
-        :itemsToShow="5"
+        :itemsToShow="3"
         :wrapAround="true"
         :transition="500"
         class="mt-12"
@@ -167,6 +167,7 @@ const innerWidth = useInnerWidth();
     opacity: 1;
   }
 }
+
 
 
 </style>

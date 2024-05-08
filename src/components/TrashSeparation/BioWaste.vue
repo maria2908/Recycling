@@ -99,4 +99,21 @@ li:before {
   content: "•  ";
   color: #dfac06;
 }
+
+@media (max-width: 1500px) {
+  .modal {
+    h1 {
+      font-size: 30px;
+    }
+
+    img {
+      width: 80%;
+    }
+
+    .modal-content {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr;
+    }
+  }
+}
 </style>

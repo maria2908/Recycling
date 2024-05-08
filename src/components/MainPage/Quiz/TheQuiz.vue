@@ -145,7 +145,7 @@ const calculateScore = () => {
 </script>
 
 <template>
-    <div class="bg-my-dark-blue relative " style="height: 90vh;">
+    <div class="bg-my-dark-blue relative quiz" style="height: 90vh;">
       <div class="absolute top-0 w-100 h-100" v-if="!startQuiz">
         <img class="absolute top-8 right-16" height="180" width="180" src="https://ouch-cdn2.icons8.com/nYcU_Ks_YvQgPjuVFJ4Af_cj0z1duoG-EcTF8Bi0R4Y/rs:fit:368:368/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9wbmcvNjgv/YTAyNTQyZGItZjZl/OS00ZDUxLTlhOGUt/NjIxZThjNGYzYzlh/LnBuZw.png" />
         <img class="absolute top-8 left-12" height="180" width="180" src="https://ouch-cdn2.icons8.com/4TJ7VxPziBcCBu7cWzkVnorXV3lFOyhWUu6WB_uT6YA/rs:fit:368:368/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9wbmcvMTAw/L2VjZDQ4MzcwLWVh/NjAtNGQzNC05OWM1/LThmNjk1YzJhMzYz/MC5wbmc.png" />
@@ -159,7 +159,7 @@ const calculateScore = () => {
         </div>
       </div>
       <div v-else>
-        <div v-if="!quizCompleted" style="height: 90vh;">
+        <div class="quiz" v-if="!quizCompleted" style="height: 90vh;">
           <div class="relative pt-4 h-full p-12" v-for="(question, index) in quiz.questions" :key="index" v-show="currentQuestion === index">
               <div class="flex justify-around align-center">
                 <div class="pt-4 w-1/2">
@@ -302,5 +302,20 @@ const calculateScore = () => {
 .disabled {
   pointer-events: none;
   opacity: 0.5;
+}
+
+@media (max-width: 768px) {
+ .quiz {
+  height: 70vh !important;
+ }
+
+ .inactive {
+  height: 24vh;
+}
+
+.active {
+  height: 24vh;
+}
+
 }
 </style>

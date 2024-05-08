@@ -1,5 +1,5 @@
 <template>
-  <div class="block text-center pb-12">
+  <div class="tips block text-center pb-12">
 
       <div class="bg-my-dark-green  h-0.5 line"></div>
       <div class="d-flex justify-center py-3">
@@ -58,6 +58,16 @@ ul {
   justify-content: center;
   shape-outside: ellipse();
   z-index: 1;
+}
+@media (max-width: 768px) {
+  .tips {
+    p {
+      margin: 0 15px;
+    }
+    ul {
+      margin: 20px 30px 0;
+    }
+  }
 }
 </style>
 

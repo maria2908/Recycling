@@ -69,7 +69,7 @@ const innerWidth = useInnerWidth();
       <div v-else class="all-news mb-16" >
         <TheNew class="new text-center" :post="post" v-for="(post,index) in displayedPosts2" :key="index"  />
       </div>
-      <router-link to="/environmental-protection" class="bg-my-dark-green hover:bg-my-green text-white ml-4 p-4 rounded px-7 text-center">{{ $t('tips.button') }}</router-link>
+      <router-link :to="{ name: 'TheNews' }" class="bg-my-dark-green hover:bg-my-green text-white ml-4 p-4 rounded px-7 text-center">{{ $t('tips.button') }}</router-link>
     </div>
 </template>
 

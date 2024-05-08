@@ -9,8 +9,8 @@ import 'swiper/css/pagination';
     <div class="text" style="width: 750px;">
       <h1 class="text-9xl text-my-dark-green font-black">{{ $t('main-title')}}</h1>
       <p class="my-12 font-semibold">{{ $t('main-text')}}</p>
-      <router-link :to="{}" class="p-4 rounded border-my-dark-green border-2 text-my-dark-green hover:border-my-green hover:text-my-green">{{ $t('read-more')}}</router-link>
-      <router-link :to="{}" class="bg-my-dark-green hover:bg-my-green border-my-dark-green hover:border-my-green border-2 text-white ml-4 p-4 rounded px-7 text-center">{{ $t('read-news')}}</router-link>
+      <router-link :to="{ name: 'EnvironmentalProtection' }" class="p-4 rounded border-my-dark-green border-2 text-my-dark-green hover:border-my-green hover:text-my-green">{{ $t('read-more')}}</router-link>
+      <router-link :to="{ name: 'TheNews'}" class="bg-my-dark-green hover:bg-my-green border-my-dark-green hover:border-my-green border-2 text-white ml-4 p-4 rounded px-7 text-center">{{ $t('read-news')}}</router-link>
     </div>
     <div class="flex slider">
       <swiper

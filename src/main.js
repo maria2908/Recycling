@@ -23,7 +23,7 @@ console.log(test)
 const i18n = createI18n({
 
     locale: localStorage.getItem('locale'),
-    fallbackLng: 'de',
+    fallbackLng: 'ua',
     messages: {
         ua: ua,
         de: de,

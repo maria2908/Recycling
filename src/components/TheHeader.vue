@@ -2,7 +2,7 @@
 import ToggleMode from "@/components/ToggleMode.vue";
 import { ref } from 'vue';
 const burgerManu = ref(false)
-const language = ref('de')
+const language = ref('ua')
 </script>
 <template>
   <header class="header d-flex justify-between align-center shadow z-10 fixed w-full ">

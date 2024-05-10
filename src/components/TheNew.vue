@@ -27,7 +27,7 @@ const truncateText = (text, maxLength) => {
         <h5 class="mb-2 font-sans text-l font-bold text-blue-gray-900">
           {{ post['title_' + $i18n.locale] }}
         </h5>
-        <p class="text-justify mt-4 font-light" v-html="truncateText(post['text_' + $i18n.locale], 200)">
+        <p class="text-justify mt-4 font-light" v-html="truncateText(post['text_' + $i18n.locale], 150)">
         </p>
       </div>
       <div class="btn p-6" style="margin-top: -15px">

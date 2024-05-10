@@ -19,10 +19,10 @@ export default {
       const templateParams = {
         from_name: this.name,
         from_email: this.email,
-        message_html: this.message
+        message: this.message
       };
 
-      emailjs.send('service_34eeos6', 'template_3cbixpr', templateParams, 'PhgvgsCyJAJxrTpJK')
+      emailjs.send('service_u2l2oam', 'template_i6nul2f', templateParams, 'PhgvgsCyJAJxrTpJK')
           .then((response) => {
             console.log('Email sent successfully:', response);
             console.log('Email sent successfully!');

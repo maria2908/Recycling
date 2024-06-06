@@ -309,16 +309,16 @@
     "text-1_2": "Packaging made of aluminum or tinplate for food and other household products also enters the recycling process: that's why you collect your packaging in the Yellow Bin or Yellow Bag, depending on the region, also in the recycling bin. Waste disposal companies hand over the collected and sorted packaging for recycling and processing to specialized companies.",
     "title-2": "Why is Metal Recycling Meaningful?",
     "text-2": "In the circular economy, metals are preserved and reused as secondary raw materials after recycling. Modern processes in metal recycling save valuable resources and protect the environment. Aluminum recycling, for example, saves up to 95 percent of the energy required for primary production. About 75 percent of the currently in use aluminum comes from recycling processes.",
-    "title": "Choose a Category:",
+    "title-3": "Choose a Category:",
     "aluminiumverpackungen": {
       "title": "Aluminum Packaging",
-      "title-3": "Recycling of Aluminum Packaging",
-      "text-3": "Primary aluminum is obtained from the ore bauxite. However, an increasing amount of the raw material is recovered through the recycling of used products. In Germany, over half of the produced aluminum is made from aluminum scrap. Recycling this material saves up to 95 percent of the energy required for primary production. Aluminum can be recycled repeatedly without a loss of quality for new products and packaging."
+      "title-1": "Recycling of Aluminum Packaging",
+      "text-1": "Primary aluminum is obtained from the ore bauxite. However, an increasing amount of the raw material is recovered through the recycling of used products. In Germany, over half of the produced aluminum is made from aluminum scrap. Recycling this material saves up to 95 percent of the energy required for primary production. Aluminum can be recycled repeatedly without a loss of quality for new products and packaging."
     },
     "weißblechverpackungen": {
       "title": "Tinplate Packaging",
-      "title-1": "Recycling of Tinplate Packaging",
-      "text-1": "The main component of packaging steel is iron, an indestructible element. 80 percent of all steel ever produced in the world is still in use today. Steel packaging can be recycled indefinitely. The recycling rate is well above 90 percent. Thus, in Germany, the material cycle for this material is closed."
+      "title-2": "Recycling of Tinplate Packaging",
+      "text-2": "The main component of packaging steel is iron, an indestructible element. 80 percent of all steel ever produced in the world is still in use today. Steel packaging can be recycled indefinitely. The recycling rate is well above 90 percent. Thus, in Germany, the material cycle for this material is closed."
     }
   },
   "trash-separation-page": {

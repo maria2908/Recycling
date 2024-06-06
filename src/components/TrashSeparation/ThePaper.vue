@@ -67,23 +67,25 @@ const open = ref(false)
   overflow: auto;
   background-color: rgb(0,0,0);
   background-color: rgba(0,0,0,0.7);
+  width: 100%;
+
 }
 .modal-content {
   border-radius: 20px;
   background-color: #fefefe;
-  margin: 15% auto;
+  margin: 10% auto;
   padding: 50px;
   border: 1px solid #888;
-  width: 55%;
-  height: 60vh;
+  width: 45% !important;
+  height: 61vh !important;
 }
 .close {
   font-weight: 700;
   color: #dfac06;
   font-size: 40px;
   position: absolute;
-  top: 24%;
-  right: 24%;
+  top: 20% !important;
+  right: 30% !important;
 }
   li {
     line-height: 35px;
